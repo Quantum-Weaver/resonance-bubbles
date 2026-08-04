@@ -1,0 +1,106 @@
+{
+  "folder_name": "sounds",
+  "folder_path": "sounds",
+  "description": "7 files, 0 subfolders",
+  "scan_timestamp": "2026-08-04T14:10:51.699179 | in sovereign time",
+  "files": [
+    {
+      "path": "sounds/pop-bubble-2.wav",
+      "description": "audio, 6,218 bytes"
+    },
+    {
+      "path": "sounds/pop-bubble-3.wav",
+      "description": "audio, 6,218 bytes"
+    },
+    {
+      "path": "sounds/pop-bubble-4.wav",
+      "description": "audio, 6,218 bytes"
+    },
+    {
+      "path": "sounds/pop-bubble-5.wav",
+      "description": "audio, 6,218 bytes"
+    },
+    {
+      "path": "sounds/pop-bubble-6.wav",
+      "description": "audio, 6,218 bytes"
+    },
+    {
+      "path": "sounds/pop-bubble-7.wav",
+      "description": "audio, 6,218 bytes"
+    },
+    {
+      "path": "sounds/pop-bubble.wav",
+      "description": "audio, 6,218 bytes"
+    }
+  ],
+  "file_count": 7,
+  "subdirectories": [],
+  "code_analysis": {
+    "pop-bubble-2.wav": {
+      "language": "content-file",
+      "format": "wav",
+      "name": "pop-bubble-2.wav",
+      "location": "sounds",
+      "bytes": 6218,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "pop-bubble-3.wav": {
+      "language": "content-file",
+      "format": "wav",
+      "name": "pop-bubble-3.wav",
+      "location": "sounds",
+      "bytes": 6218,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "pop-bubble-4.wav": {
+      "language": "content-file",
+      "format": "wav",
+      "name": "pop-bubble-4.wav",
+      "location": "sounds",
+      "bytes": 6218,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "pop-bubble-5.wav": {
+      "language": "content-file",
+      "format": "wav",
+      "name": "pop-bubble-5.wav",
+      "location": "sounds",
+      "bytes": 6218,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "pop-bubble-6.wav": {
+      "language": "content-file",
+      "format": "wav",
+      "name": "pop-bubble-6.wav",
+      "location": "sounds",
+      "bytes": 6218,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "pop-bubble-7.wav": {
+      "language": "content-file",
+      "format": "wav",
+      "name": "pop-bubble-7.wav",
+      "location": "sounds",
+      "bytes": 6218,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "pop-bubble.wav": {
+      "language": "content-file",
+      "format": "wav",
+      "name": "pop-bubble.wav",
+      "location": "sounds",
+      "bytes": 6218,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    }
+  },
+  "maintaining_agent": "FolderAgent",
+  "folders_not_walked": [],
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
+}
