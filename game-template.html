@@ -100,6 +100,12 @@
   .overlay .inner { max-width: 420px; }
   .overlay h2 { font-size: 1.25rem; margin-bottom: 10px; }
   .overlay p { color: rgba(224,224,224,0.55); font-size: 0.9rem; line-height: 1.55; margin-bottom: 18px; }
+  /* the breath — the pacer's canvas and count sit behind the words */
+  #breathcanvas { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  .breath-count { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    font-size: 22vmin; font-weight: 200; line-height: 1; pointer-events: none;
+    opacity: 0.04; color: #FDCB6E; user-select: none; }
+  #breath .inner { position: relative; z-index: 1; }
   .primary {
     background: var(--quantum); color: white; border: none; border-radius: 12px;
     padding: 12px 26px; font-size: 0.95rem; cursor: pointer;
@@ -180,6 +186,8 @@
 </div>
 
 <div class="overlay" id="breath" style="display:none;">
+  <canvas id="breathcanvas" aria-hidden="true"></canvas>
+  <div class="breath-count" id="breathcount" aria-hidden="true">1</div>
   <div class="inner">
     <h2>Take a breath</h2>
     <p>You've been playing for a while. The stars will still be here when
@@ -333,17 +341,127 @@ function tick(now) {
   requestAnimationFrame(tick);
 }
 
+// ═══ THE BREATH — the pacer ═══
+// The MATH is carried verbatim from `the-breath`
+// (resonance-awen/tools/the-breath), the re-homed engine whose curves
+// were verified live to three decimals: the four-count rise, the count
+// opacity 0.04 → 0.21 by t=0.75 falling home after, the border's sine
+// pulse, warm amber in and deep violet out. The DOOR around it is
+// Compass's Sattva door — full screen, the canvas glow, the count
+// behind, reduced motion honored.
+// KP's law, 2026-07-30: "the rehoming should not mean extracting."
+// Inline rather than imported, exactly as Compass carries its own —
+// so the single file and the app breathe identically.
+const BREATH_DURATIONS = { '4-4':[8000,8000], '4-6':[8000,12000], '4-8':[8000,16000], '5-5':[10000,10000] };
+const PHASE_COLORS = ['#FDCB6E', '#6C5CE7'];
+
+function createBreath(duration) {
+  const durations = BREATH_DURATIONS[duration] || BREATH_DURATIONS['4-4'];
+  let phaseIdx = 0, phaseStartTime = 0, started = false;
+  return {
+    sample(nowMs) {
+      if (!started) { phaseStartTime = nowMs; started = true; }
+      const phaseDur = durations[phaseIdx];
+      const t = Math.min(1, (nowMs - phaseStartTime) / phaseDur);
+      const count = Math.min(4, Math.floor(t * 4) + 1);
+      let countOpacity;
+      if (t < 0.75) { countOpacity = 0.04 + (t / 0.75) * 0.17; }
+      else { const ft = (t - 0.75) / 0.25; countOpacity = 0.21 - ft * 0.17; }
+      const borderAlpha = 0.09 + Math.sin(t * Math.PI) * 0.09;
+      const s = { phaseIdx, phase: phaseIdx === 0 ? 'in' : 'out', t, count,
+                  countOpacity, borderAlpha, color: PHASE_COLORS[phaseIdx] };
+      if (t >= 1) { phaseIdx = phaseIdx === 0 ? 1 : 0; phaseStartTime = nowMs; }
+      return s;
+    },
+    reset() { phaseIdx = 0; phaseStartTime = 0; started = false; }
+  };
+}
+
+function breathHexToRgb(hex) {
+  const n = parseInt(hex.slice(1), 16);
+  return [(n >> 16) & 0xff, (n >> 8) & 0xff, n & 0xff];
+}
+
+function drawSquarePulse(canvas, color, alpha) {
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return;
+  const W = canvas.width, H = canvas.height;
+  ctx.clearRect(0, 0, W, H);
+  if (alpha <= 0) return;
+  const dim = Math.min(W, H), sqSz = dim * 0.6;
+  const x = (W - sqSz) / 2, y = (H - sqSz) / 2, cr = 10;
+  const [r, g, b] = breathHexToRgb(color);
+  ctx.save();
+  ctx.shadowBlur = 36;
+  ctx.shadowColor = `rgba(${r},${g},${b},${alpha * 0.6})`;
+  ctx.beginPath();
+  if (ctx.roundRect) ctx.roundRect(x, y, sqSz, sqSz, cr); else ctx.rect(x, y, sqSz, sqSz);
+  ctx.strokeStyle = `rgba(${r},${g},${b},${alpha * 0.45})`;
+  ctx.lineWidth = 6 + alpha * 6;
+  ctx.stroke();
+  ctx.shadowBlur = 14;
+  ctx.shadowColor = `rgba(${r},${g},${b},${alpha})`;
+  ctx.beginPath();
+  if (ctx.roundRect) ctx.roundRect(x, y, sqSz, sqSz, cr); else ctx.rect(x, y, sqSz, sqSz);
+  ctx.strokeStyle = `rgba(${r},${g},${b},${alpha * 0.85})`;
+  ctx.lineWidth = 1.2;
+  ctx.stroke();
+  ctx.shadowBlur = 0;
+  ctx.globalAlpha = alpha * 0.04;
+  ctx.fillStyle = `rgb(${r},${g},${b})`;
+  ctx.fill();
+  ctx.restore();
+}
+
+const breath = createBreath('4-6');
+const breathReduced = window.matchMedia
+  && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+let breathRaf = 0;
+
+function breathFrame() {
+  const c = document.getElementById('breathcanvas');
+  const el = document.getElementById('breathcount');
+  if (c.width !== c.clientWidth || c.height !== c.clientHeight) {
+    c.width = c.clientWidth; c.height = c.clientHeight;
+  }
+  const s = breath.sample(performance.now());
+  drawSquarePulse(c, s.color, s.borderAlpha);
+  el.textContent = s.count;
+  el.style.opacity = s.countOpacity;
+  el.style.color = s.color;
+  breathRaf = requestAnimationFrame(breathFrame);
+}
+
+function startBreath() {
+  const el = document.getElementById('breathcount');
+  // Reduced motion: the door still opens, it simply does not move.
+  if (breathReduced) { el.style.opacity = 0.15; el.textContent = ''; return; }
+  breath.reset();
+  breathRaf = requestAnimationFrame(breathFrame);
+}
+
+function stopBreath() {
+  if (breathRaf) cancelAnimationFrame(breathRaf);
+  breathRaf = 0;
+  const c = document.getElementById('breathcanvas');
+  const ctx = c && c.getContext('2d');
+  if (ctx) ctx.clearRect(0, 0, c.width, c.height);
+}
+
 // ═══ the gentle gates ═══
 function showBreath() {
   if (document.getElementById('breath').style.display === 'flex') return;
   paused = true;
   document.getElementById('breath').style.display = 'flex';
+  startBreath();
 }
 document.getElementById('breathresume').onclick = () => {
+  stopBreath();
   document.getElementById('breath').style.display = 'none';
   paused = false; sessionPops = 0; sessionStart = Date.now();
 };
 document.getElementById('breathdone').onclick = () => {
+  stopBreath();
   document.getElementById('breath').style.display = 'none';
   document.getElementById('paused').style.display = 'flex';
 };
