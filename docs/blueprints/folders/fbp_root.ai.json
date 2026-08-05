@@ -2,7 +2,7 @@
   "folder_name": "resonance-bubbles",
   "folder_path": ".",
   "description": "A collecting game built without compulsion",
-  "scan_timestamp": "2026-08-04T14:10:51.693358 | in sovereign time",
+  "scan_timestamp": "2026-08-04T19:08:51.491540 | in sovereign time",
   "files": [
     {
       "path": ".gitignore",
@@ -10,7 +10,15 @@
     },
     {
       "path": "bubbles-set.json",
-      "description": "data, 11,597 bytes"
+      "description": "data, 32,867 bytes"
+    },
+    {
+      "path": "bubbles-wave-three.json",
+      "description": "data, 4,715 bytes"
+    },
+    {
+      "path": "bubbles-wave-two.json",
+      "description": "data, 12,677 bytes"
     },
     {
       "path": "build.py",
@@ -22,7 +30,7 @@
     },
     {
       "path": "game-template.html",
-      "description": "markup, 17,708 bytes"
+      "description": "markup, 22,571 bytes"
     },
     {
       "path": "HANDS.md",
@@ -30,15 +38,27 @@
     },
     {
       "path": "index.html",
-      "description": "markup, 87,513 bytes"
+      "description": "markup, 107,263 bytes"
     },
     {
       "path": "LICENSE",
       "description": "file, 1,092 bytes"
     },
     {
+      "path": "package-lock.json",
+      "description": "data, 85,417 bytes"
+    },
+    {
+      "path": "package.json",
+      "description": "data, 1,097 bytes"
+    },
+    {
       "path": "PHILOSOPHY.md",
       "description": "THE RESONANCE LICENSE"
+    },
+    {
+      "path": "PRIVACY.md",
+      "description": "AudHDities Sanctuary"
     },
     {
       "path": "README.md",
@@ -46,22 +66,34 @@
     },
     {
       "path": "RUN-LOG.md",
-      "description": "document, 98 bytes"
+      "description": "2026-08-04 14:07 \u00b7 the-bubbles \u00b7 game sealed \u00b7 55 bubbles \u00b7 6 collections \u00b7 7 pops \u00b7 85 KB"
     },
     {
-      "path": "seed-additions.sql",
-      "description": "sql, 7,582 bytes"
+      "path": "svelte.config.js",
+      "description": "Tauri doesn't have a Node.js server to do proper SSR"
+    },
+    {
+      "path": "tsconfig.json",
+      "description": "data, 694 bytes"
+    },
+    {
+      "path": "vite.config.js",
+      "description": "script, 873 bytes"
     }
   ],
-  "file_count": 12,
+  "file_count": 19,
   "subdirectories": [
+    ".cargo",
     "docs",
-    "sounds"
+    "sounds",
+    "src",
+    "src-tauri",
+    "static"
   ],
   "code_analysis": {
     "bubbles-set.json": {
       "language": "json",
-      "lines": 72,
+      "lines": 1028,
       "valid": true,
       "root": "object",
       "top_level_keys": [
@@ -72,6 +104,36 @@
         "set"
       ],
       "key_count": 5
+    },
+    "bubbles-wave-three.json": {
+      "language": "json",
+      "lines": 119,
+      "valid": true,
+      "root": "object",
+      "top_level_keys": [
+        "bubbles",
+        "collections",
+        "law",
+        "provenance",
+        "set",
+        "wave"
+      ],
+      "key_count": 6
+    },
+    "bubbles-wave-two.json": {
+      "language": "json",
+      "lines": 77,
+      "valid": true,
+      "root": "object",
+      "top_level_keys": [
+        "bubbles",
+        "collections",
+        "law",
+        "provenance",
+        "set",
+        "wave"
+      ],
+      "key_count": 6
     },
     "build.py": {
       "language": "python",
@@ -91,15 +153,15 @@
     },
     "CLAUDE.md": {
       "language": "markdown",
-      "lines": 77,
-      "words": 465,
+      "lines": 90,
+      "words": 598,
       "heading_count": 7,
       "headings": [
         "CLAUDE.md \u2014 resonance-bubbles",
         "SESSION PROTOCOL",
         "Essential rules \u2014 the anti-compulsion identity",
+        "The rooms",
         "Build",
-        "Project structure",
         "The gates that are KP's alone",
         "Standards"
       ],
@@ -115,13 +177,13 @@
       "links_internal_unresolved": [],
       "links_internal_outside_checkout": [],
       "code_fences": 1,
-      "table_rows": 0,
+      "table_rows": 6,
       "checkboxes": {
         "open": 0,
         "done": 0
       },
       "has_story_block": false,
-      "declares_mirror_class": true
+      "declares_mirror_class": false
     },
     "HANDS.md": {
       "language": "markdown",
@@ -148,6 +210,37 @@
       },
       "has_story_block": false,
       "declares_mirror_class": false
+    },
+    "package-lock.json": {
+      "language": "json",
+      "lines": 2530,
+      "valid": true,
+      "root": "object",
+      "top_level_keys": [
+        "lockfileVersion",
+        "name",
+        "packages",
+        "requires",
+        "version"
+      ],
+      "key_count": 5
+    },
+    "package.json": {
+      "language": "json",
+      "lines": 36,
+      "valid": true,
+      "root": "object",
+      "top_level_keys": [
+        "dependencies",
+        "description",
+        "devDependencies",
+        "license",
+        "name",
+        "scripts",
+        "type",
+        "version"
+      ],
+      "key_count": 8
     },
     "PHILOSOPHY.md": {
       "language": "markdown",
@@ -185,25 +278,59 @@
       "has_story_block": false,
       "declares_mirror_class": false
     },
+    "PRIVACY.md": {
+      "language": "markdown",
+      "lines": 79,
+      "words": 786,
+      "heading_count": 11,
+      "headings": [
+        "AudHDities Sanctuary \u2014 App Privacy Policy",
+        "Our promise",
+        "What we collect",
+        "Where your data lives",
+        "Network",
+        "Your control",
+        "Special care for neurodivergent data",
+        "Children",
+        "Security",
+        "Changes to this policy",
+        "Contact"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
     "README.md": {
       "language": "markdown",
-      "lines": 110,
-      "words": 623,
-      "heading_count": 7,
+      "lines": 161,
+      "words": 892,
+      "heading_count": 9,
       "headings": [
         "\ud83e\udee7 Resonance Bubbles",
         "WHAT IT IS",
+        "THE SKY",
+        "THE APP",
         "THE STORY",
         "WHO IT'S FOR",
-        "BUILT WITH",
+        "BUILD",
         "Development Standards",
         "LICENSE"
       ],
-      "links_external": 6,
+      "links_external": 7,
       "links_site_absolute": [],
       "links_internal": [
         {
-          "target": "docs/CHECKLIST.md",
+          "target": "PRIVACY.md",
           "resolves": true,
           "outside_checkout": false
         },
@@ -235,8 +362,8 @@
       ],
       "links_internal_unresolved": [],
       "links_internal_outside_checkout": [],
-      "code_fences": 0,
-      "table_rows": 0,
+      "code_fences": 1,
+      "table_rows": 13,
       "checkboxes": {
         "open": 0,
         "done": 0
@@ -246,8 +373,8 @@
     },
     "RUN-LOG.md": {
       "language": "markdown",
-      "lines": 2,
-      "words": 19,
+      "lines": 6,
+      "words": 95,
       "heading_count": 0,
       "headings": [],
       "links_external": 0,
@@ -264,21 +391,30 @@
       "has_story_block": false,
       "declares_mirror_class": false
     },
-    "seed-additions.sql": {
-      "language": "sql",
-      "lines": 90,
-      "statements": 3,
-      "tables_created": [],
-      "rls_enabled_on": [],
-      "policies_created": [],
-      "functions_created": [],
-      "indexes_created": 0,
-      "uses_do_block": false
+    "svelte.config.js": {
+      "language": "node",
+      "lines": 19,
+      "functions": [],
+      "commands": []
+    },
+    "tsconfig.json": {
+      "language": "json",
+      "lines": 20,
+      "valid": false,
+      "error": "Expecting ',' delimiter: line 14 column 3 (char 326)"
+    },
+    "vite.config.js": {
+      "language": "node",
+      "lines": 33,
+      "functions": [],
+      "commands": []
     }
   },
   "maintaining_agent": "FolderAgent",
   "folders_not_walked": [
-    ".git"
+    ".git",
+    ".svelte-kit",
+    "node_modules"
   ],
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

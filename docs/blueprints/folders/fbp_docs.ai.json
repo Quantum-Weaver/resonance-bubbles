@@ -1,8 +1,8 @@
 {
   "folder_name": "docs",
   "folder_path": "docs",
-  "description": "2 files, 0 subfolders",
-  "scan_timestamp": "2026-08-04T14:10:51.696708 | in sovereign time",
+  "description": "2 files, 1 subfolders",
+  "scan_timestamp": "2026-08-04T19:08:51.495612 | in sovereign time",
   "files": [
     {
       "path": "docs/CHECKLIST.md",
@@ -14,22 +14,24 @@
     }
   ],
   "file_count": 2,
-  "subdirectories": [],
+  "subdirectories": [
+    "docs/sql"
+  ],
   "code_analysis": {
     "CHECKLIST.md": {
       "language": "markdown",
-      "lines": 119,
-      "words": 993,
+      "lines": 92,
+      "words": 739,
       "heading_count": 12,
       "headings": [
         "RESONANCE BUBBLES \u2014 MASTER CHECKLIST",
         "LEGEND",
         "PHASE STATUS",
         "Phase \u22121: Built in awen \u2705",
-        "Phase 0: Repo founding \u2014 set up to the Sanctuary standards \u2705",
-        "Phase 1: The source lands \u2705",
-        "Phase 2: PWA \u2014 installable everywhere, costs nothing \u2b1c",
-        "Phase 3: Desktop \u2014 Tauri v2, patterned on echoes \u2b1c",
+        "Phase 0: Repo founded to the Sanctuary standards \u2705",
+        "Phase 1: The source landed \u2705",
+        "Phase 2: The sky tripled \u2705",
+        "Phase 3: The app \u26a0\ufe0f",
         "Phase 4: Mobile \u2b1c",
         "Phase 5: The gates \u2b1c",
         "KNOWN BUGS",
@@ -41,13 +43,13 @@
       "links_internal_unresolved": [],
       "links_internal_outside_checkout": [],
       "code_fences": 0,
-      "table_rows": 7,
+      "table_rows": 9,
       "checkboxes": {
-        "open": 23,
-        "done": 19
+        "open": 12,
+        "done": 24
       },
       "has_story_block": false,
-      "declares_mirror_class": true
+      "declares_mirror_class": false
     },
     "THE-GAME.md": {
       "language": "markdown",
