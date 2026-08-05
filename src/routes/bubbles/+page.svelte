@@ -25,7 +25,7 @@
 	};
 
 	const KEY = 'the-bubbles';
-	const SPAWN_MS = 1200;
+	const SPAWN_MS = 1300;
 	const BREATH_POPS = 50;
 	const COOLDOWN_MIN = 15;
 	const DEFAULT_MAX = 500;

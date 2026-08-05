@@ -149,7 +149,7 @@
 
 <div class="home" style="padding-top: env(safe-area-inset-top, 0px);">
 	<header class="home-header">
-		<h1 class="home-title">Echoes</h1>
+		<h1 class="home-title">Bubbles</h1>
 		{#if echoStore.totalCount > 0}
 			<span class="count-badge">{echoStore.totalCount}</span>
 		{/if}
