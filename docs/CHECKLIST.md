@@ -56,12 +56,25 @@
 - [x] Custom icon generated through the full set
 - [ ] Visual pass — the port is faithful but not pixel-matched; the app's theme
       is not yet applied to the sky
-- [ ] **Tested:** ⬜ — KP building further before sealing
+- [x] **Tested:** ✅ — KP's own hands on the Android build, *"tests
+      successful"* (2026-08-04). The visual pass above stays open on its own.
 
-### Phase 4: Mobile ⬜
-- [ ] Touch events alongside mouse · iOS audio unlock on first tap
-- [ ] Safe areas, orientation
-- [ ] **Tested:** ⬜ on a real device, both platforms
+### Phase 4: Mobile ⚠️
+- [x] **Icons regenerated for the Android build** — `npm run tauri icon
+      src-tauri/icons/icon.png`. Full set: the five mipmaps
+      (`ic_launcher`, `_round`, `_foreground`, hdpi→xxxhdpi), the iOS AppIcon
+      set, desktop PNGs, `.icns`, `.ico`
+- [x] **Keystore created** — `D:/keystores/resonance-bubbles.keystore`, the
+      shipwright's `<project>.keystore` convention, single key entry so the
+      alias is discovered rather than configured. *Password is KP's alone and
+      stored nowhere; a lost keystore is a lost package identity.*
+- [x] **Signed and installed on KP's own Android device** — the shipwright run:
+      build → `sign-release` → `install-app`
+- [x] **Touch events** — proven by play on the device; the sky pops by hand
+- [ ] iOS audio unlock on first tap — **untested**, no iOS build made
+- [ ] Safe areas, orientation — **unverified**, not exercised by the test
+- [x] **Tested:** ✅ **on Android, in KP's own hands — *"tests successful"*
+      (his word, 2026-08-04).** The play is the test, and it passed.
 
 ### Phase 5: The gates ⬜
 - [ ] 🚪 **Public or private repo** — the 30 original stars are AudHDities
@@ -89,3 +102,6 @@
 | 2026-08-04 | Game graduated from awen, resealed byte-identical, pointer left. |
 | 2026-08-04 | Sky tripled: wave two (55), Inclusive Pride (13). 123 stars / 13 collections. |
 | 2026-08-04 | Echoes adopted as the app base: build output purged, identity rebranded, `/bubbles` and `/sattva` built, export widened to the collection, PRIVACY.md written, icon set generated. Dev server verified on all routes, then stopped for KP to build on. |
+| 2026-08-04 | Blueprints re-forged by the Sanctuary's one forge — 40 fbp · 8 obp · 2 dbp · 1 pbp, 181 files described, sovereignty HELD, 0 reconciliation findings. The prior set was a 21-file snapshot taken before `src/` and `src-tauri/` existed. |
+| 2026-08-04 | **ON THE PHONE.** Icons regenerated for Android, keystore created at `D:/keystores/resonance-bubbles.keystore`, release signed and installed on KP's device. The collecting game built without compulsion is in his hands to play. |
+| 2026-08-04 | **TESTS SUCCESSFUL** — KP's word, playing on Android. Touch proven by play. Phase 3 and the Android half of Phase 4 sealed. Still open: the visual pass, iOS audio unlock (no iOS build), safe areas/orientation, and the Phase 5 gates. |
