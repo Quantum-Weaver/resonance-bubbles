@@ -50,6 +50,36 @@
 - [x] **`/sattva`** — the regulation door; `the-breath`'s verified math inline,
       compass's door behaviour, reduced motion honoured
 - [x] Sidebar: Bubbles below Home, Sattva above Settings, new `IconSattva`
+- [x] **THE SHRINE (2026-08-06)** — the menu wrapper replaced with the-cumdach,
+      consumed **by mirror** (`src/lib/cumdach/`, SHA256 `7730A4C16E6FA044`,
+      awen the single editable truth): flat door list by KP's ⚛ stroke,
+      Settings as the foot's one chrome door, the ComfortBar a declared 48px
+      reserved edge, panels derived from the measured land and re-derived on
+      every resize/rotation. Dead `isMobile` state dropped at his word.
+- [x] **THE LEADING-IN (2026-08-06)** — the onboarding consumes the-epagoge,
+      **by mirror** (`src/lib/epagoge/`, SHA256 `CBF19821CDCB4BA6`, the same
+      truth Compass's mirror carries): the walk owns flow, dots, and the
+      honest record; the app brings the particulars. **ALL presets offered
+      at the door** (KP's ⚛ word), derived from `PRESET_THEMES` itself so a
+      new preset appears the day it is born; THE KEY LAW kept (keys stored,
+      display names dress); skip lawful, the doorway line under the grid;
+      the welcome title reads `getName()` per the wordmark law. The
+      vessel-name key stays echoes' own, whole, per KP's word.
+- [x] **THE GALLERY (2026-08-06)** — `/gallery`, every star the sky holds,
+      consumed from the-gallery **by mirror** (`src/lib/gallery/`, SHA256
+      `ECCCBC995A5276F4`): rows in, cards out, the dress owning the pixels.
+      THE REWARD IS THE WORDS kept as dress law: uncollected cards rest
+      face-down (name + rarity, words veiled, dashed border); **popped cards
+      rest FLIPPED, words up** (KP's ⚛ stroke), tap turns them; the search
+      walks name + collection only — never the veiled words; two honest
+      empties in the sky's own voice; reduced motion honored. New
+      `IconGallery` joins the registry.
+- [x] **The menu reads the app's focus (KP's ⚛ strokes, 2026-08-06):**
+      Bubbles · Gallery · **Echoes** (the `/` log, honestly renamed from
+      "Home") · Insights · Timer · Sattva, Settings the foot — the game
+      leads its own app, echoes below both. And the footer's quick action
+      opens the sky: the add-echo button (both faces) now opens `/bubbles`
+      wearing 🫧, add-echo staying echoes' own at home.
 - [x] **Export carries the collection** — the purge clears `localStorage`, so
       without it the purge destroyed what the export never held
 - [x] Manual **pause**, kept apart from the internal flag so leaving the breath
@@ -120,4 +150,8 @@
 | 2026-08-05 | **The version came home — 1.3.0 → 0.1.0 at KP's ⚛ word.** The 1.3.0 was Echoes' number, inherited with the base; 0.1.0 was this repo's own founding declaration. Trued in package.json, tauri.conf.json, Cargo.toml, Cargo.lock (+ the untracked gen/ asset). **One cost, named:** KP's device holds the 1.3.0 APK; the next build's Android versionCode is lower, so that install asks for one uninstall-first. Cheapest it will ever be — one device, no store. Versions climb from here. |
 | 2026-08-05 | **Wave strata cleared at KP's ⚛ word** ("get rid of redundancy files"): root `bubbles-wave-two.json` + `bubbles-wave-three.json` removed — both verified fully merged into the set, read by nothing at build or play; the afternoon they record stays whole in git history. Repo synced. |
 | 2026-08-05 | **Wave three seeded — KP's own hand.** The last 13 rows (Inclusive Pride) ran in the dashboard; ran again same day to be sure. Phase 2 sealed; checklist trued at his word. |
+| 2026-08-06 | **The menu wrapper wears the-cumdach (Continuo).** The shrine mirrored in at `src/lib/cumdach/` (SHA256 `7730A4C16E6FA044` both sides — the third consumer, after Compass and Khorós); Sidebar rebuilt on the Compass canon body: flat doors per KP's ⚛ stroke ("flat list let cumdach handle it if it grows with the arithmetic"), Settings the foot's chrome door, the ComfortBar (48px, z-110) a declared reserved edge with the foot clearing it, dynamics re-deriving on resize and rotation. Echoes-within-bubbles left whole per his word; only stale unused code removed. |
+| 2026-08-06 | **Two committed BOMs stripped, one byte each:** `package.json` (it broke svelte-check — every component failed "Unable to read package.json" at JSON.parse) and `src-tauri/tauri.conf.json` (the same landmine, not yet stepped on). Content otherwise untouched. **Game-page rune shadow mended, typing only:** the local `state` variable renamed `saved`, freeing the `$state` rune from store-subscription shadowing; all 11 pre-existing errors cleared, the game's laws untouched. **Gate: `npm run check` — 327 files · 0 errors · 0 warnings.** |
+| 2026-08-06 | **The onboarding wears the-epagoge (Continuo).** The leading-in mirrored in at `src/lib/epagoge/` (SHA256 `CBF19821CDCB4BA6` — the third consumer, after Compass and Khorós-by-birthright); the three screens rebuilt on the walk (entry · threshold · choose): **all six presets now offered** — dark, warm, ocean, forest, sunset, AMOLED Black — derived from the shelf, 2-col grid on phones and 3-col on wider land, live-preview cards, keys stored never display names, skip lawful, "change anytime in Settings" under the grid. Welcome title now reads `getName()`. **Gate: `npm run check` — 328 files · 0 errors · 0 warnings.** |
+| 2026-08-06 | **The gallery door drawn + the menu made the app's own (Continuo).** the-gallery mirrored in (SHA256 `ECCCBC995A5276F4`) and `/gallery` born: 123 stars as flip cards — popped cards rest words-up (KP's ⚛ "reveal words, flip card after popped"), uncollected keep their secret behind a dashed veil; search walks name + collection only; the game's collection record read from the sky's own localStorage, read-only. Menu reordered at his strokes: Bubbles · Gallery · Echoes(`/`) · Insights · Timer · Sattva; the ComfortBar's add-echo became the bubbles door (🫧, both faces). **Gate: `npm run check` — 332 files · 0 errors · 0 warnings.** |
 | 2026-08-05 | **Completeness sweep at KP's ask (Fable).** Forge re-run: 0 findings, sovereignty HELD, **no drift**. Link tender dry walk: every pointer resolves. Git clean, pushed. Root and app `bubbles-set.json` verified byte-identical; both wave JSONs verified fully merged into the set. Awen room holds only `MOVED.md` — clean graduation. No real TODO markers in src. Fixed: README version badge 0.1.0 → 1.3.0 (matches package.json, tauri.conf, and the signed 1.3.0 artifacts). Surfaced for KP: `docs/sql/seed-wave-three.sql` still awaits the dashboard; root `bubbles-wave-two.json` + `bubbles-wave-three.json` are now redundant strata (removal is KP's gate). |

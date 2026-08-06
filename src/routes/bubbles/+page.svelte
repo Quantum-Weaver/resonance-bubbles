@@ -50,8 +50,8 @@
 		};
 	}
 
-	let state = $state<Saved>({ daily: 0, max: DEFAULT_MAX, day: today(), collected: {}, sound: true });
-	function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch { /* nothing leaves the page either way */ } }
+	let saved = $state<Saved>({ daily: 0, max: DEFAULT_MAX, day: today(), collected: {}, sound: true });
+	function save() { try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch { /* nothing leaves the page either way */ } }
 
 	// ── the sky ──────────────────────────────────────────────────────────
 	type Floater = { id: number; b: Bubble; x: number; y: number; speed: number; drift: number; popped: boolean };
@@ -111,7 +111,7 @@
 	}
 	let lastPopSound = -1;
 	function playPop() {
-		if (!state.sound) return;
+		if (!saved.sound) return;
 		// No two pops in a row are ever the same — KP's spec, carried.
 		let i = Math.floor(Math.random() * 7);
 		if (i === lastPopSound) i = (i + 1) % 7;
@@ -122,12 +122,12 @@
 	function pop(f: Floater) {
 		if (f.popped || paused || manualPause) return;
 		const r = RARITY[f.b.rarity];
-		if (state.daily + r.pts > state.max) { showLimit(); return; }
+		if (saved.daily + r.pts > saved.max) { showLimit(); return; }
 		f.popped = true;
 		floaters = floaters.filter((x) => x.id !== f.id);
 		playPop();
-		state.daily += r.pts;
-		state.collected[f.b.slug] = (state.collected[f.b.slug] || 0) + 1;
+		saved.daily += r.pts;
+		saved.collected[f.b.slug] = (saved.collected[f.b.slug] || 0) + 1;
 		save();
 		score += r.pts;
 		sessionPops += 1;
@@ -152,7 +152,7 @@
 
 	function frame(now: number) {
 		if (!paused && !manualPause && sky) {
-			if (now - lastSpawn > SPAWN_MS + Math.random() * 1000 && state.daily < state.max) {
+			if (now - lastSpawn > SPAWN_MS + Math.random() * 1000 && saved.daily < saved.max) {
 				spawn();
 				lastSpawn = now;
 			}
@@ -168,16 +168,16 @@
 		raf = requestAnimationFrame(frame);
 	}
 
-	const collectedCount = $derived(Object.keys(state.collected).length);
+	const collectedCount = $derived(Object.keys(saved.collected).length);
 
 	function collectionProgress(slug: string) {
 		const inSet = BUBBLES.filter((b) => b.collection === slug);
-		const have = inSet.filter((b) => state.collected[b.slug]).length;
+		const have = inSet.filter((b) => saved.collected[b.slug]).length;
 		return { have, total: inSet.length };
 	}
 
 	onMount(() => {
-		state = load();
+		saved = load();
 		raf = requestAnimationFrame(frame);
 	});
 	onDestroy(() => {
@@ -191,13 +191,13 @@
 <div class="wrap" style="padding-top: env(safe-area-inset-top, 0px);">
 	<header class="bar">
 		<div class="stat"><span class="n">{score}</span><span class="l">this sitting</span></div>
-		<div class="stat"><span class="n">{state.daily}<span class="of">/{state.max}</span></span><span class="l">today</span></div>
+		<div class="stat"><span class="n">{saved.daily}<span class="of">/{saved.max}</span></span><span class="l">today</span></div>
 		<div class="stat"><span class="n">{collectedCount}<span class="of">/{BUBBLES.length}</span></span><span class="l">collected</span></div>
 		<button class="chip" onclick={() => (manualPause = !manualPause)} aria-pressed={manualPause}>
 			{manualPause ? 'resume' : 'pause'}
 		</button>
-		<button class="chip" onclick={() => (state.sound = !state.sound, save())} aria-pressed={state.sound}>
-			{state.sound ? 'sound on' : 'sound off'}
+		<button class="chip" onclick={() => (saved.sound = !saved.sound, save())} aria-pressed={saved.sound}>
+			{saved.sound ? 'sound on' : 'sound off'}
 		</button>
 		<button class="chip" onclick={() => (showPanel = !showPanel)}>collections</button>
 	</header>
@@ -233,8 +233,8 @@
 				</div>
 			{/each}
 			<label class="limit">
-				<span>Your daily boundary — {state.max} points</span>
-				<input type="range" min="50" max="2000" step="50" bind:value={state.max} onchange={save} />
+				<span>Your daily boundary — {saved.max} points</span>
+				<input type="range" min="50" max="2000" step="50" bind:value={saved.max} onchange={save} />
 			</label>
 			<button class="ghost" onclick={() => (showPanel = false)}>close</button>
 		</aside>
@@ -255,12 +255,12 @@
 		<div class="overlay">
 			<div class="inner">
 				<h2>You've reached your boundary</h2>
-				<p>You collected {state.daily} points today. The sky rests now — it will be full again tomorrow.</p>
+				<p>You collected {saved.daily} points today. The sky rests now — it will be full again tomorrow.</p>
 				<label class="limit">
-					<span>Move it if you want to — {state.max} points</span>
-					<input type="range" min="50" max="2000" step="50" bind:value={state.max} onchange={save} />
+					<span>Move it if you want to — {saved.max} points</span>
+					<input type="range" min="50" max="2000" step="50" bind:value={saved.max} onchange={save} />
 				</label>
-				<button class="primary" onclick={() => { save(); showLimitDoor = false; paused = state.daily >= state.max; }}>
+				<button class="primary" onclick={() => { save(); showLimitDoor = false; paused = saved.daily >= saved.max; }}>
 					Done
 				</button>
 			</div>

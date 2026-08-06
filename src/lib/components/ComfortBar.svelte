@@ -43,9 +43,10 @@
 		vesselName = localStorage.getItem('resonance-echoes-vessel-name') ?? 'there';
 	});
 
-	function onQuickAdd() {
-		// Phase 1 will wire this to the echo form
-		goto('/add');
+	function onBubbles() {
+		// The footer's quick action opens the sky — the game is this app's
+		// focus (KP's ⚛ stroke, 2026-08-06; echoes keeps add-echo at home).
+		goto('/bubbles');
 	}
 
 	function toggleExpanded() {
@@ -60,7 +61,7 @@
 			<div class="comfort-bar__greeting">{greeting}</div>
 			<div class="comfort-bar__stats">{statsLine}</div>
 			<div class="comfort-bar__actions">
-				<button class="cb-action primary" onclick={onQuickAdd}>+ Quick Add</button>
+				<button class="cb-action primary" onclick={onBubbles}>🫧 Bubbles</button>
 				<button class="cb-action" onclick={() => goto('/insights')}>Insights</button>
 				<button class="cb-action" onclick={() => goto('/settings')}>Settings</button>
 			</div>
@@ -70,8 +71,8 @@
 			<button class="comfort-bar__greeting-btn" onclick={toggleExpanded}>
 				{greeting}
 			</button>
-			<button class="comfort-bar__quick-add" onclick={onQuickAdd} aria-label="Quick add echo">
-				+
+			<button class="comfort-bar__quick-add" onclick={onBubbles} aria-label="Open the bubbles">
+				🫧
 			</button>
 		</div>
 	{/if}
@@ -124,7 +125,7 @@
 		background-color: var(--accent);
 		color: #fff;
 		border: none;
-		font-size: 1.5rem;
+		font-size: 1.1rem;
 		line-height: 1;
 		cursor: pointer;
 		display: flex;
