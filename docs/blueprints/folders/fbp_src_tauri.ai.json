@@ -2,7 +2,7 @@
   "folder_name": "src-tauri",
   "folder_path": "src-tauri",
   "description": "5 files, 4 subfolders",
-  "scan_timestamp": "2026-08-04T19:08:51.570974 | in sovereign time",
+  "scan_timestamp": "2026-08-05T20:24:49.865014 | in sovereign time",
   "files": [
     {
       "path": "src-tauri/.gitignore",
@@ -18,7 +18,7 @@
     },
     {
       "path": "src-tauri/Cargo.toml",
-      "description": "config, 668 bytes"
+      "description": "config, 641 bytes"
     },
     {
       "path": "src-tauri/tauri.conf.json",
@@ -70,6 +70,9 @@
     }
   },
   "maintaining_agent": "FolderAgent",
-  "folders_not_walked": [],
+  "folders_not_walked": [
+    "gen",
+    "target"
+  ],
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

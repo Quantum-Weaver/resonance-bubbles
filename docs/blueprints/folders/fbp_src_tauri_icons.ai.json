@@ -2,31 +2,31 @@
   "folder_name": "icons",
   "folder_path": "src-tauri/icons",
   "description": "18 files, 2 subfolders",
-  "scan_timestamp": "2026-08-04T19:08:51.577974 | in sovereign time",
+  "scan_timestamp": "2026-08-05T20:24:49.871909 | in sovereign time",
   "files": [
     {
       "path": "src-tauri/icons/128x128.png",
-      "description": "image, 34,498 bytes"
+      "description": "image, 34,556 bytes"
     },
     {
       "path": "src-tauri/icons/128x128@2x.png",
-      "description": "image, 113,131 bytes"
+      "description": "image, 114,295 bytes"
     },
     {
       "path": "src-tauri/icons/32x32.png",
-      "description": "image, 2,991 bytes"
+      "description": "image, 2,990 bytes"
     },
     {
       "path": "src-tauri/icons/64x64.png",
-      "description": "image, 10,332 bytes"
+      "description": "image, 10,327 bytes"
     },
     {
       "path": "src-tauri/icons/icon.icns",
-      "description": "file, 2,170,547 bytes"
+      "description": "file, 2,064,045 bytes"
     },
     {
       "path": "src-tauri/icons/icon.ico",
-      "description": "file, 135,228 bytes"
+      "description": "file, 136,395 bytes"
     },
     {
       "path": "src-tauri/icons/icon.png",
@@ -38,19 +38,19 @@
     },
     {
       "path": "src-tauri/icons/Square107x107Logo.png",
-      "description": "image, 25,203 bytes"
+      "description": "image, 25,248 bytes"
     },
     {
       "path": "src-tauri/icons/Square142x142Logo.png",
-      "description": "image, 41,139 bytes"
+      "description": "image, 41,204 bytes"
     },
     {
       "path": "src-tauri/icons/Square150x150Logo.png",
-      "description": "image, 45,051 bytes"
+      "description": "image, 45,206 bytes"
     },
     {
       "path": "src-tauri/icons/Square284x284Logo.png",
-      "description": "image, 135,317 bytes"
+      "description": "image, 136,678 bytes"
     },
     {
       "path": "src-tauri/icons/Square30x30Logo.png",
@@ -58,23 +58,23 @@
     },
     {
       "path": "src-tauri/icons/Square310x310Logo.png",
-      "description": "image, 157,342 bytes"
+      "description": "image, 159,210 bytes"
     },
     {
       "path": "src-tauri/icons/Square44x44Logo.png",
-      "description": "image, 5,253 bytes"
+      "description": "image, 5,260 bytes"
     },
     {
       "path": "src-tauri/icons/Square71x71Logo.png",
-      "description": "image, 12,376 bytes"
+      "description": "image, 12,431 bytes"
     },
     {
       "path": "src-tauri/icons/Square89x89Logo.png",
-      "description": "image, 18,400 bytes"
+      "description": "image, 18,385 bytes"
     },
     {
       "path": "src-tauri/icons/StoreLogo.png",
-      "description": "image, 6,652 bytes"
+      "description": "image, 6,657 bytes"
     }
   ],
   "file_count": 18,
@@ -88,7 +88,7 @@
       "format": "png",
       "name": "128x128.png",
       "location": "src-tauri/icons",
-      "bytes": 34498,
+      "bytes": 34556,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -97,7 +97,7 @@
       "format": "png",
       "name": "128x128@2x.png",
       "location": "src-tauri/icons",
-      "bytes": 113131,
+      "bytes": 114295,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -106,7 +106,7 @@
       "format": "png",
       "name": "32x32.png",
       "location": "src-tauri/icons",
-      "bytes": 2991,
+      "bytes": 2990,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -115,7 +115,7 @@
       "format": "png",
       "name": "64x64.png",
       "location": "src-tauri/icons",
-      "bytes": 10332,
+      "bytes": 10327,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -142,7 +142,7 @@
       "format": "png",
       "name": "Square107x107Logo.png",
       "location": "src-tauri/icons",
-      "bytes": 25203,
+      "bytes": 25248,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -151,7 +151,7 @@
       "format": "png",
       "name": "Square142x142Logo.png",
       "location": "src-tauri/icons",
-      "bytes": 41139,
+      "bytes": 41204,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -160,7 +160,7 @@
       "format": "png",
       "name": "Square150x150Logo.png",
       "location": "src-tauri/icons",
-      "bytes": 45051,
+      "bytes": 45206,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -169,7 +169,7 @@
       "format": "png",
       "name": "Square284x284Logo.png",
       "location": "src-tauri/icons",
-      "bytes": 135317,
+      "bytes": 136678,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -187,7 +187,7 @@
       "format": "png",
       "name": "Square310x310Logo.png",
       "location": "src-tauri/icons",
-      "bytes": 157342,
+      "bytes": 159210,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -196,7 +196,7 @@
       "format": "png",
       "name": "Square44x44Logo.png",
       "location": "src-tauri/icons",
-      "bytes": 5253,
+      "bytes": 5260,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -205,7 +205,7 @@
       "format": "png",
       "name": "Square71x71Logo.png",
       "location": "src-tauri/icons",
-      "bytes": 12376,
+      "bytes": 12431,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -214,7 +214,7 @@
       "format": "png",
       "name": "Square89x89Logo.png",
       "location": "src-tauri/icons",
-      "bytes": 18400,
+      "bytes": 18385,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -223,7 +223,7 @@
       "format": "png",
       "name": "StoreLogo.png",
       "location": "src-tauri/icons",
-      "bytes": 6652,
+      "bytes": 6657,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     }

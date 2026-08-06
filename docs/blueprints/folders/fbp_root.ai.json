@@ -2,23 +2,15 @@
   "folder_name": "resonance-bubbles",
   "folder_path": ".",
   "description": "A collecting game built without compulsion",
-  "scan_timestamp": "2026-08-04T19:08:51.491540 | in sovereign time",
+  "scan_timestamp": "2026-08-05T20:24:49.793116 | in sovereign time",
   "files": [
     {
       "path": ".gitignore",
-      "description": "ignore rules, 1,575 bytes"
+      "description": "ignore rules, 1,585 bytes"
     },
     {
       "path": "bubbles-set.json",
       "description": "data, 32,867 bytes"
-    },
-    {
-      "path": "bubbles-wave-three.json",
-      "description": "data, 4,715 bytes"
-    },
-    {
-      "path": "bubbles-wave-two.json",
-      "description": "data, 12,677 bytes"
     },
     {
       "path": "build.py",
@@ -81,7 +73,7 @@
       "description": "script, 873 bytes"
     }
   ],
-  "file_count": 19,
+  "file_count": 17,
   "subdirectories": [
     ".cargo",
     "docs",
@@ -104,36 +96,6 @@
         "set"
       ],
       "key_count": 5
-    },
-    "bubbles-wave-three.json": {
-      "language": "json",
-      "lines": 119,
-      "valid": true,
-      "root": "object",
-      "top_level_keys": [
-        "bubbles",
-        "collections",
-        "law",
-        "provenance",
-        "set",
-        "wave"
-      ],
-      "key_count": 6
-    },
-    "bubbles-wave-two.json": {
-      "language": "json",
-      "lines": 77,
-      "valid": true,
-      "root": "object",
-      "top_level_keys": [
-        "bubbles",
-        "collections",
-        "law",
-        "provenance",
-        "set",
-        "wave"
-      ],
-      "key_count": 6
     },
     "build.py": {
       "language": "python",
@@ -414,7 +376,9 @@
   "folders_not_walked": [
     ".git",
     ".svelte-kit",
-    "node_modules"
+    "build",
+    "node_modules",
+    "release"
   ],
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

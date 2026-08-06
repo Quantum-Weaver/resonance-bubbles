@@ -35,7 +35,8 @@
       the same rarity, intersex included
 - [x] **123 stars · 13 collections** — pyramid 47/32/24/13/7
 - [x] Superposition base seeded through wave two (110)
-- [ ] `seed-wave-three.sql` — the last 13 rows, awaiting KP's dashboard
+- [x] `seed-wave-three.sql` — **ran by KP's own hand, 2026-08-05** (ran a second
+      time the same day to be sure). The base carries all 123. Phase 2 seals.
 
 ### Phase 3: The app ⚠️
 - [x] Echoes copied in as the base; **features kept, not stripped**
@@ -73,6 +74,12 @@
 - [x] **Touch events** — proven by play on the device; the sky pops by hand
 - [ ] iOS audio unlock on first tap — **untested**, no iOS build made
 - [ ] Safe areas, orientation — **unverified**, not exercised by the test
+- 🚪 **Apple builds wait on demand — KP's ⚛ word, 2026-08-05, house-wide:**
+      *"Apple devices will be built for once they are demanded/requested
+      enough — with all our things."* Applies to every Sanctuary app, not
+      only this one. No Apple hardware in the house; when its day comes the
+      path runs through rented macOS (cloud Mac or CI) + TestFlight with
+      borrowed hands. Not a defect — a gate with its ruling attached.
 - [x] **Tested:** ✅ **on Android, in KP's own hands — *"tests successful"*
       (his word, 2026-08-04).** The play is the test, and it passed.
 
@@ -105,3 +112,6 @@
 | 2026-08-04 | Blueprints re-forged by the Sanctuary's one forge — 40 fbp · 8 obp · 2 dbp · 1 pbp, 181 files described, sovereignty HELD, 0 reconciliation findings. The prior set was a 21-file snapshot taken before `src/` and `src-tauri/` existed. |
 | 2026-08-04 | **ON THE PHONE.** Icons regenerated for Android, keystore created at `D:/keystores/resonance-bubbles.keystore`, release signed and installed on KP's device. The collecting game built without compulsion is in his hands to play. |
 | 2026-08-04 | **TESTS SUCCESSFUL** — KP's word, playing on Android. Touch proven by play. Phase 3 and the Android half of Phase 4 sealed. Still open: the visual pass, iOS audio unlock (no iOS build), safe areas/orientation, and the Phase 5 gates. |
+| 2026-08-05 | **Wave strata cleared at KP's ⚛ word** ("get rid of redundancy files"): root `bubbles-wave-two.json` + `bubbles-wave-three.json` removed — both verified fully merged into the set, read by nothing at build or play; the afternoon they record stays whole in git history. Repo synced. |
+| 2026-08-05 | **Wave three seeded — KP's own hand.** The last 13 rows (Inclusive Pride) ran in the dashboard; ran again same day to be sure. Phase 2 sealed; checklist trued at his word. |
+| 2026-08-05 | **Completeness sweep at KP's ask (Fable).** Forge re-run: 0 findings, sovereignty HELD, **no drift**. Link tender dry walk: every pointer resolves. Git clean, pushed. Root and app `bubbles-set.json` verified byte-identical; both wave JSONs verified fully merged into the set. Awen room holds only `MOVED.md` — clean graduation. No real TODO markers in src. Fixed: README version badge 0.1.0 → 1.3.0 (matches package.json, tauri.conf, and the signed 1.3.0 artifacts). Surfaced for KP: `docs/sql/seed-wave-three.sql` still awaits the dashboard; root `bubbles-wave-two.json` + `bubbles-wave-three.json` are now redundant strata (removal is KP's gate). |

@@ -2,7 +2,7 @@
   "folder_name": "docs",
   "folder_path": "docs",
   "description": "2 files, 1 subfolders",
-  "scan_timestamp": "2026-08-04T19:08:51.495612 | in sovereign time",
+  "scan_timestamp": "2026-08-05T20:24:49.797097 | in sovereign time",
   "files": [
     {
       "path": "docs/CHECKLIST.md",
@@ -20,8 +20,8 @@
   "code_analysis": {
     "CHECKLIST.md": {
       "language": "markdown",
-      "lines": 92,
-      "words": 739,
+      "lines": 112,
+      "words": 1188,
       "heading_count": 12,
       "headings": [
         "RESONANCE BUBBLES \u2014 MASTER CHECKLIST",
@@ -32,7 +32,7 @@
         "Phase 1: The source landed \u2705",
         "Phase 2: The sky tripled \u2705",
         "Phase 3: The app \u26a0\ufe0f",
-        "Phase 4: Mobile \u2b1c",
+        "Phase 4: Mobile \u26a0\ufe0f",
         "Phase 5: The gates \u2b1c",
         "KNOWN BUGS",
         "SESSION LOG"
@@ -43,10 +43,10 @@
       "links_internal_unresolved": [],
       "links_internal_outside_checkout": [],
       "code_fences": 0,
-      "table_rows": 9,
+      "table_rows": 15,
       "checkboxes": {
-        "open": 12,
-        "done": 24
+        "open": 9,
+        "done": 31
       },
       "has_story_block": false,
       "declares_mirror_class": false

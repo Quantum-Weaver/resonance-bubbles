@@ -2,79 +2,79 @@
   "folder_name": "ios",
   "folder_path": "src-tauri/icons/ios",
   "description": "18 files, 0 subfolders",
-  "scan_timestamp": "2026-08-04T19:08:51.594943 | in sovereign time",
+  "scan_timestamp": "2026-08-05T20:24:49.888279 | in sovereign time",
   "files": [
     {
       "path": "src-tauri/icons/ios/AppIcon-20x20@1x.png",
-      "description": "image, 1,298 bytes"
+      "description": "image, 1,297 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-20x20@2x-1.png",
-      "description": "image, 4,451 bytes"
+      "description": "image, 4,450 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-20x20@2x.png",
-      "description": "image, 4,451 bytes"
+      "description": "image, 4,450 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-20x20@3x.png",
-      "description": "image, 9,170 bytes"
+      "description": "image, 9,172 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-29x29@1x.png",
-      "description": "image, 2,498 bytes"
+      "description": "image, 2,497 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-29x29@2x-1.png",
-      "description": "image, 8,647 bytes"
+      "description": "image, 8,629 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-29x29@2x.png",
-      "description": "image, 8,647 bytes"
+      "description": "image, 8,629 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-29x29@3x.png",
-      "description": "image, 17,694 bytes"
+      "description": "image, 17,740 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-40x40@1x.png",
-      "description": "image, 4,451 bytes"
+      "description": "image, 4,450 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-40x40@2x-1.png",
-      "description": "image, 15,200 bytes"
+      "description": "image, 15,221 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-40x40@2x.png",
-      "description": "image, 15,200 bytes"
+      "description": "image, 15,221 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-40x40@3x.png",
-      "description": "image, 30,759 bytes"
+      "description": "image, 30,777 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-512@2x.png",
-      "description": "image, 1,148,636 bytes"
+      "description": "image, 1,039,754 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-60x60@2x.png",
-      "description": "image, 30,759 bytes"
+      "description": "image, 30,777 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-60x60@3x.png",
-      "description": "image, 61,472 bytes"
+      "description": "image, 61,793 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-76x76@1x.png",
-      "description": "image, 13,901 bytes"
+      "description": "image, 13,941 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-76x76@2x.png",
-      "description": "image, 46,322 bytes"
+      "description": "image, 46,356 bytes"
     },
     {
       "path": "src-tauri/icons/ios/AppIcon-83.5x83.5@2x.png",
-      "description": "image, 54,053 bytes"
+      "description": "image, 54,246 bytes"
     }
   ],
   "file_count": 18,
@@ -85,7 +85,7 @@
       "format": "png",
       "name": "AppIcon-20x20@1x.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 1298,
+      "bytes": 1297,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -94,7 +94,7 @@
       "format": "png",
       "name": "AppIcon-20x20@2x-1.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 4451,
+      "bytes": 4450,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -103,7 +103,7 @@
       "format": "png",
       "name": "AppIcon-20x20@2x.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 4451,
+      "bytes": 4450,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -112,7 +112,7 @@
       "format": "png",
       "name": "AppIcon-20x20@3x.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 9170,
+      "bytes": 9172,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -121,7 +121,7 @@
       "format": "png",
       "name": "AppIcon-29x29@1x.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 2498,
+      "bytes": 2497,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -130,7 +130,7 @@
       "format": "png",
       "name": "AppIcon-29x29@2x-1.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 8647,
+      "bytes": 8629,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -139,7 +139,7 @@
       "format": "png",
       "name": "AppIcon-29x29@2x.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 8647,
+      "bytes": 8629,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -148,7 +148,7 @@
       "format": "png",
       "name": "AppIcon-29x29@3x.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 17694,
+      "bytes": 17740,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -157,7 +157,7 @@
       "format": "png",
       "name": "AppIcon-40x40@1x.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 4451,
+      "bytes": 4450,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -166,7 +166,7 @@
       "format": "png",
       "name": "AppIcon-40x40@2x-1.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 15200,
+      "bytes": 15221,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -175,7 +175,7 @@
       "format": "png",
       "name": "AppIcon-40x40@2x.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 15200,
+      "bytes": 15221,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -184,7 +184,7 @@
       "format": "png",
       "name": "AppIcon-40x40@3x.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 30759,
+      "bytes": 30777,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -193,7 +193,7 @@
       "format": "png",
       "name": "AppIcon-512@2x.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 1148636,
+      "bytes": 1039754,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -202,7 +202,7 @@
       "format": "png",
       "name": "AppIcon-60x60@2x.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 30759,
+      "bytes": 30777,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -211,7 +211,7 @@
       "format": "png",
       "name": "AppIcon-60x60@3x.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 61472,
+      "bytes": 61793,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -220,7 +220,7 @@
       "format": "png",
       "name": "AppIcon-76x76@1x.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 13901,
+      "bytes": 13941,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -229,7 +229,7 @@
       "format": "png",
       "name": "AppIcon-76x76@2x.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 46322,
+      "bytes": 46356,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     },
@@ -238,7 +238,7 @@
       "format": "png",
       "name": "AppIcon-83.5x83.5@2x.png",
       "location": "src-tauri/icons/ios",
-      "bytes": 54053,
+      "bytes": 54246,
       "opened": false,
       "law": "Name and location only. The file is never opened."
     }

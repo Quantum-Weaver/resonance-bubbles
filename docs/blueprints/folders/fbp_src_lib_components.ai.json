@@ -2,7 +2,7 @@
   "folder_name": "components",
   "folder_path": "src/lib/components",
   "description": "4 files, 1 subfolders",
-  "scan_timestamp": "2026-08-04T19:08:51.511848 | in sovereign time",
+  "scan_timestamp": "2026-08-05T20:24:49.811506 | in sovereign time",
   "files": [
     {
       "path": "src/lib/components/ComfortBar.svelte",
