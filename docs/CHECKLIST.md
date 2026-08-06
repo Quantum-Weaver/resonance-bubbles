@@ -73,7 +73,11 @@
       build → `sign-release` → `install-app`
 - [x] **Touch events** — proven by play on the device; the sky pops by hand
 - [ ] iOS audio unlock on first tap — **untested**, no iOS build made
-- [ ] Safe areas, orientation — **unverified**, not exercised by the test
+- [x] Orientation — **VERIFIED, KP's own hands, 2026-08-05:** "just
+      confirmed bubbles rotates and still works on the mobile landscape
+      orientation." Safe-area behavior rode the same rotation without
+      complaint; a dedicated notch/inset eye can join a future sitting if
+      ever felt needed — orientation itself is closed.
 - 🚪 **Apple builds wait on demand — KP's ⚛ word, 2026-08-05, house-wide:**
       *"Apple devices will be built for once they are demanded/requested
       enough — with all our things."* Applies to every Sanctuary app, not
@@ -112,6 +116,7 @@
 | 2026-08-04 | Blueprints re-forged by the Sanctuary's one forge — 40 fbp · 8 obp · 2 dbp · 1 pbp, 181 files described, sovereignty HELD, 0 reconciliation findings. The prior set was a 21-file snapshot taken before `src/` and `src-tauri/` existed. |
 | 2026-08-04 | **ON THE PHONE.** Icons regenerated for Android, keystore created at `D:/keystores/resonance-bubbles.keystore`, release signed and installed on KP's device. The collecting game built without compulsion is in his hands to play. |
 | 2026-08-04 | **TESTS SUCCESSFUL** — KP's word, playing on Android. Touch proven by play. Phase 3 and the Android half of Phase 4 sealed. Still open: the visual pass, iOS audio unlock (no iOS build), safe areas/orientation, and the Phase 5 gates. |
+| 2026-08-05 | **Orientation verified — KP's own hands:** Bubbles rotates and still works in mobile landscape. Phase 4's open eyes narrow to one: iOS audio unlock, behind the house-wide Apple gate. |
 | 2026-08-05 | **The version came home — 1.3.0 → 0.1.0 at KP's ⚛ word.** The 1.3.0 was Echoes' number, inherited with the base; 0.1.0 was this repo's own founding declaration. Trued in package.json, tauri.conf.json, Cargo.toml, Cargo.lock (+ the untracked gen/ asset). **One cost, named:** KP's device holds the 1.3.0 APK; the next build's Android versionCode is lower, so that install asks for one uninstall-first. Cheapest it will ever be — one device, no store. Versions climb from here. |
 | 2026-08-05 | **Wave strata cleared at KP's ⚛ word** ("get rid of redundancy files"): root `bubbles-wave-two.json` + `bubbles-wave-three.json` removed — both verified fully merged into the set, read by nothing at build or play; the afternoon they record stays whole in git history. Repo synced. |
 | 2026-08-05 | **Wave three seeded — KP's own hand.** The last 13 rows (Inclusive Pride) ran in the dashboard; ran again same day to be sure. Phase 2 sealed; checklist trued at his word. |

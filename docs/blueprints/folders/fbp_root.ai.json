@@ -2,7 +2,7 @@
   "folder_name": "resonance-bubbles",
   "folder_path": ".",
   "description": "A collecting game built without compulsion",
-  "scan_timestamp": "2026-08-05T20:24:49.793116 | in sovereign time",
+  "scan_timestamp": "2026-08-05T20:41:55.124799 | in sovereign time",
   "files": [
     {
       "path": ".gitignore",
@@ -42,7 +42,7 @@
     },
     {
       "path": "package.json",
-      "description": "data, 1,097 bytes"
+      "description": "data, 1,100 bytes"
     },
     {
       "path": "PHILOSOPHY.md",
@@ -190,19 +190,8 @@
     "package.json": {
       "language": "json",
       "lines": 36,
-      "valid": true,
-      "root": "object",
-      "top_level_keys": [
-        "dependencies",
-        "description",
-        "devDependencies",
-        "license",
-        "name",
-        "scripts",
-        "type",
-        "version"
-      ],
-      "key_count": 8
+      "valid": false,
+      "error": "Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)"
     },
     "PHILOSOPHY.md": {
       "language": "markdown",

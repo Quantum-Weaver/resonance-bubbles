@@ -1,6 +1,6 @@
 {
   "analysis": "sovereignty",
-  "scan_timestamp": "2026-08-05T20:24:49.945799 | in sovereign time",
+  "scan_timestamp": "2026-08-05T20:41:55.292238 | in sovereign time",
   "law": "Trees this repo's .gitignore declares uncommittable must not be tracked.",
   "git_available": true,
   "ignored_trees": {

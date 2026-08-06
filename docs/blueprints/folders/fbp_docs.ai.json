@@ -2,7 +2,7 @@
   "folder_name": "docs",
   "folder_path": "docs",
   "description": "2 files, 1 subfolders",
-  "scan_timestamp": "2026-08-05T20:24:49.797097 | in sovereign time",
+  "scan_timestamp": "2026-08-05T20:41:55.129022 | in sovereign time",
   "files": [
     {
       "path": "docs/CHECKLIST.md",
@@ -20,8 +20,8 @@
   "code_analysis": {
     "CHECKLIST.md": {
       "language": "markdown",
-      "lines": 112,
-      "words": 1188,
+      "lines": 119,
+      "words": 1341,
       "heading_count": 12,
       "headings": [
         "RESONANCE BUBBLES \u2014 MASTER CHECKLIST",
@@ -43,7 +43,7 @@
       "links_internal_unresolved": [],
       "links_internal_outside_checkout": [],
       "code_fences": 0,
-      "table_rows": 15,
+      "table_rows": 16,
       "checkboxes": {
         "open": 9,
         "done": 31

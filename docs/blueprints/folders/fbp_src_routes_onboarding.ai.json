@@ -2,7 +2,7 @@
   "folder_name": "onboarding",
   "folder_path": "src/routes/onboarding",
   "description": "1 files, 0 subfolders",
-  "scan_timestamp": "2026-08-05T20:24:49.857505 | in sovereign time",
+  "scan_timestamp": "2026-08-05T20:41:55.194441 | in sovereign time",
   "files": [
     {
       "path": "src/routes/onboarding/+page.svelte",

@@ -2,7 +2,7 @@
   "folder_name": "src-tauri",
   "folder_path": "src-tauri",
   "description": "5 files, 4 subfolders",
-  "scan_timestamp": "2026-08-05T20:24:49.865014 | in sovereign time",
+  "scan_timestamp": "2026-08-05T20:41:55.203037 | in sovereign time",
   "files": [
     {
       "path": "src-tauri/.gitignore",
@@ -14,15 +14,15 @@
     },
     {
       "path": "src-tauri/Cargo.lock",
-      "description": "file, 152,085 bytes"
+      "description": "file, 152,088 bytes"
     },
     {
       "path": "src-tauri/Cargo.toml",
-      "description": "config, 641 bytes"
+      "description": "\ufeff[package]"
     },
     {
       "path": "src-tauri/tauri.conf.json",
-      "description": "data, 810 bytes"
+      "description": "data, 813 bytes"
     }
   ],
   "file_count": 5,
@@ -45,7 +45,6 @@
       "language": "toml",
       "lines": 28,
       "sections": [
-        "package",
         "lib",
         "build-dependencies",
         "dependencies",
@@ -55,18 +54,8 @@
     "tauri.conf.json": {
       "language": "json",
       "lines": 38,
-      "valid": true,
-      "root": "object",
-      "top_level_keys": [
-        "$schema",
-        "app",
-        "build",
-        "bundle",
-        "identifier",
-        "productName",
-        "version"
-      ],
-      "key_count": 7
+      "valid": false,
+      "error": "Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)"
     }
   },
   "maintaining_agent": "FolderAgent",

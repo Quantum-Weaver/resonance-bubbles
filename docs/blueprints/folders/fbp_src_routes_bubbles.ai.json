@@ -2,7 +2,7 @@
   "folder_name": "bubbles",
   "folder_path": "src/routes/bubbles",
   "description": "1 files, 0 subfolders",
-  "scan_timestamp": "2026-08-05T20:24:49.854726 | in sovereign time",
+  "scan_timestamp": "2026-08-05T20:41:55.191534 | in sovereign time",
   "files": [
     {
       "path": "src/routes/bubbles/+page.svelte",

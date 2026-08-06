@@ -2,7 +2,7 @@
   "folder_name": "insights",
   "folder_path": "src/routes/insights",
   "description": "1 files, 0 subfolders",
-  "scan_timestamp": "2026-08-05T20:24:49.856208 | in sovereign time",
+  "scan_timestamp": "2026-08-05T20:41:55.193143 | in sovereign time",
   "files": [
     {
       "path": "src/routes/insights/+page.svelte",
