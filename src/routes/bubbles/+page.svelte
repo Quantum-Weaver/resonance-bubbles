@@ -11,17 +11,21 @@
 	//   · the reward is the words — no streaks, no combos, no timers, no red
 	//   · local-first absolutely — collection and boundary in localStorage only
 	import { onDestroy, onMount } from 'svelte';
+	import { QUANTUM_COLORS } from '$lib/cosmic';
+	import {
+		RARITY_DRESS, collectionFill, collectionHue, edge, hue, stripes,
+		type Bubble, type Collection, type Rarity
+	} from '$lib/bubbles/dress';
 	import set from '$lib/data/bubbles-set.json';
 
-	type Rarity = 'common' | 'rare' | 'epic' | 'legendary' | 'mythic';
-	type Bubble = { slug: string; name: string; rarity: Rarity; collection: string; description: string };
-
+	// The numbers are the game's law and live here. The colours are the dress
+	// and live once, at $lib/bubbles/dress — the gallery wears the same ones.
 	const RARITY: Record<Rarity, { pts: number; w: number; size: number; speed: number; color: string; emoji: string }> = {
-		common:    { pts: 1,  w: 60, size: 40, speed: 0.6, color: '#94a3b8', emoji: '✨' },
-		rare:      { pts: 3,  w: 25, size: 48, speed: 0.5, color: '#22d3ee', emoji: '💫' },
-		epic:      { pts: 5,  w: 10, size: 56, speed: 0.4, color: '#a855f7', emoji: '⚡' },
-		legendary: { pts: 10, w: 4,  size: 64, speed: 0.3, color: '#f59e0b', emoji: '🌌' },
-		mythic:    { pts: 25, w: 1,  size: 80, speed: 0.2, color: '#f43f5e', emoji: '🪐' }
+		common:    { pts: 1,  w: 60, size: 40, speed: 0.6, ...RARITY_DRESS.common },
+		rare:      { pts: 3,  w: 25, size: 48, speed: 0.5, ...RARITY_DRESS.rare },
+		epic:      { pts: 5,  w: 10, size: 56, speed: 0.4, ...RARITY_DRESS.epic },
+		legendary: { pts: 10, w: 4,  size: 64, speed: 0.3, ...RARITY_DRESS.legendary },
+		mythic:    { pts: 25, w: 1,  size: 80, speed: 0.2, ...RARITY_DRESS.mythic }
 	};
 
 	const KEY = 'the-bubbles';
@@ -31,7 +35,7 @@
 	const DEFAULT_MAX = 500;
 
 	const BUBBLES = set.bubbles as Bubble[];
-	const COLLECTIONS = set.collections as { slug: string; name: string; description: string }[];
+	const COLLECTIONS = set.collections as Collection[];
 
 	type Saved = { daily: number; max: number; day: string; collected: Record<string, number>; sound: boolean };
 
@@ -188,7 +192,7 @@
 
 <svelte:head><title>Bubbles</title></svelte:head>
 
-<div class="wrap" style="padding-top: env(safe-area-inset-top, 0px);">
+<div class="wrap" style="padding-top: env(safe-area-inset-top, 0px); --quantum: {QUANTUM_COLORS['quantum.purple']};">
 	<header class="bar">
 		<div class="stat"><span class="n">{score}</span><span class="l">this sitting</span></div>
 		<div class="stat"><span class="n">{saved.daily}<span class="of">/{saved.max}</span></span><span class="l">today</span></div>
@@ -206,14 +210,20 @@
 		{#each floaters as f (f.id)}
 			<button
 				class="bubble"
-				style="left:{f.x}px; bottom:{f.y}px; width:{RARITY[f.b.rarity].size}px; height:{RARITY[f.b.rarity].size}px; --c:{RARITY[f.b.rarity].color};"
+				class:flag={!!f.b.palette}
+				class:pride={f.b.collection === 'inclusive-pride'}
+				style="left:{f.x}px; bottom:{f.y}px; width:{RARITY[f.b.rarity].size}px; height:{RARITY[f.b.rarity].size}px;
+					--c:{edge(f.b)}; --rc:{RARITY[f.b.rarity].color};
+					{f.b.palette ? `--flag:${stripes(f.b.palette)};` : ''}{f.b.ring ? `--ring:${hue(f.b.ring)};` : ''}"
 				onclick={() => pop(f)}
 				aria-label="Pop {f.b.name}"
 			></button>
 		{/each}
 
 		{#if card}
-			<div class="card" style="--c:{card.color}">
+			<div class="card" class:flagged={!!card.b.palette} style="--c:{card.color}; --ac:{edge(card.b)};
+				--flag:{card.b.palette ? stripes(card.b.palette, '90deg') : card.color}">
+				<div class="ribbon"></div>
 				<div class="card-top"><span class="card-emoji">{card.emoji}</span><span class="card-pts">+{card.pts}</span></div>
 				<h3>{card.b.name}</h3>
 				<p>{card.b.description}</p>
@@ -226,9 +236,10 @@
 			<h2>Collections</h2>
 			{#each COLLECTIONS as c}
 				{@const p = collectionProgress(c.slug)}
-				<div class="coll">
-					<div class="coll-head"><strong>{c.name}</strong><span>{p.have}/{p.total}</span></div>
-					<div class="bar-track"><i style="width:{p.total ? (p.have / p.total) * 100 : 0}%"></i></div>
+				{@const fill = collectionFill(c)}
+				<div class="coll" style="--a:{collectionHue(c)}; --fill:{fill}">
+					<div class="coll-head"><span class="dot" style="background:{fill}"></span><strong>{c.name}</strong><span class="count">{p.have}/{p.total}</span></div>
+					<div class="bar-track"><i style="clip-path: inset(0 {100 - (p.total ? (p.have / p.total) * 100 : 0)}% 0 0)"></i></div>
 					<p>{c.description}</p>
 				</div>
 			{/each}
@@ -279,32 +290,80 @@
 		padding: 6px 14px; font-size: 0.78rem; color: inherit; cursor: pointer; opacity: 0.75; }
 	.chip + .chip { margin-left: 8px; }
 	.sky { position: relative; flex: 1; overflow: hidden; }
-	.bubble { position: absolute; border-radius: 50%; border: 1px solid var(--c); cursor: pointer; padding: 0;
-		background: radial-gradient(circle at 32% 28%, rgba(255,255,255,0.35), transparent 62%),
-			color-mix(in srgb, var(--c) 22%, transparent);
-		box-shadow: 0 0 18px color-mix(in srgb, var(--c) 35%, transparent); }
-	.card { position: absolute; left: 50%; bottom: 8%; transform: translateX(-50%); max-width: 420px;
-		background: rgba(12,12,18,0.92); border: 1px solid color-mix(in srgb, var(--c) 45%, transparent);
-		border-radius: 14px; padding: 14px 18px; text-align: center; }
+
+	/* The colour carries further now: a deeper fill, a lit rim, an inner glow. */
+	.bubble { position: absolute; border-radius: 50%; border: 1.5px solid color-mix(in srgb, var(--c) 85%, transparent);
+		cursor: pointer; padding: 0;
+		background:
+			radial-gradient(circle at 32% 26%, rgba(255,255,255,0.55), transparent 52%),
+			radial-gradient(circle at 68% 76%, color-mix(in srgb, var(--c) 75%, transparent), transparent 68%),
+			color-mix(in srgb, var(--c) 40%, transparent);
+		box-shadow: 0 0 24px color-mix(in srgb, var(--c) 50%, transparent),
+			inset 0 0 20px color-mix(in srgb, var(--c) 32%, transparent); }
+
+	/* A flag keeps its own stripes inside the circle. The wrap-highlight rides on
+	   top so it still reads as a bubble and not a sticker. Rarity is untouched —
+	   every flag drifts at the same rate as every other flag. */
+	.bubble.flag {
+		background:
+			radial-gradient(circle at 32% 26%, rgba(255,255,255,0.5), transparent 48%),
+			radial-gradient(circle at 70% 78%, rgba(255,255,255,0.14), transparent 60%),
+			var(--flag);
+		border-color: rgba(255,255,255,0.5);
+		box-shadow: 0 0 26px color-mix(in srgb, var(--c) 55%, transparent),
+			0 0 46px color-mix(in srgb, var(--c) 28%, transparent),
+			inset 0 0 16px rgba(255,255,255,0.18); }
+	/* Intersex: a ring, because that flag is a ring. */
+	.bubble.flag[style*='--ring'] { border: 4px solid var(--ring); }
+	/* The two stars in the collection that are not flags still wear its halo. */
+	.bubble.pride:not(.flag) {
+		box-shadow: 0 0 24px color-mix(in srgb, var(--rc) 55%, transparent),
+			0 0 44px color-mix(in srgb, var(--c) 30%, transparent),
+			0 0 70px rgba(255,255,255,0.10),
+			inset 0 0 20px color-mix(in srgb, var(--rc) 32%, transparent); }
+
+	/* The words sit at the top of the sky, where they are read before the eye
+	   goes back to the drifting. */
+	.card { position: absolute; left: 50%; top: 14px; transform: translateX(-50%); max-width: 420px;
+		background: linear-gradient(180deg, color-mix(in srgb, var(--ac) 16%, rgba(12,12,18,0.94)), rgba(12,12,18,0.95));
+		border: 1px solid color-mix(in srgb, var(--ac) 60%, transparent);
+		border-radius: 14px; padding: 0 18px 14px; text-align: center; overflow: hidden;
+		box-shadow: 0 0 34px color-mix(in srgb, var(--ac) 30%, transparent), 0 8px 26px rgba(0,0,0,0.45);
+		animation: card-in 320ms cubic-bezier(0.22, 1, 0.36, 1); }
+	.ribbon { height: 5px; margin: 0 -18px 12px; background: var(--flag); }
 	.card-top { display: flex; gap: 10px; justify-content: center; align-items: center; }
 	.card-emoji { font-size: 1.3rem; }
 	.card-pts { color: var(--c); font-size: 0.85rem; }
-	.card h3 { margin: 6px 0 4px; font-size: 1.05rem; }
-	.card p { font-size: 0.88rem; opacity: 0.7; line-height: 1.5; margin: 0; }
+	.card h3 { margin: 6px 0 4px; font-size: 1.05rem; color: color-mix(in srgb, var(--ac) 55%, #ffffff); }
+	.card.flagged h3 { background: var(--flag); -webkit-background-clip: text; background-clip: text; color: transparent; }
+	.card p { font-size: 0.88rem; opacity: 0.82; line-height: 1.5; margin: 0; }
+	@keyframes card-in { from { opacity: 0; transform: translate(-50%, -10px); } to { opacity: 1; transform: translate(-50%, 0); } }
+	@media (prefers-reduced-motion: reduce) { .card { animation: none; } }
 	.panel { position: absolute; right: 0; top: 0; bottom: 0; width: min(340px, 88vw); overflow-y: auto;
 		background: rgba(10,10,16,0.96); padding: 18px; }
-	.coll { margin-bottom: 14px; }
-	.coll-head { display: flex; justify-content: space-between; font-size: 0.85rem; }
-	.coll p { font-size: 0.75rem; opacity: 0.5; margin: 4px 0 0; line-height: 1.45; }
-	.bar-track { height: 5px; background: rgba(255,255,255,0.08); border-radius: 3px; overflow: hidden; margin-top: 5px; }
-	.bar-track i { display: block; height: 100%; background: #a855f7; border-radius: 3px; transition: width 0.4s ease; }
+	/* Each collection wears its own colour — the Pride set wears all of them. */
+	.coll { margin-bottom: 14px; padding: 10px 12px; border-radius: 10px;
+		border-left: 3px solid var(--a);
+		background: linear-gradient(90deg, color-mix(in srgb, var(--a) 14%, transparent), transparent 70%); }
+	.coll-head { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; }
+	.coll-head strong { font-weight: 500; }
+	.coll-head .count { margin-left: auto; opacity: 0.6; font-variant-numeric: tabular-nums; }
+	.dot { width: 9px; height: 9px; border-radius: 50%; flex: none;
+		box-shadow: 0 0 10px color-mix(in srgb, var(--a) 70%, transparent); }
+	.coll p { font-size: 0.75rem; opacity: 0.6; margin: 4px 0 0; line-height: 1.45; }
+	.bar-track { height: 6px; background: rgba(255,255,255,0.08); border-radius: 3px; overflow: hidden; margin-top: 7px; }
+	/* Full-width fill, revealed by clip — so a rainbow stays a rainbow at 2/13. */
+	.bar-track i { display: block; height: 100%; width: 100%; background: var(--fill); border-radius: 3px;
+		transition: clip-path 0.4s ease; }
+	@media (prefers-reduced-motion: reduce) { .bar-track i { transition: none; } }
 	.limit { display: block; margin: 18px 0; font-size: 0.8rem; opacity: 0.8; }
 	.limit input { width: 100%; margin-top: 8px; }
 	.overlay { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(6,6,10,0.93); z-index: 20; }
 	.overlay .inner { max-width: 420px; text-align: center; padding: 24px; }
 	.overlay h2 { font-size: 1.25rem; margin-bottom: 10px; }
 	.overlay p { opacity: 0.55; font-size: 0.9rem; line-height: 1.55; margin-bottom: 18px; }
-	.primary { background: #a855f7; border: none; border-radius: 999px; padding: 9px 22px; color: #fff; cursor: pointer; }
+	.primary { background: var(--quantum); border: none; border-radius: 999px; padding: 9px 22px; color: #fff; cursor: pointer;
+		box-shadow: 0 0 20px color-mix(in srgb, var(--quantum) 45%, transparent); }
 	.ghost { background: none; border: none; color: rgba(224,224,224,0.4); font-size: 0.8rem;
 		cursor: pointer; margin-top: 14px; display: inline-block; text-decoration: none; }
 </style>

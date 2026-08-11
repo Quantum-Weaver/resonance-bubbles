@@ -6,67 +6,92 @@
     {
       "slug": "star-dust",
       "name": "Star Dust",
-      "description": "The everyday wonders — small lights that drift past anyone, any day."
+      "description": "The everyday wonders — small lights that drift past anyone, any day.",
+      "accent": "starDust"
     },
     {
       "slug": "hearth",
       "name": "The Hearth Collection",
-      "description": "Home, warmth, and the door that opens. What belonging looks like when it floats."
+      "description": "Home, warmth, and the door that opens. What belonging looks like when it floats.",
+      "accent": "hearth.gold"
     },
     {
       "slug": "elemental",
       "name": "The Elemental Set",
-      "description": "Ember, rain, wind, and root — the old ingredients, still at work in everything."
+      "description": "Ember, rain, wind, and root — the old ingredients, still at work in everything.",
+      "palette": [
+        "pagan.earth",
+        "pagan.air",
+        "pagan.fire",
+        "pagan.water"
+      ]
     },
     {
       "slug": "council",
       "name": "The Council Collection",
-      "description": "Nine chairs, nine ways of tending a house. Collect the whole table."
+      "description": "Nine chairs, nine ways of tending a house. Collect the whole table.",
+      "accent": "entity.chancellor"
     },
     {
       "slug": "sky-wheel",
       "name": "The Sky Wheel",
-      "description": "Eight spokes of the turning year — the sky's own calendar, drifting past. (An addition, offered to the online set.)"
+      "description": "Eight spokes of the turning year — the sky's own calendar, drifting past. (An addition, offered to the online set.)",
+      "accent": "mystical.sun"
     },
     {
       "slug": "quantum-weave",
       "name": "Quantum Weave",
-      "description": "The deepest waters, rarest by nature: the ideas the whole Sanctuary is woven from."
+      "description": "The deepest waters, rarest by nature: the ideas the whole Sanctuary is woven from.",
+      "accent": "quantum.purple"
     },
     {
       "slug": "sensory",
       "name": "The Sensory Set",
-      "description": "What the body already knew. Small wonders that arrive through skin, ear, and weight rather than words."
+      "description": "What the body already knew. Small wonders that arrive through skin, ear, and weight rather than words.",
+      "accent": "mood.peaceful"
     },
     {
       "slug": "long-night",
       "name": "The Long Night",
-      "description": "Rest, and the dark that was never the thing to fear. Off duty, and allowed to be."
+      "description": "Rest, and the dark that was never the thing to fear. Off duty, and allowed to be.",
+      "accent": "mystical.moon"
     },
     {
       "slug": "workshop",
       "name": "The Workshop",
-      "description": "Making, and the tools that make making possible. Sharp so they can be gentle."
+      "description": "Making, and the tools that make making possible. Sharp so they can be gentle.",
+      "accent": "fire.base"
     },
     {
       "slug": "companions",
       "name": "The Companions",
-      "description": "The ones with fur and feathers, who counted as family from the start. The word just caught up."
+      "description": "The ones with fur and feathers, who counted as family from the start. The word just caught up.",
+      "accent": "sanctuary.green"
     },
     {
       "slug": "threshold",
       "name": "The Threshold",
-      "description": "Doors, edges, and the crossing itself. Ready is sometimes the whole of it."
+      "description": "Doors, edges, and the crossing itself. Ready is sometimes the whole of it.",
+      "accent": "cosmic.blue"
     },
     {
       "slug": "the-given",
       "name": "The Given",
-      "description": "What this house refuses to charge for. The rarest waters: the laws underneath every other star here."
+      "description": "What this house refuses to charge for. The rarest waters: the laws underneath every other star here.",
+      "accent": "sanctuary.emerald"
     },
     {
       "slug": "inclusive-pride",
       "name": "Inclusive Pride",
-      "description": "Colours held up on purpose — one flag that carries the others inside it. Every flag here drifts at the same rarity, because no one's is rarer than anyone else's."
+      "description": "Colours held up on purpose — one flag that carries the others inside it. Every flag here drifts at the same rarity, because no one's is rarer than anyone else's.",
+      "palette": [
+        "pride.red",
+        "pride.orange",
+        "pride.yellow",
+        "pride.green",
+        "pride.blue",
+        "pride.purple"
+      ]
     }
   ],
   "bubbles": [
@@ -926,7 +951,15 @@
       "rarity": "common",
       "collection": "inclusive-pride",
       "description": "Six stripes, and the first was sewn by hand. Every flag starts as somebody's fabric.",
-      "addition": true
+      "addition": true,
+      "palette": [
+        "pride.red",
+        "pride.orange",
+        "pride.yellow",
+        "pride.green",
+        "pride.blue",
+        "pride.purple"
+      ]
     },
     {
       "slug": "progress",
@@ -934,7 +967,20 @@
       "rarity": "common",
       "collection": "inclusive-pride",
       "description": "The chevron that moves, pointing in. A flag that cannot grow is a flag that stopped meaning it.",
-      "addition": true
+      "addition": true,
+      "palette": [
+        "pride.transBlue",
+        "pride.transPink",
+        "pride.white",
+        "pride.brown",
+        "pride.black",
+        "pride.red",
+        "pride.orange",
+        "pride.yellow",
+        "pride.green",
+        "pride.blue",
+        "pride.purple"
+      ]
     },
     {
       "slug": "trans-banner",
@@ -942,7 +988,14 @@
       "rarity": "common",
       "collection": "inclusive-pride",
       "description": "Pink, blue, and white in the middle for everyone still arriving. Designed to read correctly upside down — there is no wrong way to fly it.",
-      "addition": true
+      "addition": true,
+      "palette": [
+        "pride.transBlue",
+        "pride.transPink",
+        "pride.transWhite",
+        "pride.transPink",
+        "pride.transBlue"
+      ]
     },
     {
       "slug": "non-binary",
@@ -950,7 +1003,13 @@
       "rarity": "common",
       "collection": "inclusive-pride",
       "description": "Yellow for outside it, white for all of it, purple for both, black for none. Four answers where two were offered.",
-      "addition": true
+      "addition": true,
+      "palette": [
+        "pride.nonBinary",
+        "pride.white",
+        "#9C59D1",
+        "void.dark"
+      ]
     },
     {
       "slug": "genderfluid",
@@ -958,7 +1017,14 @@
       "rarity": "common",
       "collection": "inclusive-pride",
       "description": "It moves. Moving was never the same as being unsure.",
-      "addition": true
+      "addition": true,
+      "palette": [
+        "pride.genderfluid",
+        "pride.white",
+        "#BE18D6",
+        "void.dark",
+        "#333EBD"
+      ]
     },
     {
       "slug": "agender",
@@ -966,7 +1032,16 @@
       "rarity": "common",
       "collection": "inclusive-pride",
       "description": "Complete, and not a gap where something should be. Absence is an answer too.",
-      "addition": true
+      "addition": true,
+      "palette": [
+        "pride.black",
+        "void.light",
+        "pride.white",
+        "#B7F684",
+        "pride.white",
+        "void.light",
+        "pride.black"
+      ]
     },
     {
       "slug": "pansexual",
@@ -974,7 +1049,12 @@
       "rarity": "common",
       "collection": "inclusive-pride",
       "description": "Three stripes with nobody left standing outside them.",
-      "addition": true
+      "addition": true,
+      "palette": [
+        "pride.pansexual",
+        "mystical.sun",
+        "#21B1FF"
+      ]
     },
     {
       "slug": "bisexual",
@@ -982,7 +1062,14 @@
       "rarity": "common",
       "collection": "inclusive-pride",
       "description": "Two colors and the overlap between. The middle is not indecision — it is its own colour.",
-      "addition": true
+      "addition": true,
+      "palette": [
+        "pride.bisexual",
+        "pride.bisexual",
+        "#9B4F96",
+        "#0038A8",
+        "#0038A8"
+      ]
     },
     {
       "slug": "asexual",
@@ -990,7 +1077,13 @@
       "rarity": "common",
       "collection": "inclusive-pride",
       "description": "Grey between the black and the white, where most true things actually live.",
-      "addition": true
+      "addition": true,
+      "palette": [
+        "pride.black",
+        "#A3A3A3",
+        "pride.white",
+        "pride.purple"
+      ]
     },
     {
       "slug": "lesbian",
@@ -998,7 +1091,16 @@
       "rarity": "common",
       "collection": "inclusive-pride",
       "description": "Sunset stripes. Orange for the ones who came first, pink for the ones who came after.",
-      "addition": true
+      "addition": true,
+      "palette": [
+        "pride.lesbian",
+        "#EF7627",
+        "#FF9A56",
+        "pride.white",
+        "#D162A4",
+        "#B55690",
+        "#A30262"
+      ]
     },
     {
       "slug": "intersex",
@@ -1006,7 +1108,11 @@
       "rarity": "common",
       "collection": "inclusive-pride",
       "description": "A purple circle on yellow, unbroken on purpose. Whole exactly as it arrived — nothing about it was ever waiting to be corrected.",
-      "addition": true
+      "addition": true,
+      "palette": [
+        "mystical.sun"
+      ],
+      "ring": "#7902AA"
     },
     {
       "slug": "found-family",
