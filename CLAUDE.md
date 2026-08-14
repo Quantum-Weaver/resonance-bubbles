@@ -2,20 +2,19 @@
 
 **Stack:** SvelteKit (static adapter, SPA) over **Tauri v2**, built on the
 Resonance Echoes base whose features are kept, not stripped. Desktop and mobile
-from one codebase. The star set is data (`src/lib/data/bubbles-set.json`), never
-code.
+from one codebase; the star set is data (`src/lib/data/bubbles-set.json`), never
+code. · **Authors:** [HANDS.md](HANDS.md) — each voice in its own words, per the
+Hands Standard.
 
-**Authors:** see [HANDS.md](HANDS.md) — the voices are named there, each in
-their own words, per the Hands Standard.
+*Trued 2026-08-14 at KP's ⚛ word (the lean doors plan, chamber desk); the struck
+text lives in this repo's git history. SEED-class: planted once from the
+standards and this repo's own from then on — no agent overwrites it.*
 
 ---
 
-## SESSION PROTOCOL
-
-1. Read `docs/CHECKLIST.md` for current state.
-2. One phase at a time — complete, verify, update the checklist, move on.
-3. **The checklist updates in the same sitting as the work it records.**
-4. Zero errors before commit.
+Enter by **`docs/CHECKLIST.md`** — the newest rows ARE the state. One pass, one
+scoped duty; zero errors before commit; the checklist updates in the same
+sitting as the work it records.
 
 ## Essential rules — the anti-compulsion identity
 
@@ -44,46 +43,31 @@ make the game stickier, it is the wrong change.
 
 ## The rooms
 
-| Route | What it is |
-|---|---|
-| `/` | Echoes' home — the journal, inherited whole |
-| `/bubbles` | The game — sky, collections, boundary, breath door |
-| `/sattva` | The regulation door — the breathing pacer |
-| `/insights` `/timer` `/settings` `/add` `/onboarding` | Echoes' suite, kept intact |
+The door order is KP's ⚛ strokes, 2026-08-06: Bubbles · Gallery · Echoes (`/`) ·
+Insights · Timer · Sattva, Settings the foot. Eight route folders stand; the map
+is `docs/blueprints/pbp.ai.json`. **The `echo` domain is not the brand** —
+`echo.svelte.ts`, the `echoes` table and the word "echo" throughout are the
+journal's own data model and they stay; only the app's *identity* was rebranded
+(product name, bundle id, window title, crate). **Growing the sky is data**, not
+code — new stars, collections and seasonal sets go into `bubbles-set.json`. If
+seasons become real it wants two things it lacks: a time window on a bubble, and
+a version on the set for migrating a renamed slug.
 
-**The `echo` domain is not the brand.** `echo.svelte.ts`, the `echoes` table and
-the word "echo" throughout are the journal's own data model. They stay. Only the
-app's *identity* was rebranded — product name, bundle id, window title, crate.
+## Tools
 
-## Build
-
-```bash
-npm run dev          # browser, http://localhost:1420
-npm run tauri dev    # its own window
-npm run tauri build  # desktop binaries
-```
-
-**Growing the sky is data.** Add entries to `src/lib/data/bubbles-set.json` —
-new stars, new collections, seasonal sets. No code changes. Two things it does
-not yet have, if seasons become real: a time window on a bubble, and a version
-on the set for migrating a renamed slug.
-
-**Icons:** `npx tauri icon src-tauri/icons/icon.png` — note that it **overwrites
-its own input**; keep the master elsewhere.
+Own commands: `npm run dev · build · preview · check · check:watch · tauri`
+(`tauri dev` for its own window, `tauri build` for the binaries). House tools and
+this repo's registration state: `house-tools`. Android laws and the icon trap:
+`android-tauri`. Signing and the shelf: `release-road`. Store pack:
+`docs/PLAY-TRACK.md` + `play-track`.
 
 ## The gates that are KP's alone
 
-- **Whether this repo goes public.** The 30 original stars are carried verbatim
-  from the AudHDities base, so publishing here publishes AudHDities content.
-- **Store distribution**, and the accounts it costs.
-- **Whether the standalone one-file build (`build.py`, `game-template.html`)
-  stays alive** as the free web-playable version, or retires now that the app
-  is the target.
+Six stand in `docs/CHECKLIST.md` Phase 5 — 🚪 marks a decision only he makes,
+never a task. The one with teeth beyond this repo: **whether this repo goes
+public.** The 30 original stars are carried verbatim from the AudHDities base,
+so publishing here publishes AudHDities content.
 
-## Standards
+## People
 
-This repo follows the
-[Sanctuary Standards](https://github.com/Quantum-Weaver/resonance-standards).
-`.gitignore`, this file, and `docs/CHECKLIST.md` are **SEED-class** — planted
-once from the standards and this repo's own from then on. No agent overwrites
-them.
+Root `CLAUDE.md` §Council · this repo's `HANDS.md`.
