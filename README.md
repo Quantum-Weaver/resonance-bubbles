@@ -1,13 +1,26 @@
 # 🫧 Resonance Bubbles
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.3.0-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-0.1.0-brightgreen.svg)]()
 
 *A collecting game built without compulsion — 123 stars, seven bubble-wrap pops,
 and a daily boundary only you can set.*
 
 Built on the [Resonance Grammar](https://github.com/Quantum-Weaver/resonance-grammar)
 — every fragment contains the whole.
+
+---
+
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/bubbles-01.jpg" width="23%" alt="Resonance Bubbles — screenshot 1" />
+  <img src="screenshots/bubbles-02.jpg" width="23%" alt="Resonance Bubbles — screenshot 2" />
+  <img src="screenshots/bubbles-03.jpg" width="23%" alt="Resonance Bubbles — screenshot 3" />
+  <img src="screenshots/bubbles-04.jpg" width="23%" alt="Resonance Bubbles — screenshot 4" />
+  <img src="screenshots/bubbles-05.jpg" width="23%" alt="Resonance Bubbles — screenshot 5" />
+  <img src="screenshots/bubbles-06.jpg" width="23%" alt="Resonance Bubbles — screenshot 6" />
+</p>
 
 ---
 
