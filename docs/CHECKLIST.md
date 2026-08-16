@@ -144,6 +144,7 @@
 ## SESSION LOG
 | Date | What Was Done |
 |------|---------------|
+| 2026-08-16 | **Signing keystore recut to the Sanctuary DN** (this sitting, KP's env files his own hand): primary `F:\keystores\resonance-bubbles.keystore` · second copy `D:\keystores\` byte-identical · alias `resonance-bubbles` · 4096-bit RSA, SHA384withRSA, valid to Jan 2054 (10,000-day validity, the khoros/sistrum convention) · DN `CN=AudHDities Sanctuary, O=AudHDities Sanctuary, C=US` · cert SHA256 `75:B1:8D:8E…C9:7B:4A`. The generic keystore retired, kept: `RETIRED-2026-08-16-resonance-bubbles.keystore.old-dn` on both drives (was at `D:/keystores/resonance-bubbles.keystore`, cut 2026-08-04 per the row below). Secrets live only in the env vault file — pointers here, never contents. **CAUTION: this app is live on Google Play closed testing — the first upload signed with this new key needs the Play-side upload-key reset at KP's console, his hand.** |
 | 2026-08-04 | Repo founded to the standards; committed and pushed. |
 | 2026-08-04 | Game graduated from awen, resealed byte-identical, pointer left. |
 | 2026-08-04 | Sky tripled: wave two (55), Inclusive Pride (13). 123 stars / 13 collections. |
