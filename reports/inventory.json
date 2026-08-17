@@ -1,0 +1,3700 @@
+{
+  "project": "resonance-bubbles",
+  "scanned_at": "2026-08-17T22:22:05.096526+00:00",
+  "total_files": 520,
+  "files": [
+    {
+      "path": ".cargo/config.toml",
+      "type": "config",
+      "language": "toml",
+      "lines": 11,
+      "description": "Android 16 KB memory-page-size support (Play requirement for Android 15+"
+    },
+    {
+      "path": ".claude/settings.json",
+      "type": "config",
+      "language": "json",
+      "lines": 5,
+      "description": "Settings"
+    },
+    {
+      "path": ".gitignore",
+      "type": "config",
+      "language": "unknown",
+      "lines": 62,
+      "description": ".gitignore"
+    },
+    {
+      "path": ".svelte-kit/ambient.d.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 404,
+      "description": "this file is generated \u2014 do not edit it"
+    },
+    {
+      "path": ".svelte-kit/env.d.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 1,
+      "description": "See https://svelte.dev/docs/kit/environment-variables for more information"
+    },
+    {
+      "path": ".svelte-kit/generated/client/app.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 55,
+      "description": "in dev, this makes Vite inject its client as this module's first dependency,"
+    },
+    {
+      "path": ".svelte-kit/generated/client/matchers.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "Matchers"
+    },
+    {
+      "path": ".svelte-kit/generated/client/nodes/0.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 3,
+      "description": "0"
+    },
+    {
+      "path": ".svelte-kit/generated/client/nodes/1.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "1"
+    },
+    {
+      "path": ".svelte-kit/generated/client/nodes/10.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "10"
+    },
+    {
+      "path": ".svelte-kit/generated/client/nodes/2.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "2"
+    },
+    {
+      "path": ".svelte-kit/generated/client/nodes/3.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "3"
+    },
+    {
+      "path": ".svelte-kit/generated/client/nodes/4.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "4"
+    },
+    {
+      "path": ".svelte-kit/generated/client/nodes/5.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "5"
+    },
+    {
+      "path": ".svelte-kit/generated/client/nodes/6.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "6"
+    },
+    {
+      "path": ".svelte-kit/generated/client/nodes/7.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "7"
+    },
+    {
+      "path": ".svelte-kit/generated/client/nodes/8.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "8"
+    },
+    {
+      "path": ".svelte-kit/generated/client/nodes/9.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "9"
+    },
+    {
+      "path": ".svelte-kit/generated/client-optimized/app.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 55,
+      "description": "in dev, this makes Vite inject its client as this module's first dependency,"
+    },
+    {
+      "path": ".svelte-kit/generated/client-optimized/matchers.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "Matchers"
+    },
+    {
+      "path": ".svelte-kit/generated/client-optimized/nodes/0.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 3,
+      "description": "0"
+    },
+    {
+      "path": ".svelte-kit/generated/client-optimized/nodes/1.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "1"
+    },
+    {
+      "path": ".svelte-kit/generated/client-optimized/nodes/10.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "10"
+    },
+    {
+      "path": ".svelte-kit/generated/client-optimized/nodes/2.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "2"
+    },
+    {
+      "path": ".svelte-kit/generated/client-optimized/nodes/3.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "3"
+    },
+    {
+      "path": ".svelte-kit/generated/client-optimized/nodes/4.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "4"
+    },
+    {
+      "path": ".svelte-kit/generated/client-optimized/nodes/5.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "5"
+    },
+    {
+      "path": ".svelte-kit/generated/client-optimized/nodes/6.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "6"
+    },
+    {
+      "path": ".svelte-kit/generated/client-optimized/nodes/7.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "7"
+    },
+    {
+      "path": ".svelte-kit/generated/client-optimized/nodes/8.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "8"
+    },
+    {
+      "path": ".svelte-kit/generated/client-optimized/nodes/9.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "9"
+    },
+    {
+      "path": ".svelte-kit/generated/root.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 3,
+      "description": "Root"
+    },
+    {
+      "path": ".svelte-kit/generated/root.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 68,
+      "description": "Root"
+    },
+    {
+      "path": ".svelte-kit/generated/server/internal.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 55,
+      "description": "Internal"
+    },
+    {
+      "path": ".svelte-kit/generated/shared/error-template.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "Error template"
+    },
+    {
+      "path": ".svelte-kit/non-ambient.d.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 51,
+      "description": "this file is generated \u2014 do not edit it"
+    },
+    {
+      "path": ".svelte-kit/output/client/.vite/manifest.json",
+      "type": "config",
+      "language": "json",
+      "lines": 432,
+      "description": "Manifest"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/assets/0.Eu0gpkba.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */@layer properties{@supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from r"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/assets/10.BOz1HCTp.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "10.BOz1HCTp"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/assets/2.BkycbbX8.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "2.BkycbbX8"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/assets/3.BTPytVuA.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "3.BTPytVuA"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/assets/4.B3n9zm5m.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "4.B3n9zm5m"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/assets/5.BNaHKAkg.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "5.BNaHKAkg"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/assets/6.5bkzZygz.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "6.5bkzZygz"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/assets/7.ClREbZ1s.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "7.ClREbZ1s"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/assets/8.COCjG6DO.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "8.COCjG6DO"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/assets/9.Bt7EvuH_.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "9.Bt7EvuH"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/aCmx3GtI.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "ACmx3GtI"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/B2eLyj3N.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "B2eLyj3N"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/B6AO6AoO.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "B6AO6AoO"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/B8yTE34F.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "B8yTE34F"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/B9dTHDC0.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "B9dTHDC0"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/BoFxrMlB.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "BoFxrMlB"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/BqBdaicK.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "BqBdaicK"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/BRj8rNQM.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "BRj8rNQM"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/Bt9FiWuH.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "Bt9FiWuH"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/C4goroIs.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "C4goroIs"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/Cab89zrN.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "Cab89zrN"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/Ce8fqrq5.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "Ce8fqrq5"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/Cg10qQWn.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 2,
+      "description": "Cg10qQWn"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/CpQ5Ju-2.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "CpQ5Ju 2"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/CRaflAwg.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 2,
+      "description": "CRaflAwg"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/D_OypWSv.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "D OypWSv"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/DBXlKVGE.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "DBXlKVGE"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/DizL2FeB.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "DizL2FeB"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/DJsF3XY1.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "DJsF3XY1"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/DlQNAQKj.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "DlQNAQKj"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/DmGEoF0v.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "DmGEoF0v"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/DxtDDG0c.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "DxtDDG0c"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/chunks/wbPk3Yxo.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 81,
+      "description": "WbPk3Yxo"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/entry/app.ASofb19L.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 2,
+      "description": "App.ASofb19L"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/entry/start.DoXbU0dp.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "Start.DoXbU0dp"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/nodes/0.DxiH0oOf.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 9,
+      "description": "0.DxiH0oOf"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/nodes/1.DVixb-d6.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "1.DVixb d6"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/nodes/10.ByoA1nc-.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "10.ByoA1nc"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/nodes/2.BCYxGtIO.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "2.BCYxGtIO"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/nodes/3.C6EyZ8Mv.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "3.C6EyZ8Mv"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/nodes/4.DRNKmdEQ.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 4,
+      "description": "4.DRNKmdEQ"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/nodes/5.Dh1oqP-8.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "5.Dh1oqP 8"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/nodes/6.DL_AzTcL.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 2,
+      "description": "6.DL AzTcL"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/nodes/7.DzJ1kexK.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "7.DzJ1kexK"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/nodes/8.FERd3dn7.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "8.FERd3dn7"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/immutable/nodes/9.BYARJ26n.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1,
+      "description": "9.BYARJ26n"
+    },
+    {
+      "path": ".svelte-kit/output/client/_app/version.json",
+      "type": "config",
+      "language": "json",
+      "lines": 1,
+      "description": "Version"
+    },
+    {
+      "path": ".svelte-kit/output/client/aethelred-avatar.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 1410.42,
+      "description": "Aethelred avatar"
+    },
+    {
+      "path": ".svelte-kit/output/client/bubbles.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Bubbles"
+    },
+    {
+      "path": ".svelte-kit/output/client/cello.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 2934.02,
+      "description": "Cello"
+    },
+    {
+      "path": ".svelte-kit/output/client/compass.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 2299.32,
+      "description": "Compass"
+    },
+    {
+      "path": ".svelte-kit/output/client/echoes.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 2181.06,
+      "description": "Echoes"
+    },
+    {
+      "path": ".svelte-kit/output/client/favicon.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 1941.39,
+      "description": "Favicon"
+    },
+    {
+      "path": ".svelte-kit/output/client/favicon2.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 40.49,
+      "description": "Favicon2"
+    },
+    {
+      "path": ".svelte-kit/output/client/hearth.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 2208.91,
+      "description": "Hearth"
+    },
+    {
+      "path": ".svelte-kit/output/client/Icon-1.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 242.27,
+      "description": "Icon 1"
+    },
+    {
+      "path": ".svelte-kit/output/client/Icon-2.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 312.82,
+      "description": "Icon 2"
+    },
+    {
+      "path": ".svelte-kit/output/client/lantern.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 2243.82,
+      "description": "Lantern"
+    },
+    {
+      "path": ".svelte-kit/output/client/QW-logo.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 1941.39,
+      "description": "QW logo"
+    },
+    {
+      "path": ".svelte-kit/output/client/sounds/pop-bubble-2.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 56,
+      "description": "Pop bubble 2"
+    },
+    {
+      "path": ".svelte-kit/output/client/sounds/pop-bubble-3.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 73,
+      "description": "Pop bubble 3"
+    },
+    {
+      "path": ".svelte-kit/output/client/sounds/pop-bubble-4.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 58,
+      "description": "Pop bubble 4"
+    },
+    {
+      "path": ".svelte-kit/output/client/sounds/pop-bubble-5.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 71,
+      "description": "Pop bubble 5"
+    },
+    {
+      "path": ".svelte-kit/output/client/sounds/pop-bubble-6.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 57,
+      "description": "Pop bubble 6"
+    },
+    {
+      "path": ".svelte-kit/output/client/sounds/pop-bubble-7.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 55,
+      "description": "Pop bubble 7"
+    },
+    {
+      "path": ".svelte-kit/output/client/sounds/pop-bubble.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 76,
+      "description": "Pop bubble"
+    },
+    {
+      "path": ".svelte-kit/output/client/svelte.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 40.49,
+      "description": "Svelte"
+    },
+    {
+      "path": ".svelte-kit/output/client/tauri.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 40.49,
+      "description": "Tauri"
+    },
+    {
+      "path": ".svelte-kit/output/client/tauri.svg",
+      "type": "unknown",
+      "language": "unknown",
+      "large": true,
+      "size_kb": 116.78,
+      "description": "Tauri"
+    },
+    {
+      "path": ".svelte-kit/output/client/thread.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 3872.19,
+      "description": "Thread"
+    },
+    {
+      "path": ".svelte-kit/output/client/vite.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 40.49,
+      "description": "Vite"
+    },
+    {
+      "path": ".svelte-kit/output/server/.vite/manifest.json",
+      "type": "config",
+      "language": "json",
+      "lines": 350,
+      "description": "Manifest"
+    },
+    {
+      "path": ".svelte-kit/output/server/_app/immutable/assets/_layout.CIuQjjVB.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */@layer properties{@supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from r"
+    },
+    {
+      "path": ".svelte-kit/output/server/_app/immutable/assets/_page.5bkzZygz.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "Page.5bkzZygz"
+    },
+    {
+      "path": ".svelte-kit/output/server/_app/immutable/assets/_page.BkycbbX8.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "Page.BkycbbX8"
+    },
+    {
+      "path": ".svelte-kit/output/server/_app/immutable/assets/_page.BOz1HCTp.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "Page.BOz1HCTp"
+    },
+    {
+      "path": ".svelte-kit/output/server/_app/immutable/assets/_page.Bt7EvuH_.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "Page.Bt7EvuH"
+    },
+    {
+      "path": ".svelte-kit/output/server/_app/immutable/assets/_page.BTPytVuA.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "Page.BTPytVuA"
+    },
+    {
+      "path": ".svelte-kit/output/server/_app/immutable/assets/_page.CO3HwN_F.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "Page.CO3HwN F"
+    },
+    {
+      "path": ".svelte-kit/output/server/_app/immutable/assets/_page.CyjfJZRf.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "Page.CyjfJZRf"
+    },
+    {
+      "path": ".svelte-kit/output/server/_app/immutable/assets/_page.D3jKefzt.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "Page.D3jKefzt"
+    },
+    {
+      "path": ".svelte-kit/output/server/_app/immutable/assets/_page.z7dAmhFl.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1,
+      "description": "Page.z7dAmhFl"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/bubbles-set.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 37,
+      "description": "Bubbles set"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/client.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 24,
+      "description": "eslint-disable-next-line @typescript-eslint/require-await"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/colors.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 194,
+      "description": "============================================================================"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/echo.svelte.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 15,
+      "description": "Echo.svelte"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/emojis.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 89,
+      "description": "Emojis"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/exports.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 174,
+      "description": "Exports"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/index-server.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 9,
+      "description": "Index server"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/index.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1288,
+      "description": "Index"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/index2.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 21,
+      "description": "Index2"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/index3.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 59,
+      "description": "Index3"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/interactivity.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 307,
+      "description": "0px"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/internal.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 135,
+      "description": "Internal"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/root.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 2996,
+      "description": "Root"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/senses.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 99,
+      "description": "Senses"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/server.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 34,
+      "description": "Server"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/state.svelte.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 19,
+      "description": "State.svelte"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/theme.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 65,
+      "description": "Theme"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/theme.svelte.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 11,
+      "description": "Theme.svelte"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/utils.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1014,
+      "description": "Utils"
+    },
+    {
+      "path": ".svelte-kit/output/server/chunks/utils2.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 41,
+      "description": "Utils2"
+    },
+    {
+      "path": ".svelte-kit/output/server/entries/fallbacks/error.svelte.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 11,
+      "description": "Error.svelte"
+    },
+    {
+      "path": ".svelte-kit/output/server/entries/pages/_layout.svelte.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 267,
+      "description": "Layout.svelte"
+    },
+    {
+      "path": ".svelte-kit/output/server/entries/pages/_layout.ts.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 4,
+      "description": "Layout.ts"
+    },
+    {
+      "path": ".svelte-kit/output/server/entries/pages/_page.svelte.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 151,
+      "description": "Page.svelte"
+    },
+    {
+      "path": ".svelte-kit/output/server/entries/pages/add/_page.svelte.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 129,
+      "description": "Page.svelte"
+    },
+    {
+      "path": ".svelte-kit/output/server/entries/pages/bubbles/_page.svelte.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 77,
+      "description": "Page.svelte"
+    },
+    {
+      "path": ".svelte-kit/output/server/entries/pages/gallery/_page.svelte.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 192,
+      "description": "Page.svelte"
+    },
+    {
+      "path": ".svelte-kit/output/server/entries/pages/insights/_page.svelte.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 287,
+      "description": "Page.svelte"
+    },
+    {
+      "path": ".svelte-kit/output/server/entries/pages/onboarding/_page.svelte.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 148,
+      "description": "Page.svelte"
+    },
+    {
+      "path": ".svelte-kit/output/server/entries/pages/sattva/_page.svelte.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 91,
+      "description": "Page.svelte"
+    },
+    {
+      "path": ".svelte-kit/output/server/entries/pages/settings/_page.svelte.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 116,
+      "description": "Page.svelte"
+    },
+    {
+      "path": ".svelte-kit/output/server/entries/pages/timer/_page.svelte.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 194,
+      "description": "Page.svelte"
+    },
+    {
+      "path": ".svelte-kit/output/server/env.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 13,
+      "description": "Env"
+    },
+    {
+      "path": ".svelte-kit/output/server/index.js",
+      "type": "source",
+      "language": "javascript",
+      "large": true,
+      "size_kb": 127.88,
+      "description": "Index"
+    },
+    {
+      "path": ".svelte-kit/output/server/internal.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 14,
+      "description": "Internal"
+    },
+    {
+      "path": ".svelte-kit/output/server/manifest-full.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 103,
+      "description": "Manifest full"
+    },
+    {
+      "path": ".svelte-kit/output/server/manifest.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 103,
+      "description": "Manifest"
+    },
+    {
+      "path": ".svelte-kit/output/server/nodes/0.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 10,
+      "description": "0"
+    },
+    {
+      "path": ".svelte-kit/output/server/nodes/1.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 6,
+      "description": "1"
+    },
+    {
+      "path": ".svelte-kit/output/server/nodes/10.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 6,
+      "description": "10"
+    },
+    {
+      "path": ".svelte-kit/output/server/nodes/2.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 6,
+      "description": "2"
+    },
+    {
+      "path": ".svelte-kit/output/server/nodes/3.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 6,
+      "description": "3"
+    },
+    {
+      "path": ".svelte-kit/output/server/nodes/4.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 6,
+      "description": "4"
+    },
+    {
+      "path": ".svelte-kit/output/server/nodes/5.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 6,
+      "description": "5"
+    },
+    {
+      "path": ".svelte-kit/output/server/nodes/6.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 6,
+      "description": "6"
+    },
+    {
+      "path": ".svelte-kit/output/server/nodes/7.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 6,
+      "description": "7"
+    },
+    {
+      "path": ".svelte-kit/output/server/nodes/8.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 6,
+      "description": "8"
+    },
+    {
+      "path": ".svelte-kit/output/server/nodes/9.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 6,
+      "description": "9"
+    },
+    {
+      "path": ".svelte-kit/output/server/remote-entry.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 1166,
+      "description": "Remote entry"
+    },
+    {
+      "path": ".svelte-kit/tsconfig.json",
+      "type": "config",
+      "language": "json",
+      "lines": 56,
+      "description": "Tsconfig"
+    },
+    {
+      "path": ".svelte-kit/types/route_meta_data.json",
+      "type": "config",
+      "language": "json",
+      "lines": 30,
+      "description": "Route meta data"
+    },
+    {
+      "path": ".svelte-kit/types/src/routes/$types.d.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 25,
+      "description": "$types.d"
+    },
+    {
+      "path": ".svelte-kit/types/src/routes/add/$types.d.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 17,
+      "description": "$types.d"
+    },
+    {
+      "path": ".svelte-kit/types/src/routes/bubbles/$types.d.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 17,
+      "description": "$types.d"
+    },
+    {
+      "path": ".svelte-kit/types/src/routes/gallery/$types.d.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 17,
+      "description": "$types.d"
+    },
+    {
+      "path": ".svelte-kit/types/src/routes/insights/$types.d.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 17,
+      "description": "$types.d"
+    },
+    {
+      "path": ".svelte-kit/types/src/routes/onboarding/$types.d.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 17,
+      "description": "$types.d"
+    },
+    {
+      "path": ".svelte-kit/types/src/routes/sattva/$types.d.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 17,
+      "description": "$types.d"
+    },
+    {
+      "path": ".svelte-kit/types/src/routes/settings/$types.d.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 17,
+      "description": "$types.d"
+    },
+    {
+      "path": ".svelte-kit/types/src/routes/timer/$types.d.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 17,
+      "description": "$types.d"
+    },
+    {
+      "path": "bubbles-set.json",
+      "type": "config",
+      "language": "json",
+      "lines": 1028,
+      "description": "Bubbles set"
+    },
+    {
+      "path": "build.py",
+      "type": "source",
+      "language": "python",
+      "lines": 61,
+      "description": "!/usr/bin/env python3"
+    },
+    {
+      "path": "CLAUDE.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 73,
+      "description": "CLAUDE.md \u2014 resonance-bubbles"
+    },
+    {
+      "path": "docs/blueprints/analysis_sovereignty.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 19,
+      "description": "Analysis sovereignty.ai"
+    },
+    {
+      "path": "docs/blueprints/dbp_src.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 36,
+      "description": "Dbp src.ai"
+    },
+    {
+      "path": "docs/blueprints/dbp_src_tauri.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 50,
+      "description": "Dbp src tauri.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_cargo.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 27,
+      "description": "Fbp cargo.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_docs.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 87,
+      "description": "Fbp docs.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_docs_sql.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 60,
+      "description": "Fbp docs sql.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_root.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 373,
+      "description": "Fbp root.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_sounds.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 106,
+      "description": "Fbp sounds.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 54,
+      "description": "Fbp src.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_lib.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 21,
+      "description": "Fbp src lib.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_lib_components.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 75,
+      "description": "Fbp src lib components.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_lib_components_icons.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 94,
+      "description": "Fbp src lib components icons.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_lib_cosmic.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 490,
+      "description": "Fbp src lib cosmic.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_lib_data.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 74,
+      "description": "Fbp src lib data.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_lib_stores.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 91,
+      "description": "Fbp src lib stores.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_lib_styles.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 29,
+      "description": "Fbp src lib styles.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_lib_styles_generated.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 307,
+      "description": "Fbp src lib styles generated.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_lib_theme.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 34,
+      "description": "Fbp src lib theme.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_lib_types.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 36,
+      "description": "Fbp src lib types.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_routes.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 71,
+      "description": "Fbp src routes.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_routes_add.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 30,
+      "description": "Fbp src routes add.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_routes_bubbles.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 29,
+      "description": "Fbp src routes bubbles.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_routes_insights.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 29,
+      "description": "Fbp src routes insights.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_routes_onboarding.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 28,
+      "description": "Fbp src routes onboarding.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_routes_sattva.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 28,
+      "description": "Fbp src routes sattva.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_routes_settings.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 29,
+      "description": "Fbp src routes settings.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_routes_timer.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 29,
+      "description": "Fbp src routes timer.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_tauri.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 67,
+      "description": "Fbp src tauri.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_tauri_capabilities.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 33,
+      "description": "Fbp src tauri capabilities.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_tauri_cargo.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 27,
+      "description": "Fbp src tauri cargo.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_tauri_icons.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 234,
+      "description": "Fbp src tauri icons.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_tauri_icons_android.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 21,
+      "description": "Fbp src tauri icons android.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_tauri_icons_android_mipmap_anydpi_v26.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 18,
+      "description": "Fbp src tauri icons android mipmap anydpi v26.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_tauri_icons_android_mipmap_hdpi.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 54,
+      "description": "Fbp src tauri icons android mipmap hdpi.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_tauri_icons_android_mipmap_mdpi.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 54,
+      "description": "Fbp src tauri icons android mipmap mdpi.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_tauri_icons_android_mipmap_xhdpi.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 54,
+      "description": "Fbp src tauri icons android mipmap xhdpi.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_tauri_icons_android_mipmap_xxhdpi.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 54,
+      "description": "Fbp src tauri icons android mipmap xxhdpi.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_tauri_icons_android_mipmap_xxxhdpi.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 54,
+      "description": "Fbp src tauri icons android mipmap xxxhdpi.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_tauri_icons_android_values.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 18,
+      "description": "Fbp src tauri icons android values.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_tauri_icons_ios.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 249,
+      "description": "Fbp src tauri icons ios.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_src_tauri_src.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 41,
+      "description": "Fbp src tauri src.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_static.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 216,
+      "description": "Fbp static.ai"
+    },
+    {
+      "path": "docs/blueprints/folders/fbp_static_sounds.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 106,
+      "description": "Fbp static sounds.ai"
+    },
+    {
+      "path": "docs/blueprints/journal.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 13,
+      "description": "blueprint-forge journal \u2014 resonance-bubbles"
+    },
+    {
+      "path": "docs/blueprints/obp_docs.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 26,
+      "description": "Obp docs.ai"
+    },
+    {
+      "path": "docs/blueprints/obp_src_lib.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 82,
+      "description": "Obp src lib.ai"
+    },
+    {
+      "path": "docs/blueprints/obp_src_routes.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 68,
+      "description": "Obp src routes.ai"
+    },
+    {
+      "path": "docs/blueprints/obp_src_tauri_capabilities.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 19,
+      "description": "Obp src tauri capabilities.ai"
+    },
+    {
+      "path": "docs/blueprints/obp_src_tauri_cargo.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 19,
+      "description": "Obp src tauri cargo.ai"
+    },
+    {
+      "path": "docs/blueprints/obp_src_tauri_icons.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 82,
+      "description": "Obp src tauri icons.ai"
+    },
+    {
+      "path": "docs/blueprints/obp_src_tauri_src.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 19,
+      "description": "Obp src tauri src.ai"
+    },
+    {
+      "path": "docs/blueprints/obp_static.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 26,
+      "description": "Obp static.ai"
+    },
+    {
+      "path": "docs/blueprints/pbp.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 119,
+      "description": "Pbp.ai"
+    },
+    {
+      "path": "docs/blueprints/reconciliation.ai.json",
+      "type": "config",
+      "language": "json",
+      "lines": 9,
+      "description": "Reconciliation.ai"
+    },
+    {
+      "path": "docs/CHECKLIST.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 166,
+      "description": "RESONANCE BUBBLES \u2014 MASTER CHECKLIST"
+    },
+    {
+      "path": "docs/PLAY-TRACK.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 112,
+      "description": "Bubbles \u2014 Google Play test track"
+    },
+    {
+      "path": "docs/sql/seed-additions.sql",
+      "type": "source",
+      "language": "sql",
+      "lines": 89,
+      "description": "============================================================"
+    },
+    {
+      "path": "docs/sql/seed-wave-three.sql",
+      "type": "source",
+      "language": "sql",
+      "lines": 56,
+      "description": "============================================================"
+    },
+    {
+      "path": "docs/sql/seed-wave-two.sql",
+      "type": "source",
+      "language": "sql",
+      "lines": 161,
+      "description": "============================================================"
+    },
+    {
+      "path": "docs/THE-GAME.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 65,
+      "description": "the-bubbles"
+    },
+    {
+      "path": "game-template.html",
+      "type": "source",
+      "language": "html",
+      "lines": 525,
+      "description": "Game template"
+    },
+    {
+      "path": "HANDS.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 51,
+      "description": "The Hands \u2014 who builds this, and how"
+    },
+    {
+      "path": "index.html",
+      "type": "source",
+      "language": "html",
+      "large": true,
+      "size_kb": 104.75,
+      "description": "Index"
+    },
+    {
+      "path": "LICENSE",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 21,
+      "description": "LICENSE"
+    },
+    {
+      "path": "package-lock.json",
+      "type": "config",
+      "language": "json",
+      "lines": 2529,
+      "description": "Package lock"
+    },
+    {
+      "path": "package.json",
+      "type": "config",
+      "language": "json",
+      "lines": 35,
+      "description": "Package"
+    },
+    {
+      "path": "PHILOSOPHY.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 114,
+      "description": "THE RESONANCE LICENSE \u2014 PHILOSOPHY"
+    },
+    {
+      "path": "PRIVACY.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 78,
+      "description": "AudHDities Sanctuary \u2014 App Privacy Policy"
+    },
+    {
+      "path": "README.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 173,
+      "description": "\ud83e\udee7 Resonance Bubbles"
+    },
+    {
+      "path": "release/Resonance Bubbles_0.1.0_x64-setup.exe",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 23436.25,
+      "description": "Resonance Bubbles 0.1.0 x64 setup"
+    },
+    {
+      "path": "release/Resonance Bubbles_0.1.0_x64_en-US.msi",
+      "type": "unknown",
+      "language": "unknown",
+      "large": true,
+      "size_kb": 24460.0,
+      "description": "Resonance Bubbles 0.1.0 x64 en US"
+    },
+    {
+      "path": "release/resonance-bubbles-v0.1.0.aab",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 107453.65,
+      "description": "Resonance bubbles v0.1.0"
+    },
+    {
+      "path": "release/resonance-bubbles-v0.1.0.apk",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 127101.95,
+      "description": "Resonance bubbles v0.1.0"
+    },
+    {
+      "path": "release/resonance-bubbles-v0.1.0.apk.idsig",
+      "type": "unknown",
+      "language": "unknown",
+      "large": true,
+      "size_kb": 1009.54,
+      "description": "Resonance bubbles v0.1.0.apk"
+    },
+    {
+      "path": "RUN-LOG.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 5,
+      "description": "2026-08-04 14:07 \u00b7 the-bubbles \u00b7 game sealed \u00b7 55 bubbles \u00b7 6 collections \u00b7 7 pops \u00b7 85 KB"
+    },
+    {
+      "path": "screenshots/bubbles-01.jpg",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 182.65,
+      "description": "Bubbles 01"
+    },
+    {
+      "path": "screenshots/bubbles-02.jpg",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 276.54,
+      "description": "Bubbles 02"
+    },
+    {
+      "path": "screenshots/bubbles-03.jpg",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 299.8,
+      "description": "Bubbles 03"
+    },
+    {
+      "path": "screenshots/bubbles-04.jpg",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 313.41,
+      "description": "Bubbles 04"
+    },
+    {
+      "path": "screenshots/bubbles-05.jpg",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 291.98,
+      "description": "Bubbles 05"
+    },
+    {
+      "path": "screenshots/bubbles-06.jpg",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 201.09,
+      "description": "Bubbles 06"
+    },
+    {
+      "path": "sounds/pop-bubble-2.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 56,
+      "description": "Pop bubble 2"
+    },
+    {
+      "path": "sounds/pop-bubble-3.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 73,
+      "description": "Pop bubble 3"
+    },
+    {
+      "path": "sounds/pop-bubble-4.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 58,
+      "description": "Pop bubble 4"
+    },
+    {
+      "path": "sounds/pop-bubble-5.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 71,
+      "description": "Pop bubble 5"
+    },
+    {
+      "path": "sounds/pop-bubble-6.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 57,
+      "description": "Pop bubble 6"
+    },
+    {
+      "path": "sounds/pop-bubble-7.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 55,
+      "description": "Pop bubble 7"
+    },
+    {
+      "path": "sounds/pop-bubble.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 76,
+      "description": "Pop bubble"
+    },
+    {
+      "path": "src/app.css",
+      "type": "source",
+      "language": "css",
+      "lines": 111,
+      "description": "src/app.css */"
+    },
+    {
+      "path": "src/app.html",
+      "type": "source",
+      "language": "html",
+      "lines": 16,
+      "description": "App"
+    },
+    {
+      "path": "src/lib/bubbles/dress.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 79,
+      "description": "THE DRESS \u2014 one definition of what a star looks like."
+    },
+    {
+      "path": "src/lib/components/ComfortBar.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 208,
+      "description": "ComfortBar"
+    },
+    {
+      "path": "src/lib/components/GradientPulse.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 54,
+      "description": "GradientPulse"
+    },
+    {
+      "path": "src/lib/components/icons/IconGallery.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 11,
+      "description": "IconGallery"
+    },
+    {
+      "path": "src/lib/components/icons/IconHome.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 6,
+      "description": "IconHome"
+    },
+    {
+      "path": "src/lib/components/icons/IconInsights.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 9,
+      "description": "IconInsights"
+    },
+    {
+      "path": "src/lib/components/icons/Icons.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 35,
+      "description": "Icons"
+    },
+    {
+      "path": "src/lib/components/icons/IconSattva.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 9,
+      "description": "IconSattva"
+    },
+    {
+      "path": "src/lib/components/icons/IconSettings.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 7,
+      "description": "IconSettings"
+    },
+    {
+      "path": "src/lib/components/icons/IconTimer.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 8,
+      "description": "IconTimer"
+    },
+    {
+      "path": "src/lib/components/Sidebar.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 371,
+      "description": "Sidebar"
+    },
+    {
+      "path": "src/lib/components/TimerVisualization.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 598,
+      "description": "TimerVisualization"
+    },
+    {
+      "path": "src/lib/cosmic/attention.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 287,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/cosmic/colors.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 376,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/cosmic/consciousness.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 587,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/cosmic/dimensions.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 576,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/cosmic/effects.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 636,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/cosmic/index.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 425,
+      "description": "====================================================="
+    },
+    {
+      "path": "src/lib/cosmic/interactivity.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 282,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/cosmic/MIRROR.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 9,
+      "description": "DISTRIBUTED MIRROR - the source of truth lives in resonance-ziggy"
+    },
+    {
+      "path": "src/lib/cosmic/motion.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 855,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/cosmic/positioning.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 871,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/cosmic/solids.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 503,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/cosmic/typography.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 679,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/cumdach/index.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 223,
+      "description": "the-cumdach \u2014 the book-shrine, pure."
+    },
+    {
+      "path": "src/lib/cumdach/MIRROR.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 18,
+      "description": "DISTRIBUTED MIRROR - the source of truth lives in resonance-awen"
+    },
+    {
+      "path": "src/lib/data/bubbles-set.json",
+      "type": "config",
+      "language": "json",
+      "lines": 1134,
+      "description": "Bubbles set"
+    },
+    {
+      "path": "src/lib/data/emojis.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 99,
+      "description": "Emojis"
+    },
+    {
+      "path": "src/lib/data/senses.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 109,
+      "description": "Senses"
+    },
+    {
+      "path": "src/lib/epagoge/index.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 192,
+      "description": "the-epagoge \u2014 the leading-in, pure."
+    },
+    {
+      "path": "src/lib/epagoge/MIRROR.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 19,
+      "description": "DISTRIBUTED MIRROR - the source of truth lives in resonance-awen"
+    },
+    {
+      "path": "src/lib/gallery/index.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 116,
+      "description": "The gallery \u2014 the data-driven gallery core, reborn: one engine, many"
+    },
+    {
+      "path": "src/lib/gallery/MIRROR.md",
+      "type": "doc",
+      "language": "markdown",
+      "lines": 19,
+      "description": "DISTRIBUTED MIRROR - the source of truth lives in resonance-awen"
+    },
+    {
+      "path": "src/lib/stores/echo.svelte.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 221,
+      "description": "Personal emoji definitions \u2014 the folksonomy layer of the Resonance Grammar."
+    },
+    {
+      "path": "src/lib/stores/theme.svelte.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 42,
+      "description": "Theme.svelte"
+    },
+    {
+      "path": "src/lib/stores/timer.svelte.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 238,
+      "description": "Ported from Compass's timer store (2026-07-18) with one deliberate"
+    },
+    {
+      "path": "src/lib/stores/ui.svelte.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 11,
+      "description": "Cross-component UI signals that don't belong to any domain store."
+    },
+    {
+      "path": "src/lib/styles/custom_overrides.css",
+      "type": "source",
+      "language": "css",
+      "lines": 52,
+      "description": "styles/custom-overrides.css"
+    },
+    {
+      "path": "src/lib/styles/generated/animations.css",
+      "type": "source",
+      "language": "css",
+      "lines": 471,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/styles/generated/attention-modes.css",
+      "type": "source",
+      "language": "css",
+      "lines": 118,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/styles/generated/attention-selector.css",
+      "type": "source",
+      "language": "css",
+      "lines": 145,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/styles/generated/ceremonies-refuge.css",
+      "type": "source",
+      "language": "css",
+      "lines": 185,
+      "description": "========================================================================== */"
+    },
+    {
+      "path": "src/lib/styles/generated/ceremonies.css",
+      "type": "source",
+      "language": "css",
+      "lines": 258,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/styles/generated/consciousness-depth.css",
+      "type": "source",
+      "language": "css",
+      "lines": 228,
+      "description": "========================================================================== */"
+    },
+    {
+      "path": "src/lib/styles/generated/deity-voices.css",
+      "type": "source",
+      "language": "css",
+      "lines": 233,
+      "description": "========================================================================== */"
+    },
+    {
+      "path": "src/lib/styles/generated/domains.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1518,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/styles/generated/ensemble.css",
+      "type": "source",
+      "language": "css",
+      "lines": 153,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/styles/generated/eternal-witness.css",
+      "type": "source",
+      "language": "css",
+      "lines": 173,
+      "description": "========================================================================== */"
+    },
+    {
+      "path": "src/lib/styles/generated/gates.css",
+      "type": "source",
+      "language": "css",
+      "lines": 116,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/styles/generated/glow-field.css",
+      "type": "source",
+      "language": "css",
+      "lines": 212,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/styles/generated/parallax.css",
+      "type": "source",
+      "language": "css",
+      "lines": 514,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/styles/generated/pause-state.css",
+      "type": "source",
+      "language": "css",
+      "lines": 63,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/styles/generated/scene.css",
+      "type": "source",
+      "language": "css",
+      "lines": 119,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/styles/generated/supportive-affordances.css",
+      "type": "source",
+      "language": "css",
+      "lines": 66,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/styles/generated/text-effects.css",
+      "type": "source",
+      "language": "css",
+      "lines": 470,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/styles/generated/transcendence.css",
+      "type": "source",
+      "language": "css",
+      "lines": 128,
+      "description": "========================================================================== */"
+    },
+    {
+      "path": "src/lib/styles/generated/typography.css",
+      "type": "source",
+      "language": "css",
+      "lines": 1581,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/styles/generated/variables.css",
+      "type": "source",
+      "language": "css",
+      "lines": 479,
+      "description": "========================================================================== */"
+    },
+    {
+      "path": "src/lib/styles/generated/zoom.css",
+      "type": "source",
+      "language": "css",
+      "lines": 803,
+      "description": "============================================================================"
+    },
+    {
+      "path": "src/lib/theme/theme.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 64,
+      "description": "Theme"
+    },
+    {
+      "path": "src/lib/types/types.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 39,
+      "description": "Theme customization"
+    },
+    {
+      "path": "src/routes/+layout.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 87,
+      "description": "+layout"
+    },
+    {
+      "path": "src/routes/+layout.ts",
+      "type": "source",
+      "language": "typescript",
+      "lines": 5,
+      "description": "Tauri doesn't have a Node.js server to do proper SSR"
+    },
+    {
+      "path": "src/routes/+page.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 650,
+      "description": "+page"
+    },
+    {
+      "path": "src/routes/add/+page.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 771,
+      "description": "+page"
+    },
+    {
+      "path": "src/routes/bubbles/+page.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 369,
+      "description": "+page"
+    },
+    {
+      "path": "src/routes/gallery/+page.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 580,
+      "description": "+page"
+    },
+    {
+      "path": "src/routes/insights/+page.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 718,
+      "description": "+page"
+    },
+    {
+      "path": "src/routes/onboarding/+page.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 488,
+      "description": "+page"
+    },
+    {
+      "path": "src/routes/sattva/+page.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 255,
+      "description": "+page"
+    },
+    {
+      "path": "src/routes/settings/+page.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 772,
+      "description": "+page"
+    },
+    {
+      "path": "src/routes/timer/+page.svelte",
+      "type": "source",
+      "language": "svelte",
+      "lines": 509,
+      "description": "+page"
+    },
+    {
+      "path": "src-tauri/.cargo/config.toml",
+      "type": "config",
+      "language": "toml",
+      "lines": 11,
+      "description": "Android 16 KB memory-page-size support (Play requirement for Android 15+"
+    },
+    {
+      "path": "src-tauri/.gitignore",
+      "type": "config",
+      "language": "unknown",
+      "lines": 7,
+      "description": ".gitignore"
+    },
+    {
+      "path": "src-tauri/build.rs",
+      "type": "source",
+      "language": "rust",
+      "lines": 25,
+      "description": "The jniLibs/<abi> dirs contain ONLY libc++_shared.so \u2014 not libc.a."
+    },
+    {
+      "path": "src-tauri/capabilities/default.json",
+      "type": "config",
+      "language": "json",
+      "lines": 17,
+      "description": "Default"
+    },
+    {
+      "path": "src-tauri/Cargo.lock",
+      "type": "config",
+      "language": "unknown",
+      "large": true,
+      "size_kb": 142.62,
+      "description": "Cargo"
+    },
+    {
+      "path": "src-tauri/Cargo.toml",
+      "type": "config",
+      "language": "toml",
+      "lines": 27,
+      "description": "Cargo"
+    },
+    {
+      "path": "src-tauri/gen/android/.editorconfig",
+      "type": "config",
+      "language": "unknown",
+      "lines": 12,
+      "description": ".editorconfig"
+    },
+    {
+      "path": "src-tauri/gen/android/.gitignore",
+      "type": "config",
+      "language": "unknown",
+      "lines": 20,
+      "description": ".gitignore"
+    },
+    {
+      "path": "src-tauri/gen/android/.gradle/8.14.3/checksums/checksums.lock",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 1,
+      "description": "Checksums"
+    },
+    {
+      "path": "src-tauri/gen/android/.gradle/8.14.3/executionHistory/executionHistory.bin",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 4203.95,
+      "description": "ExecutionHistory"
+    },
+    {
+      "path": "src-tauri/gen/android/.gradle/8.14.3/executionHistory/executionHistory.lock",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 1,
+      "description": "ExecutionHistory"
+    },
+    {
+      "path": "src-tauri/gen/android/.gradle/8.14.3/fileChanges/last-build.bin",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 0.0,
+      "description": "Last build"
+    },
+    {
+      "path": "src-tauri/gen/android/.gradle/8.14.3/fileHashes/fileHashes.bin",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 137.09,
+      "description": "FileHashes"
+    },
+    {
+      "path": "src-tauri/gen/android/.gradle/8.14.3/fileHashes/fileHashes.lock",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 1,
+      "description": "FileHashes"
+    },
+    {
+      "path": "src-tauri/gen/android/.gradle/8.14.3/fileHashes/resourceHashesCache.bin",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 23.54,
+      "description": "ResourceHashesCache"
+    },
+    {
+      "path": "src-tauri/gen/android/.gradle/8.14.3/gc.properties",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 0,
+      "description": "Gc"
+    },
+    {
+      "path": "src-tauri/gen/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 2,
+      "description": "BuildOutputCleanup"
+    },
+    {
+      "path": "src-tauri/gen/android/.gradle/buildOutputCleanup/cache.properties",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 2,
+      "description": "Cache"
+    },
+    {
+      "path": "src-tauri/gen/android/.gradle/buildOutputCleanup/outputFiles.bin",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 58.35,
+      "description": "OutputFiles"
+    },
+    {
+      "path": "src-tauri/gen/android/.gradle/file-system.probe",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 1,
+      "description": "File system"
+    },
+    {
+      "path": "src-tauri/gen/android/.gradle/noVersion/buildLogic.lock",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 2,
+      "description": "BuildLogic"
+    },
+    {
+      "path": "src-tauri/gen/android/.gradle/vcs-1/gc.properties",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 0,
+      "description": "Gc"
+    },
+    {
+      "path": "src-tauri/gen/android/app/.gitignore",
+      "type": "config",
+      "language": "unknown",
+      "lines": 6,
+      "description": ".gitignore"
+    },
+    {
+      "path": "src-tauri/gen/android/app/build.gradle.kts",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 71,
+      "description": "Build.gradle"
+    },
+    {
+      "path": "src-tauri/gen/android/app/proguard-rules.pro",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 21,
+      "description": "Proguard rules"
+    },
+    {
+      "path": "src-tauri/gen/android/app/proguard-tauri.pro",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 5,
+      "description": "Proguard tauri"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/AndroidManifest.xml",
+      "type": "source",
+      "language": "xml",
+      "lines": 37,
+      "description": "AndroidManifest"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/assets/tauri.conf.json",
+      "type": "config",
+      "language": "json",
+      "lines": 1,
+      "description": "Tauri.conf"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/java/com/audhd/resonance_bubbles/generated/Ipc.kt",
+      "type": "source",
+      "language": "kotlin",
+      "lines": 25,
+      "description": "Copyright 2020-2023 Tauri Programme within The Commons Conservancy"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/java/com/audhd/resonance_bubbles/generated/Logger.kt",
+      "type": "source",
+      "language": "kotlin",
+      "lines": 89,
+      "description": "Copyright 2020-2023 Tauri Programme within The Commons Conservancy"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/java/com/audhd/resonance_bubbles/generated/PermissionHelper.kt",
+      "type": "source",
+      "language": "kotlin",
+      "lines": 117,
+      "description": "Copyright 2020-2023 Tauri Programme within The Commons Conservancy"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/java/com/audhd/resonance_bubbles/generated/proguard-wry.pro",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 37,
+      "description": "Proguard wry"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/java/com/audhd/resonance_bubbles/generated/Rust.kt",
+      "type": "source",
+      "language": "kotlin",
+      "lines": 48,
+      "description": "Copyright 2020-2023 Tauri Programme within The Commons Conservancy"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/java/com/audhd/resonance_bubbles/generated/RustWebChromeClient.kt",
+      "type": "source",
+      "language": "kotlin",
+      "lines": 493,
+      "description": "Copyright 2020-2023 Tauri Programme within The Commons Conservancy"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/java/com/audhd/resonance_bubbles/generated/RustWebView.kt",
+      "type": "source",
+      "language": "kotlin",
+      "lines": 98,
+      "description": "Copyright 2020-2023 Tauri Programme within The Commons Conservancy"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/java/com/audhd/resonance_bubbles/generated/RustWebViewClient.kt",
+      "type": "source",
+      "language": "kotlin",
+      "lines": 100,
+      "description": "Copyright 2020-2023 Tauri Programme within The Commons Conservancy"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/java/com/audhd/resonance_bubbles/generated/TauriActivity.kt",
+      "type": "source",
+      "language": "kotlin",
+      "lines": 65,
+      "description": "Copyright 2019-2024 Tauri Programme within The Commons Conservancy"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/java/com/audhd/resonance_bubbles/generated/WryActivity.kt",
+      "type": "source",
+      "language": "kotlin",
+      "lines": 175,
+      "description": "Copyright 2020-2023 Tauri Programme within The Commons Conservancy"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/java/com/audhd/resonance_bubbles/MainActivity.kt",
+      "type": "source",
+      "language": "kotlin",
+      "lines": 11,
+      "description": "MainActivity"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/jniLibs/arm64-v8a/libresonance_bubbles_lib.so",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 0.0,
+      "description": "Libresonance bubbles lib"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/jniLibs/armeabi-v7a/libresonance_bubbles_lib.so",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 0.0,
+      "description": "Libresonance bubbles lib"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/jniLibs/x86/libresonance_bubbles_lib.so",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 0.0,
+      "description": "Libresonance bubbles lib"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/jniLibs/x86_64/libresonance_bubbles_lib.so",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 0.0,
+      "description": "Libresonance bubbles lib"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/drawable/ic_launcher_background.xml",
+      "type": "source",
+      "language": "xml",
+      "lines": 170,
+      "description": "Ic launcher background"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml",
+      "type": "source",
+      "language": "xml",
+      "lines": 30,
+      "description": "Ic launcher foreground"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/layout/activity_main.xml",
+      "type": "source",
+      "language": "xml",
+      "lines": 18,
+      "description": "Activity main"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "type": "source",
+      "language": "xml",
+      "lines": 5,
+      "description": "Ic launcher"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher foreground"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher round"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher foreground"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher round"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher foreground"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher round"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher foreground"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher round"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher foreground"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher round"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/values/colors.xml",
+      "type": "source",
+      "language": "xml",
+      "lines": 10,
+      "description": "Colors"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/values/ic_launcher_background.xml",
+      "type": "source",
+      "language": "xml",
+      "lines": 4,
+      "description": "Ic launcher background"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/values/strings.xml",
+      "type": "source",
+      "language": "xml",
+      "lines": 4,
+      "description": "Strings"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/values/themes.xml",
+      "type": "source",
+      "language": "xml",
+      "lines": 6,
+      "description": "Themes"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/values-night/themes.xml",
+      "type": "source",
+      "language": "xml",
+      "lines": 6,
+      "description": "Themes"
+    },
+    {
+      "path": "src-tauri/gen/android/app/src/main/res/xml/file_paths.xml",
+      "type": "source",
+      "language": "xml",
+      "lines": 5,
+      "description": "File paths"
+    },
+    {
+      "path": "src-tauri/gen/android/app/tauri.build.gradle.kts",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 9,
+      "description": "Tauri.build.gradle"
+    },
+    {
+      "path": "src-tauri/gen/android/app/tauri.properties",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 3,
+      "description": "Tauri"
+    },
+    {
+      "path": "src-tauri/gen/android/build.gradle.kts",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 22,
+      "description": "Build.gradle"
+    },
+    {
+      "path": "src-tauri/gen/android/buildSrc/.gradle/8.14.3/executionHistory/executionHistory.bin",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 51.03,
+      "description": "ExecutionHistory"
+    },
+    {
+      "path": "src-tauri/gen/android/buildSrc/.gradle/8.14.3/executionHistory/executionHistory.lock",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 1,
+      "description": "ExecutionHistory"
+    },
+    {
+      "path": "src-tauri/gen/android/buildSrc/.gradle/buildOutputCleanup/buildOutputCleanup.lock",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 1,
+      "description": "BuildOutputCleanup"
+    },
+    {
+      "path": "src-tauri/gen/android/buildSrc/.gradle/buildOutputCleanup/cache.properties",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 2,
+      "description": "Cache"
+    },
+    {
+      "path": "src-tauri/gen/android/buildSrc/.gradle/buildOutputCleanup/outputFiles.bin",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 18.42,
+      "description": "OutputFiles"
+    },
+    {
+      "path": "src-tauri/gen/android/buildSrc/.gradle/file-system.probe",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 1,
+      "description": "File system"
+    },
+    {
+      "path": "src-tauri/gen/android/buildSrc/build.gradle.kts",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 23,
+      "description": "Build.gradle"
+    },
+    {
+      "path": "src-tauri/gen/android/buildSrc/src/main/java/com/audhd/resonance_bubbles/kotlin/BuildTask.kt",
+      "type": "source",
+      "language": "kotlin",
+      "lines": 68,
+      "description": "Try different Windows-specific extensions"
+    },
+    {
+      "path": "src-tauri/gen/android/buildSrc/src/main/java/com/audhd/resonance_bubbles/kotlin/RustPlugin.kt",
+      "type": "source",
+      "language": "kotlin",
+      "lines": 85,
+      "description": "RustPlugin"
+    },
+    {
+      "path": "src-tauri/gen/android/gradle/wrapper/gradle-wrapper.jar",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 57.82,
+      "description": "Gradle wrapper"
+    },
+    {
+      "path": "src-tauri/gen/android/gradle/wrapper/gradle-wrapper.properties",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 6,
+      "description": "Gradle wrapper"
+    },
+    {
+      "path": "src-tauri/gen/android/gradle.properties",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 24,
+      "description": "Gradle"
+    },
+    {
+      "path": "src-tauri/gen/android/gradlew",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 185,
+      "description": "Gradlew"
+    },
+    {
+      "path": "src-tauri/gen/android/gradlew.bat",
+      "type": "source",
+      "language": "batch",
+      "lines": 89,
+      "description": "Gradlew"
+    },
+    {
+      "path": "src-tauri/gen/android/settings.gradle",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 3,
+      "description": "Settings"
+    },
+    {
+      "path": "src-tauri/gen/android/tauri.settings.gradle",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 9,
+      "description": "Tauri.settings"
+    },
+    {
+      "path": "src-tauri/gen/schemas/acl-manifests.json",
+      "type": "config",
+      "language": "json",
+      "large": true,
+      "size_kb": 139.1,
+      "description": "Acl manifests"
+    },
+    {
+      "path": "src-tauri/gen/schemas/android-schema.json",
+      "type": "config",
+      "language": "json",
+      "large": true,
+      "size_kb": 403.02,
+      "description": "Android schema"
+    },
+    {
+      "path": "src-tauri/gen/schemas/capabilities.json",
+      "type": "config",
+      "language": "json",
+      "lines": 1,
+      "description": "Capabilities"
+    },
+    {
+      "path": "src-tauri/gen/schemas/desktop-schema.json",
+      "type": "config",
+      "language": "json",
+      "large": true,
+      "size_kb": 403.02,
+      "description": "Desktop schema"
+    },
+    {
+      "path": "src-tauri/gen/schemas/mobile-schema.json",
+      "type": "config",
+      "language": "json",
+      "large": true,
+      "size_kb": 403.02,
+      "description": "Mobile schema"
+    },
+    {
+      "path": "src-tauri/gen/schemas/windows-schema.json",
+      "type": "config",
+      "language": "json",
+      "large": true,
+      "size_kb": 403.02,
+      "description": "Windows schema"
+    },
+    {
+      "path": "src-tauri/icons/128x128.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 26.95,
+      "description": "128x128"
+    },
+    {
+      "path": "src-tauri/icons/128x128@2x.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 87.43,
+      "description": "128x128@2x"
+    },
+    {
+      "path": "src-tauri/icons/32x32.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 2.48,
+      "description": "32x32"
+    },
+    {
+      "path": "src-tauri/icons/64x64.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 8.25,
+      "description": "64x64"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-anydpi-v26/ic_launcher.xml",
+      "type": "source",
+      "language": "xml",
+      "lines": 5,
+      "description": "Ic launcher"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-hdpi/ic_launcher.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-hdpi/ic_launcher_foreground.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher foreground"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-hdpi/ic_launcher_round.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher round"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-mdpi/ic_launcher.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-mdpi/ic_launcher_foreground.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher foreground"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-mdpi/ic_launcher_round.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher round"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xhdpi/ic_launcher.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xhdpi/ic_launcher_foreground.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher foreground"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xhdpi/ic_launcher_round.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher round"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_foreground.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher foreground"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_round.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher round"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_foreground.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher foreground"
+    },
+    {
+      "path": "src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_round.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Ic launcher round"
+    },
+    {
+      "path": "src-tauri/icons/android/values/ic_launcher_background.xml",
+      "type": "source",
+      "language": "xml",
+      "lines": 4,
+      "description": "Ic launcher background"
+    },
+    {
+      "path": "src-tauri/icons/icon.icns",
+      "type": "unknown",
+      "language": "unknown",
+      "large": true,
+      "size_kb": 1605.34,
+      "description": "Icon"
+    },
+    {
+      "path": "src-tauri/icons/icon.ico",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 105.48,
+      "description": "Icon"
+    },
+    {
+      "path": "src-tauri/icons/icon.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Icon"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-20x20@1x.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 1.13,
+      "description": "AppIcon 20x20@1x"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-20x20@2x-1.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 3.62,
+      "description": "AppIcon 20x20@2x 1"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-20x20@2x.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 3.62,
+      "description": "AppIcon 20x20@2x"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-20x20@3x.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 7.38,
+      "description": "AppIcon 20x20@3x"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-29x29@1x.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 2.11,
+      "description": "AppIcon 29x29@1x"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-29x29@2x-1.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 6.94,
+      "description": "AppIcon 29x29@2x 1"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-29x29@2x.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 6.94,
+      "description": "AppIcon 29x29@2x"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-29x29@3x.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 13.89,
+      "description": "AppIcon 29x29@3x"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-40x40@1x.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 3.62,
+      "description": "AppIcon 40x40@1x"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-40x40@2x-1.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 12.07,
+      "description": "AppIcon 40x40@2x 1"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-40x40@2x.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 12.07,
+      "description": "AppIcon 40x40@2x"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-40x40@3x.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 24.06,
+      "description": "AppIcon 40x40@3x"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-512@2x.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 834.65,
+      "description": "AppIcon 512@2x"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-60x60@2x.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 24.06,
+      "description": "AppIcon 60x60@2x"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-60x60@3x.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 48.42,
+      "description": "AppIcon 60x60@3x"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-76x76@1x.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 11.05,
+      "description": "AppIcon 76x76@1x"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-76x76@2x.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 36.16,
+      "description": "AppIcon 76x76@2x"
+    },
+    {
+      "path": "src-tauri/icons/ios/AppIcon-83.5x83.5@2x.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 42.46,
+      "description": "AppIcon 83.5x83.5@2x"
+    },
+    {
+      "path": "src-tauri/icons/source.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 51.94,
+      "description": "Source"
+    },
+    {
+      "path": "src-tauri/icons/Square107x107Logo.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 19.88,
+      "description": "Square107x107Logo"
+    },
+    {
+      "path": "src-tauri/icons/Square142x142Logo.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 32.19,
+      "description": "Square142x142Logo"
+    },
+    {
+      "path": "src-tauri/icons/Square150x150Logo.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 35.47,
+      "description": "Square150x150Logo"
+    },
+    {
+      "path": "src-tauri/icons/Square284x284Logo.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 104.31,
+      "description": "Square284x284Logo"
+    },
+    {
+      "path": "src-tauri/icons/Square30x30Logo.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 2.23,
+      "description": "Square30x30Logo"
+    },
+    {
+      "path": "src-tauri/icons/Square310x310Logo.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 120.58,
+      "description": "Square310x310Logo"
+    },
+    {
+      "path": "src-tauri/icons/Square44x44Logo.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 4.31,
+      "description": "Square44x44Logo"
+    },
+    {
+      "path": "src-tauri/icons/Square71x71Logo.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 9.84,
+      "description": "Square71x71Logo"
+    },
+    {
+      "path": "src-tauri/icons/Square89x89Logo.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 14.4,
+      "description": "Square89x89Logo"
+    },
+    {
+      "path": "src-tauri/icons/StoreLogo.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 5.37,
+      "description": "StoreLogo"
+    },
+    {
+      "path": "src-tauri/src/lib.rs",
+      "type": "source",
+      "language": "rust",
+      "lines": 80,
+      "description": "Lib"
+    },
+    {
+      "path": "src-tauri/src/main.rs",
+      "type": "source",
+      "language": "rust",
+      "lines": 6,
+      "description": "Prevents additional console window on Windows in release, DO NOT REMOVE!!"
+    },
+    {
+      "path": "src-tauri/tauri.conf.json",
+      "type": "config",
+      "language": "json",
+      "lines": 37,
+      "description": "Tauri.conf"
+    },
+    {
+      "path": "static/aethelred-avatar.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 1410.42,
+      "description": "Aethelred avatar"
+    },
+    {
+      "path": "static/bubbles.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 860.2,
+      "description": "Bubbles"
+    },
+    {
+      "path": "static/cello.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 2934.02,
+      "description": "Cello"
+    },
+    {
+      "path": "static/compass.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 2299.32,
+      "description": "Compass"
+    },
+    {
+      "path": "static/echoes.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 2181.06,
+      "description": "Echoes"
+    },
+    {
+      "path": "static/favicon.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 1941.39,
+      "description": "Favicon"
+    },
+    {
+      "path": "static/favicon2.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 40.49,
+      "description": "Favicon2"
+    },
+    {
+      "path": "static/hearth.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 2208.91,
+      "description": "Hearth"
+    },
+    {
+      "path": "static/Icon-1.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 242.27,
+      "description": "Icon 1"
+    },
+    {
+      "path": "static/Icon-2.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 312.82,
+      "description": "Icon 2"
+    },
+    {
+      "path": "static/lantern.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 2243.82,
+      "description": "Lantern"
+    },
+    {
+      "path": "static/QW-logo.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 1941.39,
+      "description": "QW logo"
+    },
+    {
+      "path": "static/sounds/pop-bubble-2.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 56,
+      "description": "Pop bubble 2"
+    },
+    {
+      "path": "static/sounds/pop-bubble-3.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 73,
+      "description": "Pop bubble 3"
+    },
+    {
+      "path": "static/sounds/pop-bubble-4.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 58,
+      "description": "Pop bubble 4"
+    },
+    {
+      "path": "static/sounds/pop-bubble-5.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 71,
+      "description": "Pop bubble 5"
+    },
+    {
+      "path": "static/sounds/pop-bubble-6.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 57,
+      "description": "Pop bubble 6"
+    },
+    {
+      "path": "static/sounds/pop-bubble-7.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 55,
+      "description": "Pop bubble 7"
+    },
+    {
+      "path": "static/sounds/pop-bubble.wav",
+      "type": "unknown",
+      "language": "unknown",
+      "lines": 76,
+      "description": "Pop bubble"
+    },
+    {
+      "path": "static/svelte.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 40.49,
+      "description": "Svelte"
+    },
+    {
+      "path": "static/tauri.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 40.49,
+      "description": "Tauri"
+    },
+    {
+      "path": "static/tauri.svg",
+      "type": "unknown",
+      "language": "unknown",
+      "large": true,
+      "size_kb": 116.78,
+      "description": "Tauri"
+    },
+    {
+      "path": "static/thread.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 3872.19,
+      "description": "Thread"
+    },
+    {
+      "path": "static/vite.png",
+      "type": "binary",
+      "language": "unknown",
+      "size_kb": 40.49,
+      "description": "Vite"
+    },
+    {
+      "path": "svelte.config.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 18,
+      "description": "Tauri doesn't have a Node.js server to do proper SSR"
+    },
+    {
+      "path": "tsconfig.json",
+      "type": "config",
+      "language": "json",
+      "lines": 19,
+      "description": "Tsconfig"
+    },
+    {
+      "path": "vite.config.js",
+      "type": "source",
+      "language": "javascript",
+      "lines": 32,
+      "description": "https://vite.dev/config/"
+    }
+  ],
+  "by_type": {
+    "config": 82,
+    "source": 253,
+    "binary": 118,
+    "unknown": 53,
+    "doc": 14
+  },
+  "by_language": {
+    "toml": 3,
+    "json": 73,
+    "unknown": 177,
+    "typescript": 36,
+    "javascript": 116,
+    "svelte": 22,
+    "css": 43,
+    "python": 1,
+    "markdown": 14,
+    "sql": 3,
+    "html": 3,
+    "rust": 3,
+    "xml": 13,
+    "kotlin": 12,
+    "batch": 1
+  },
+  "secrets_flagged": [],
+  "large_files": [
+    ".svelte-kit/output/client/tauri.svg",
+    ".svelte-kit/output/server/index.js",
+    "index.html",
+    "release/Resonance Bubbles_0.1.0_x64_en-US.msi",
+    "release/resonance-bubbles-v0.1.0.apk.idsig",
+    "src-tauri/Cargo.lock",
+    "src-tauri/gen/schemas/acl-manifests.json",
+    "src-tauri/gen/schemas/android-schema.json",
+    "src-tauri/gen/schemas/desktop-schema.json",
+    "src-tauri/gen/schemas/mobile-schema.json",
+    "src-tauri/gen/schemas/windows-schema.json",
+    "src-tauri/icons/icon.icns",
+    "static/tauri.svg"
+  ]
+}
