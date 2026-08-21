@@ -1,0 +1,29 @@
+{
+  "tier": "object",
+  "object_name": "static",
+  "object_path": "static",
+  "self": "bubbles/static/obp.ai.json",
+  "parent": "bubbles/pbp.ai.json",
+  "description": "17 files, 1 subfolders",
+  "folders": [
+    {
+      "blueprint": "bubbles/static/fbp.ai.json",
+      "folder_path": "static",
+      "description": "17 files, 1 subfolders",
+      "file_count": 17,
+      "subdirectory_count": 1
+    },
+    {
+      "blueprint": "bubbles/static/sounds/fbp.ai.json",
+      "folder_path": "static/sounds",
+      "description": "7 files, 0 subfolders",
+      "file_count": 7,
+      "subdirectory_count": 0
+    }
+  ],
+  "folder_count": 2,
+  "total_files": 24,
+  "integration_timestamp": "2026-08-21T15:19:21.858587 | in sovereign time",
+  "maintaining_agent": "ObjectAgent",
+  "note": "Links only. Every folder's details live at its own address."
+}

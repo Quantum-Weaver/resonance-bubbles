@@ -1,0 +1,110 @@
+{
+  "tier": "folder",
+  "folder_name": "icons",
+  "folder_path": "src/lib/components/icons",
+  "self": "bubbles/src/lib/components/icons/fbp.ai.json",
+  "parent": "bubbles/src/lib/obp.ai.json",
+  "description": "7 files, 0 subfolders",
+  "files": [
+    {
+      "path": "src/lib/components/icons/IconGallery.svelte",
+      "description": "surface, 593 bytes"
+    },
+    {
+      "path": "src/lib/components/icons/IconHome.svelte",
+      "description": "surface, 374 bytes"
+    },
+    {
+      "path": "src/lib/components/icons/IconInsights.svelte",
+      "description": "surface, 539 bytes"
+    },
+    {
+      "path": "src/lib/components/icons/Icons.svelte",
+      "description": "surface, 908 bytes"
+    },
+    {
+      "path": "src/lib/components/icons/IconSattva.svelte",
+      "description": "surface, 547 bytes"
+    },
+    {
+      "path": "src/lib/components/icons/IconSettings.svelte",
+      "description": "surface, 963 bytes"
+    },
+    {
+      "path": "src/lib/components/icons/IconTimer.svelte",
+      "description": "surface, 378 bytes"
+    }
+  ],
+  "file_count": 7,
+  "subdirectories": [],
+  "code_analysis": {
+    "IconGallery.svelte": {
+      "language": "svelte",
+      "lines": 12,
+      "uses_runes": [
+        "$props"
+      ],
+      "fetch_calls": [],
+      "has_style_block": false
+    },
+    "IconHome.svelte": {
+      "language": "svelte",
+      "lines": 7,
+      "uses_runes": [
+        "$props"
+      ],
+      "fetch_calls": [],
+      "has_style_block": false
+    },
+    "IconInsights.svelte": {
+      "language": "svelte",
+      "lines": 10,
+      "uses_runes": [
+        "$props"
+      ],
+      "fetch_calls": [],
+      "has_style_block": false
+    },
+    "Icons.svelte": {
+      "language": "svelte",
+      "lines": 36,
+      "uses_runes": [
+        "$derived",
+        "$props"
+      ],
+      "fetch_calls": [],
+      "has_style_block": false
+    },
+    "IconSattva.svelte": {
+      "language": "svelte",
+      "lines": 10,
+      "uses_runes": [
+        "$props"
+      ],
+      "fetch_calls": [],
+      "has_style_block": false
+    },
+    "IconSettings.svelte": {
+      "language": "svelte",
+      "lines": 8,
+      "uses_runes": [
+        "$props"
+      ],
+      "fetch_calls": [],
+      "has_style_block": false
+    },
+    "IconTimer.svelte": {
+      "language": "svelte",
+      "lines": 9,
+      "uses_runes": [
+        "$props"
+      ],
+      "fetch_calls": [],
+      "has_style_block": false
+    }
+  },
+  "folders_not_walked": [],
+  "scan_timestamp": "2026-08-21T15:19:21.638599 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
+}

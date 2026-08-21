@@ -1,0 +1,96 @@
+{
+  "tier": "folder",
+  "folder_name": "screenshots",
+  "folder_path": "screenshots",
+  "self": "bubbles/screenshots/fbp.ai.json",
+  "parent": "bubbles/pbp.ai.json",
+  "description": "6 files, 0 subfolders",
+  "files": [
+    {
+      "path": "screenshots/bubbles-01.jpg",
+      "description": "image, 187,032 bytes"
+    },
+    {
+      "path": "screenshots/bubbles-02.jpg",
+      "description": "image, 283,180 bytes"
+    },
+    {
+      "path": "screenshots/bubbles-03.jpg",
+      "description": "image, 306,991 bytes"
+    },
+    {
+      "path": "screenshots/bubbles-04.jpg",
+      "description": "image, 320,933 bytes"
+    },
+    {
+      "path": "screenshots/bubbles-05.jpg",
+      "description": "image, 298,985 bytes"
+    },
+    {
+      "path": "screenshots/bubbles-06.jpg",
+      "description": "image, 205,913 bytes"
+    }
+  ],
+  "file_count": 6,
+  "subdirectories": [],
+  "code_analysis": {
+    "bubbles-01.jpg": {
+      "language": "content-file",
+      "format": "jpg",
+      "name": "bubbles-01.jpg",
+      "location": "screenshots",
+      "bytes": 187032,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "bubbles-02.jpg": {
+      "language": "content-file",
+      "format": "jpg",
+      "name": "bubbles-02.jpg",
+      "location": "screenshots",
+      "bytes": 283180,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "bubbles-03.jpg": {
+      "language": "content-file",
+      "format": "jpg",
+      "name": "bubbles-03.jpg",
+      "location": "screenshots",
+      "bytes": 306991,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "bubbles-04.jpg": {
+      "language": "content-file",
+      "format": "jpg",
+      "name": "bubbles-04.jpg",
+      "location": "screenshots",
+      "bytes": 320933,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "bubbles-05.jpg": {
+      "language": "content-file",
+      "format": "jpg",
+      "name": "bubbles-05.jpg",
+      "location": "screenshots",
+      "bytes": 298985,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    },
+    "bubbles-06.jpg": {
+      "language": "content-file",
+      "format": "jpg",
+      "name": "bubbles-06.jpg",
+      "location": "screenshots",
+      "bytes": 205913,
+      "opened": false,
+      "law": "Name and location only. The file is never opened."
+    }
+  },
+  "folders_not_walked": [],
+  "scan_timestamp": "2026-08-21T15:19:21.619858 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
+}

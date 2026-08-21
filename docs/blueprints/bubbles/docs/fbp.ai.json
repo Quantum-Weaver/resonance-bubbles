@@ -1,0 +1,175 @@
+{
+  "tier": "folder",
+  "folder_name": "docs",
+  "folder_path": "docs",
+  "self": "bubbles/docs/fbp.ai.json",
+  "parent": "bubbles/docs/obp.ai.json",
+  "description": "4 files, 1 subfolders",
+  "files": [
+    {
+      "path": "docs/CHECKLIST.md",
+      "description": "RESONANCE BUBBLES"
+    },
+    {
+      "path": "docs/PLAY-TRACK.md",
+      "description": "Bubbles"
+    },
+    {
+      "path": "docs/STORY-BLOCK.md",
+      "description": "STORY BLOCK"
+    },
+    {
+      "path": "docs/THE-GAME.md",
+      "description": "the-bubbles"
+    }
+  ],
+  "file_count": 4,
+  "subdirectories": [
+    "docs/sql"
+  ],
+  "code_analysis": {
+    "CHECKLIST.md": {
+      "language": "markdown",
+      "lines": 169,
+      "words": 3000,
+      "heading_count": 12,
+      "headings": [
+        "RESONANCE BUBBLES \u2014 MASTER CHECKLIST",
+        "LEGEND",
+        "PHASE STATUS",
+        "Phase \u22121: Built in awen \u2705",
+        "Phase 0: Repo founded to the Sanctuary standards \u2705",
+        "Phase 1: The source landed \u2705",
+        "Phase 2: The sky tripled \u2705",
+        "Phase 3: The app \u26a0\ufe0f",
+        "Phase 4: Mobile \u26a0\ufe0f",
+        "Phase 5: The gates \u2b1c",
+        "KNOWN BUGS",
+        "SESSION LOG"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [
+        {
+          "target": "docs/STORY-BLOCK.md",
+          "resolves": false,
+          "outside_checkout": false
+        }
+      ],
+      "links_internal_unresolved": [
+        "docs/STORY-BLOCK.md"
+      ],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 27,
+      "checkboxes": {
+        "open": 8,
+        "done": 36
+      },
+      "has_story_block": false,
+      "declares_mirror_class": true
+    },
+    "PLAY-TRACK.md": {
+      "language": "markdown",
+      "lines": 113,
+      "words": 549,
+      "heading_count": 10,
+      "headings": [
+        "Bubbles \u2014 Google Play test track",
+        "Standards check \u2014 verified against the repo and the signed APK, 2026-08-13",
+        "The upload pack (KP's hands)",
+        "App name (30 char max)",
+        "Short description (80 char max \u2014 this is 79)",
+        "Full description \u2014 paste-ready",
+        "Release notes \u2014 first upload (under the 500-char limit)",
+        "Data safety form \u2014 the answers",
+        "Content rating questionnaire",
+        "Track log"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 4,
+      "table_rows": 12,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "STORY-BLOCK.md": {
+      "language": "markdown",
+      "lines": 131,
+      "words": 929,
+      "heading_count": 12,
+      "headings": [
+        "STORY BLOCK \u2014 Resonance Bubbles",
+        "WHAT",
+        "HOW",
+        "WHERE",
+        "WHEN",
+        "WHY",
+        "INSPIRATION",
+        "REMEMBERINGS",
+        "COUNCIL THREAD",
+        "WEAVER THREAD",
+        "PROVENANCE",
+        "ETYMOLOGY"
+      ],
+      "links_external": 1,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
+    "THE-GAME.md": {
+      "language": "markdown",
+      "lines": 66,
+      "words": 441,
+      "heading_count": 6,
+      "headings": [
+        "the-bubbles",
+        "The laws (the anti-compulsion identity)",
+        "The set \u2014 55 stars, six collections",
+        "The voice",
+        "The dress",
+        "The story (per the Story Block Standard)"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 1,
+      "table_rows": 0,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": true,
+      "declares_mirror_class": false
+    }
+  },
+  "folders_not_walked": [
+    {
+      "name": "blueprints",
+      "address": "docs/blueprints",
+      "walked": false,
+      "reason": "a blueprint output tree \u2014 the forge does not blueprint blueprints"
+    }
+  ],
+  "scan_timestamp": "2026-08-21T15:19:21.610790 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
+}

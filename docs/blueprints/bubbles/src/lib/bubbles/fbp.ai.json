@@ -1,0 +1,47 @@
+{
+  "tier": "folder",
+  "folder_name": "bubbles",
+  "folder_path": "src/lib/bubbles",
+  "self": "bubbles/src/lib/bubbles/fbp.ai.json",
+  "parent": "bubbles/src/lib/obp.ai.json",
+  "description": "1 files, 0 subfolders",
+  "files": [
+    {
+      "path": "src/lib/bubbles/dress.ts",
+      "description": "THE DRESS"
+    }
+  ],
+  "file_count": 1,
+  "subdirectories": [],
+  "code_analysis": {
+    "dress.ts": {
+      "language": "typescript",
+      "lines": 80,
+      "exported_functions": [
+        "hue",
+        "stripes",
+        "edge",
+        "collectionFill",
+        "collectionHue"
+      ],
+      "exported_consts": [
+        "RARITY_DRESS",
+        "RARITY_ORDER"
+      ],
+      "interfaces": [],
+      "types": [
+        "Rarity",
+        "Bubble",
+        "Collection"
+      ],
+      "imports_node": [],
+      "spawns_process": false,
+      "writes_files": false,
+      "env_names_read": []
+    }
+  },
+  "folders_not_walked": [],
+  "scan_timestamp": "2026-08-21T15:19:21.630850 | in sovereign time",
+  "maintaining_agent": "FolderAgent",
+  "note": "The details live here. Upper tiers link to this address; they do not copy this body."
+}
