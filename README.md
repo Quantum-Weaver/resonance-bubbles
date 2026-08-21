@@ -121,6 +121,8 @@ This repo is that game's graduation — the point at which a thing that called
 itself *the standalone playable* got its own address, so it could be given away
 on its own terms.
 
+📖 [Full Story Block](docs/STORY-BLOCK.md)
+
 ---
 
 ## WHO IT'S FOR
