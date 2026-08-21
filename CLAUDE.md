@@ -45,7 +45,7 @@ make the game stickier, it is the wrong change.
 
 The door order is KP's ⚛ strokes, 2026-08-06: Bubbles · Gallery · Echoes (`/`) ·
 Insights · Timer · Sattva, Settings the foot. Eight route folders stand; the map
-is `docs/blueprints/pbp.ai.json`. **The `echo` domain is not the brand** —
+is `docs/blueprints/bubbles/pbp.ai.json`. **The `echo` domain is not the brand** —
 `echo.svelte.ts`, the `echoes` table and the word "echo" throughout are the
 journal's own data model and they stay; only the app's *identity* was rebranded
 (product name, bundle id, window title, crate). **Growing the sky is data**, not

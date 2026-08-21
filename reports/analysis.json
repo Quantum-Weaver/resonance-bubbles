@@ -1,6 +1,6 @@
 {
   "project": "resonance-bubbles",
-  "analyzed_at": "2026-08-17T22:22:05.414803+00:00",
+  "analyzed_at": "2026-08-21T20:30:41.275649+00:00",
   "standards_compliance": {
     "readme": true,
     "license": true,
@@ -8,7 +8,12 @@
     "claude_md": true,
     "gitignore": true
   },
-  "vulnerabilities": [],
+  "vulnerabilities": [
+    {
+      "severity": "high",
+      "issue": "Keystore/credential file committed: upload_certificate.pem"
+    }
+  ],
   "gaps": [
     "Marked incomplete in docs/CHECKLIST.md: - \u2705 Complete \u00b7 \u26a0\ufe0f In Progress \u00b7 \ud83d\udd34 Broken \u00b7 \u2b1c Pending",
     "Unchecked checklist item in docs/CHECKLIST.md: Visual pass \u2014 the port is faithful but not pixel-matched. **First pass",
@@ -23,57 +28,61 @@
     "Possibly broken import in .svelte-kit/generated/client/nodes/1.js: '../../../../node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte' does not resolve to a known file",
     "Possibly broken import in .svelte-kit/generated/client-optimized/nodes/1.js: '../../../../node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte' does not resolve to a known file",
     "Possibly broken import in .svelte-kit/generated/server/internal.js: '../../../node_modules/@sveltejs/kit/src/runtime/shared-server.js' does not resolve to a known file",
-    "13 file(s) over 100KB were flagged by the reader and not fully read by the analyzer: .svelte-kit/output/client/tauri.svg, .svelte-kit/output/server/index.js, index.html, release/Resonance Bubbles_0.1.0_x64_en-US.msi, release/resonance-bubbles-v0.1.0.apk.idsig, src-tauri/Cargo.lock, src-tauri/gen/schemas/acl-manifests.json, src-tauri/gen/schemas/android-schema.json, src-tauri/gen/schemas/desktop-schema.json, src-tauri/gen/schemas/mobile-schema.json, src-tauri/gen/schemas/windows-schema.json, src-tauri/icons/icon.icns, static/tauri.svg",
+    "14 file(s) over 100KB were flagged by the reader and not fully read by the analyzer: .svelte-kit/output/client/tauri.svg, .svelte-kit/output/server/index.js, index.html, release/Resonance Bubbles_0.1.0_x64_en-US.msi, release/resonance-bubbles-v0.1.0.apk.idsig, reports/inventory.json, src-tauri/Cargo.lock, src-tauri/gen/schemas/acl-manifests.json, src-tauri/gen/schemas/android-schema.json, src-tauri/gen/schemas/desktop-schema.json, src-tauri/gen/schemas/mobile-schema.json, src-tauri/gen/schemas/windows-schema.json, src-tauri/icons/icon.icns, static/tauri.svg",
     "No CI/CD configuration found"
   ],
   "test_readiness": "0 test file(s) found. Detected framework(s): jest.",
   "recommendations": [
     {
       "priority": 1,
-      "action": "Marked incomplete in docs/CHECKLIST.md: - \u2705 Complete \u00b7 \u26a0\ufe0f In Progress \u00b7 \ud83d\udd34 Broken \u00b7 \u2b1c Pending"
+      "action": "Fix vulnerability: Keystore/credential file committed: upload_certificate.pem"
     },
     {
       "priority": 2,
-      "action": "Unchecked checklist item in docs/CHECKLIST.md: Visual pass \u2014 the port is faithful but not pixel-matched. **First pass"
+      "action": "Marked incomplete in docs/CHECKLIST.md: - \u2705 Complete \u00b7 \u26a0\ufe0f In Progress \u00b7 \ud83d\udd34 Broken \u00b7 \u2b1c Pending"
     },
     {
       "priority": 3,
-      "action": "Unchecked checklist item in docs/CHECKLIST.md: iOS audio unlock on first tap \u2014 **untested**, no iOS build made"
+      "action": "Unchecked checklist item in docs/CHECKLIST.md: Visual pass \u2014 the port is faithful but not pixel-matched. **First pass"
     },
     {
       "priority": 4,
-      "action": "Unchecked checklist item in docs/CHECKLIST.md: \ud83d\udeaa **Public or private repo** \u2014 the 30 original stars are AudHDities"
+      "action": "Unchecked checklist item in docs/CHECKLIST.md: iOS audio unlock on first tap \u2014 **untested**, no iOS build made"
     },
     {
       "priority": 5,
-      "action": "Unchecked checklist item in docs/CHECKLIST.md: \ud83d\udeaa **Stores or not.** Apple $99/yr, Google Play $25 once. Desktop free."
+      "action": "Unchecked checklist item in docs/CHECKLIST.md: \ud83d\udeaa **Public or private repo** \u2014 the 30 original stars are AudHDities"
     },
     {
       "priority": 6,
-      "action": "Unchecked checklist item in docs/CHECKLIST.md: \ud83d\udeaa **Does the standalone survive?** `build.py` + `game-template.html` still"
+      "action": "Unchecked checklist item in docs/CHECKLIST.md: \ud83d\udeaa **Stores or not.** Apple $99/yr, Google Play $25 once. Desktop free."
     },
     {
       "priority": 7,
-      "action": "Unchecked checklist item in docs/CHECKLIST.md: \ud83d\udeaa **`games/` in awen** \u2014 empties, or becomes a nursery."
+      "action": "Unchecked checklist item in docs/CHECKLIST.md: \ud83d\udeaa **Does the standalone survive?** `build.py` + `game-template.html` still"
     },
     {
       "priority": 8,
-      "action": "Unchecked checklist item in docs/CHECKLIST.md: \ud83d\udeaa **The registry question**, carried from awen: does `games/` get its own"
+      "action": "Unchecked checklist item in docs/CHECKLIST.md: \ud83d\udeaa **`games/` in awen** \u2014 empties, or becomes a nursery."
     },
     {
       "priority": 9,
-      "action": "Unchecked checklist item in docs/CHECKLIST.md: \ud83d\udeaa **THE PLAYING \u2014 KP's \u269b own hands and ears.** *His play rules every"
+      "action": "Unchecked checklist item in docs/CHECKLIST.md: \ud83d\udeaa **The registry question**, carried from awen: does `games/` get its own"
     },
     {
       "priority": 10,
-      "action": "Marked incomplete in docs/CHECKLIST.md: | 2026-08-05 | **Completeness sweep at KP's ask (Fable).** Forge re-run: 0 findings, sovereignty HELD, **no drift**. Lin"
+      "action": "Unchecked checklist item in docs/CHECKLIST.md: \ud83d\udeaa **THE PLAYING \u2014 KP's \u269b own hands and ears.** *His play rules every"
     },
     {
       "priority": 11,
-      "action": "Establish a test suite"
+      "action": "Marked incomplete in docs/CHECKLIST.md: | 2026-08-05 | **Completeness sweep at KP's ask (Fable).** Forge re-run: 0 findings, sovereignty HELD, **no drift**. Lin"
     },
     {
       "priority": 12,
+      "action": "Establish a test suite"
+    },
+    {
+      "priority": 13,
       "action": "Add CI/CD configuration"
     }
   ]
