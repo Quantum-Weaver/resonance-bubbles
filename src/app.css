@@ -7,6 +7,24 @@
 /* ─── Tailwind CSS v4 ──────────────────────────────────────────────────── */
 @import "tailwindcss";
 
+/* ─── The app's theme, spoken as Tailwind tokens ───────────────────────────
+   The shell sets the live theme on `.app-shell` at runtime (mode · accent ·
+   tint · font size — `+layout.svelte`), as plain CSS variables. `@theme
+   inline` hands those same variables to Tailwind as colour tokens, so a page
+   can say `bg-surface` / `border-line` / `text-ink-3` / `ring-accent` and stay
+   theme-aware without one hex of its own. `inline` is load-bearing: the
+   utilities emit `var(--bg-surface)` at the element, where the shell's value
+   is in scope — a plain @theme would resolve on :root, where it is not.
+   Landed 2026-08-23 with the gallery's Tailwind dress; additive only. */
+@theme inline {
+  --color-surface: var(--bg-surface);
+  --color-line: var(--border-color);
+  --color-ink: var(--text);
+  --color-ink-2: var(--text-secondary);
+  --color-ink-3: var(--text-muted);
+  --color-accent: var(--accent);
+}
+
 /* ─── COSMIC Generated Styles ──────────────────────────────────────────── */
 @import "./lib/styles/generated/variables.css";
 @import "./lib/styles/generated/animations.css";
@@ -33,10 +51,18 @@
 ──────────────────────────────────────────────────────────────────────── */
 
 /* ─── Global Resets ────────────────────────────────────────────────────── */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* In @layer base on purpose (2026-08-23): an UNLAYERED `* { margin: 0;
+   padding: 0 }` outranks every layered Tailwind utility no matter its
+   specificity — so `px-4`, `mt-1`, `pl-9` all silently lost to it, which is
+   how the gallery's first Tailwind dress came out flush to the edges. Tailwind's
+   own preflight already carries this exact reset in its base layer; placing
+   ours beside it keeps the reset for everything else and lets utilities win. */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 }
 
 /* Images may never push a screen past the viewport; component classes that

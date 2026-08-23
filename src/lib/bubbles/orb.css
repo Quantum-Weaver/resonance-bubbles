@@ -1,0 +1,59 @@
+/* THE ORB — one paint for a star, wherever it is drawn.
+ *
+ * The sky (`/bubbles`) drifts these and the gallery (`/gallery`) shelves
+ * them, and until 2026-08-23 only the sky knew how to paint one: the gallery
+ * showed an emoji where the star should be. This file is the recipe, moved
+ * here verbatim from the sky's own stylesheet (a MOVE, not a redesign — the
+ * sky looks exactly as it did), so both doors draw the same orb from the same
+ * lines, the way `dress.ts` already holds the same colours for both. One
+ * definition per object — the Grammar's first law, applied to a circle.
+ *
+ * The element supplies its own size and position; this file paints only.
+ * It reads the same custom properties the sky already sets:
+ *   --c     the star's own colour — `edge(b)`: its first stripe, or its rarity
+ *   --rc    the rarity's colour (used by the two pride stars that are not flags)
+ *   --flag  the stripes, `stripes(b.palette)`, when the star is a flag
+ *   --ring  the ring some flags wear instead of stripes (intersex)
+ */
+
+/* The colour carries further now: a deeper fill, a lit rim, an inner glow. */
+.orb {
+	border-radius: 50%;
+	border: 1.5px solid color-mix(in srgb, var(--c) 85%, transparent);
+	background:
+		radial-gradient(circle at 32% 26%, rgba(255, 255, 255, 0.55), transparent 52%),
+		radial-gradient(circle at 68% 76%, color-mix(in srgb, var(--c) 75%, transparent), transparent 68%),
+		color-mix(in srgb, var(--c) 40%, transparent);
+	box-shadow:
+		0 0 24px color-mix(in srgb, var(--c) 50%, transparent),
+		inset 0 0 20px color-mix(in srgb, var(--c) 32%, transparent);
+}
+
+/* A flag keeps its own stripes inside the circle. The wrap-highlight rides on
+   top so it still reads as a bubble and not a sticker. Rarity is untouched —
+   every flag drifts at the same rate as every other flag. */
+.orb.flag {
+	background:
+		radial-gradient(circle at 32% 26%, rgba(255, 255, 255, 0.5), transparent 48%),
+		radial-gradient(circle at 70% 78%, rgba(255, 255, 255, 0.14), transparent 60%),
+		var(--flag);
+	border-color: rgba(255, 255, 255, 0.5);
+	box-shadow:
+		0 0 26px color-mix(in srgb, var(--c) 55%, transparent),
+		0 0 46px color-mix(in srgb, var(--c) 28%, transparent),
+		inset 0 0 16px rgba(255, 255, 255, 0.18);
+}
+
+/* Intersex: a ring, because that flag is a ring. */
+.orb.flag[style*='--ring'] {
+	border: 4px solid var(--ring);
+}
+
+/* The two stars in the collection that are not flags still wear its halo. */
+.orb.pride:not(.flag) {
+	box-shadow:
+		0 0 24px color-mix(in srgb, var(--rc) 55%, transparent),
+		0 0 44px color-mix(in srgb, var(--c) 30%, transparent),
+		0 0 70px rgba(255, 255, 255, 0.1),
+		inset 0 0 20px color-mix(in srgb, var(--rc) 32%, transparent);
+}

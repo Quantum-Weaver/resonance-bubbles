@@ -16,6 +16,7 @@
 		RARITY_DRESS, collectionFill, collectionHue, edge, hue, stripes,
 		type Bubble, type Collection, type Rarity
 	} from '$lib/bubbles/dress';
+	import '$lib/bubbles/orb.css';
 	import set from '$lib/data/bubbles-set.json';
 
 	// The numbers are the game's law and live here. The colours are the dress
@@ -209,7 +210,7 @@
 	<div class="sky" bind:this={sky}>
 		{#each floaters as f (f.id)}
 			<button
-				class="bubble"
+				class="bubble orb"
 				class:flag={!!f.b.palette}
 				class:pride={f.b.collection === 'inclusive-pride'}
 				style="left:{f.x}px; bottom:{f.y}px; width:{RARITY[f.b.rarity].size}px; height:{RARITY[f.b.rarity].size}px;
@@ -291,36 +292,11 @@
 	.chip + .chip { margin-left: 8px; }
 	.sky { position: relative; flex: 1; overflow: hidden; }
 
-	/* The colour carries further now: a deeper fill, a lit rim, an inner glow. */
-	.bubble { position: absolute; border-radius: 50%; border: 1.5px solid color-mix(in srgb, var(--c) 85%, transparent);
-		cursor: pointer; padding: 0;
-		background:
-			radial-gradient(circle at 32% 26%, rgba(255,255,255,0.55), transparent 52%),
-			radial-gradient(circle at 68% 76%, color-mix(in srgb, var(--c) 75%, transparent), transparent 68%),
-			color-mix(in srgb, var(--c) 40%, transparent);
-		box-shadow: 0 0 24px color-mix(in srgb, var(--c) 50%, transparent),
-			inset 0 0 20px color-mix(in srgb, var(--c) 32%, transparent); }
-
-	/* A flag keeps its own stripes inside the circle. The wrap-highlight rides on
-	   top so it still reads as a bubble and not a sticker. Rarity is untouched —
-	   every flag drifts at the same rate as every other flag. */
-	.bubble.flag {
-		background:
-			radial-gradient(circle at 32% 26%, rgba(255,255,255,0.5), transparent 48%),
-			radial-gradient(circle at 70% 78%, rgba(255,255,255,0.14), transparent 60%),
-			var(--flag);
-		border-color: rgba(255,255,255,0.5);
-		box-shadow: 0 0 26px color-mix(in srgb, var(--c) 55%, transparent),
-			0 0 46px color-mix(in srgb, var(--c) 28%, transparent),
-			inset 0 0 16px rgba(255,255,255,0.18); }
-	/* Intersex: a ring, because that flag is a ring. */
-	.bubble.flag[style*='--ring'] { border: 4px solid var(--ring); }
-	/* The two stars in the collection that are not flags still wear its halo. */
-	.bubble.pride:not(.flag) {
-		box-shadow: 0 0 24px color-mix(in srgb, var(--rc) 55%, transparent),
-			0 0 44px color-mix(in srgb, var(--c) 30%, transparent),
-			0 0 70px rgba(255,255,255,0.10),
-			inset 0 0 20px color-mix(in srgb, var(--rc) 32%, transparent); }
+	/* The paint — fill, rim, glow, the flag's stripes, the ring, the pride halo —
+	   lives in `$lib/bubbles/orb.css` now (moved verbatim 2026-08-23, so the
+	   gallery can draw the same star); this rule keeps only the sky's own
+	   business: where a bubble sits and that it can be pressed. */
+	.bubble { position: absolute; cursor: pointer; padding: 0; }
 
 	/* The words sit at the top of the sky, where they are read before the eye
 	   goes back to the drifting. */

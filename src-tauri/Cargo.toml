@@ -1,6 +1,6 @@
 [package]
 name = "resonance-bubbles"
-version = "0.1.0"
+version = "0.1.1"
 description = "A sovereign journal for logging anything with feeling"
 authors = ["Quantum Weaver"]
 edition = "2021"
