@@ -1,15 +1,4 @@
 // THE DRESS — one definition of what a star looks like.
-//
-// The sky (`/bubbles`) and the gallery (`/gallery`) both draw the same 123
-// stars, and both used to hold their own copy of the rarity's face. The
-// gallery's copy went stale the moment the sky's colours moved, which is the
-// copy-tax the Grammar's first law names: one definition per object. The
-// colours live here now, read from the cosmic tokens, and both doors import
-// them.
-//
-// What is NOT here: the game's numbers — points, weight, size, speed. Those
-// are the game's law and they stay in the game's own page. This file only
-// says what a star LOOKS like.
 import { QUANTUM_COLORS } from '$lib/cosmic';
 
 export type Rarity = 'common' | 'rare' | 'epic' | 'legendary' | 'mythic';
@@ -36,8 +25,7 @@ export type Collection = {
 	palette?: string[];
 };
 
-/** Rarity's face, from the cosmic tokens — never loose hex.
- *  Mythic wears the curator's magenta, not the old rose: no red anywhere. */
+/** Rarity's face, from the cosmic tokens — never loose hex. */
 export const RARITY_DRESS: Record<Rarity, { color: string; emoji: string }> = {
 	common: { color: QUANTUM_COLORS['void.light'], emoji: '✨' },
 	rare: { color: QUANTUM_COLORS['neurospark'], emoji: '💫' },

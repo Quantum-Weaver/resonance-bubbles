@@ -1,24 +1,4 @@
 <script lang="ts">
-	// THE GALLERY — every star the sky holds, told as cards.
-	//
-	// This door consumes the-gallery (the spring's gallery engine, athena's
-	// six-domains-one-shape reborn): rows in, cards out — the engine derives
-	// the content, this dress owns every pixel. The game's law governs the
-	// dress: THE REWARD IS THE WORDS — a star's description is earned at the
-	// pop, so an uncollected card rests face-down (name + rarity shown,
-	// words veiled) and a popped card rests FLIPPED, words up (KP's ⚛
-	// stroke: "reveal words, flip card after popped"). The search walks
-	// name and collection only — never the veiled words.
-	//
-	// THE DRESS, redrawn 2026-08-23 at KP's word ("the gallery cards are not
-	// great appearance… if it is not using tailwind it needs to"): Tailwind
-	// utilities carry the layout, spacing, type and states; the few painterly
-	// things a utility cannot say well — a surface tinted by a per-card colour,
-	// a name mixed from it — sit in the short style block at the foot. And the
-	// card now WEARS THE STAR: the same orb the sky drifts, painted by the same
-	// lines (`$lib/bubbles/orb.css`), so the gallery looks like the game it
-	// belongs to. A collected star glows; a waiting one is dim and dashed,
-	// "still drifting" — a place it waits, never a place the player failed.
 	import { onMount } from 'svelte';
 	import { galleryOf, type GalleryConfig } from '$lib/gallery';
 	import {
@@ -33,8 +13,7 @@
 	const collectionName = new Map(COLLECTIONS.map((c) => [c.slug, c.name]));
 	const collectionBySlug = new Map(COLLECTIONS.map((c) => [c.slug, c]));
 
-	// The collection state is the game's own record, read-only here —
-	// the same localStorage the sky writes at every pop.
+	// The game's own record, read-only here — the same localStorage the sky writes at every pop.
 	const KEY = 'the-bubbles';
 	let collected = $state<Record<string, number>>({});
 	onMount(() => {
@@ -45,19 +24,12 @@
 		}
 	});
 
-	// ── the sieves ───────────────────────────────────────────────────────
-	// Filtering happens HERE, in the dress, not in the engine: the gallery
-	// core is a byte-faithful mirror whose truth lives in awen, and its
-	// contract already offers the two things the dress needs — a search over
-	// declared fields, and an order of the domain's choosing.
-	//
-	// The status sieve is a sieve, never a scoreboard: "still drifting" is
-	// where a star waits, not where a player failed.
+	// the sieves
 	type Status = 'all' | 'collected' | 'waiting';
 	type Order = 'sky' | 'name' | 'rarity' | 'collection';
 
 	let query = $state('');
-	let openSieves = $state(false); // a phone's shelf comes first; the sieves fold away
+	let openSieves = $state(false);
 	let coll = $state('all');
 	let rarity = $state<'all' | Rarity>('all');
 	let status = $state<Status>('all');
@@ -73,7 +45,7 @@
 	const rank = new Map(RARITY_ORDER.map((r, i) => [r, i]));
 	const byName = (a: Bubble, b: Bubble) => a.name.localeCompare(b.name);
 	const SORTS: Record<Order, ((a: Bubble, b: Bubble) => number) | undefined> = {
-		sky: undefined, // as the set gives them — the order the sky was written in
+		sky: undefined, // as the set gives them
 		name: byName,
 		rarity: (a, b) => (rank.get(b.rarity) ?? 0) - (rank.get(a.rarity) ?? 0) || byName(a, b),
 		collection: (a, b) =>
@@ -98,10 +70,7 @@
 		query = '';
 	}
 
-	// The domain's declaration — searchIn walks name and collection ONLY
-	// (KP's ⚛ stroke): the veiled words never leak through a search box.
-	// previewLength 200: the longest star's sentence is 138 characters, and
-	// the reward is the words — none of them is cut short here any more.
+	// The domain's declaration — searchIn walks name and collection only.
 	const config: GalleryConfig<Bubble> = $derived({
 		searchIn: [(b) => b.name, (b) => b.collection, (b) => collectionName.get(b.collection)],
 		card: {
@@ -123,18 +92,14 @@
 	const bubbleBySlug = new Map(BUBBLES.map((b) => [b.slug, b]));
 	const collectedCount = $derived(Object.keys(collected).filter((s) => bubbleBySlug.has(s)).length);
 
-	// The chosen collection, told whole above its stars — its own colour, its
-	// own words, and how much of it has drifted past (the sky's panel idiom:
-	// a full-width fill revealed by clip, so a rainbow stays a rainbow at 2/13).
+	// The chosen collection, told whole above its stars.
 	const chosen = $derived(coll === 'all' ? null : (collectionBySlug.get(coll) ?? null));
 	const chosenHave = $derived(
 		chosen ? BUBBLES.filter((b) => b.collection === chosen.slug && collected[b.slug]).length : 0
 	);
 	const chosenTotal = $derived(chosen ? BUBBLES.filter((b) => b.collection === chosen.slug).length : 0);
 
-	// A third emptiness the engine cannot know about: the sieve emptied the
-	// shelf, not the sky. It gets its own kind voice — and "nothing waiting"
-	// is good news, so it is told as good news.
+	// A third emptiness the engine cannot know about: the sieve emptied the shelf, not the sky.
 	const emptied = $derived.by(() => {
 		if (!view.empty || !sieving || view.empty.kind !== 'silent') return null;
 		if (status === 'waiting') return 'Nothing waits here — every star under this sieve has been popped.';
@@ -142,26 +107,20 @@
 		return 'No stars under that sieve — the sky holds others.';
 	});
 
-	// A popped card rests words-up; a tap turns it over and back — only
-	// popped cards flip, the unpopped keep their secret.
+	// A popped card rests words-up; a tap turns it over and back — only popped cards flip.
 	let turned = $state<Record<string, boolean>>({});
 	function flip(slug: string) {
 		if (!collected[slug]) return;
 		turned[slug] = !turned[slug];
 	}
 
-	// The orb on a card, sized by rarity the way the sky sizes it — rarer is
-	// larger — but gently, so a shelf of cards stays a shelf. These are the
-	// card's own measures (dress), not the game's numbers.
+	// The orb on a card, sized by rarity — rarer is larger.
 	const ORB: Record<Rarity, number> = { common: 44, rare: 48, epic: 52, legendary: 58, mythic: 66 };
 
 	/** Every variable a card's paint reads, in one string.
 	 *    --c   the orb's colour — `edge(b)`: a flag's first stripe, else the rarity
 	 *    --rc  the rarity's colour (the pride halo reads it, as in the sky)
-	 *    --t   the CHROME's tint — always the rarity's colour, so the surface, the
-	 *          name and the pill say how rare a star is, and a flag's red stripe
-	 *          never becomes red UI: on a flag the chrome stays the rarity's
-	 *          neutral and the flag's own colours do the speaking.
+	 *    --t   the CHROME's tint — always the rarity's colour
 	 *    --flag · --ring · --s  the stripes, the ring, the orb's size */
 	function paint(b: Bubble): string {
 		const parts = [
@@ -180,7 +139,7 @@
 
 <div class="flex h-full flex-col overflow-y-auto" style="padding-top: env(safe-area-inset-top, 0px);">
 	<header class="flex flex-col gap-3 px-4 pt-4 pb-1">
-		<!-- the title and the tally — how many of the sky's stars have drifted past -->
+		<!-- the title and the tally -->
 		<div class="flex items-end justify-between gap-4">
 			<div class="min-w-0">
 				<h1 class="text-xl font-semibold tracking-tight">Gallery</h1>
@@ -193,7 +152,7 @@
 			</p>
 		</div>
 
-		<!-- the search — name and collection only; the veiled words never leak -->
+		<!-- the search -->
 		<label class="relative block">
 			<svg
 				class="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-ink-3"
@@ -210,7 +169,7 @@
 			/>
 		</label>
 
-		<!-- filter & sort — folded away by default: on a phone the shelf is what came for -->
+		<!-- filter & sort -->
 		<div class="flex items-center gap-3">
 			<button
 				class="rounded-full border border-line bg-surface px-3 py-1.5 text-xs text-ink-2 transition hover:text-ink aria-expanded:border-accent/60 aria-expanded:text-ink"
@@ -294,10 +253,7 @@
 		<!-- the chosen collection, told whole above its stars -->
 		{#if chosen}
 			{@const fill = collectionFill(chosen)}
-			<!-- A one-colour collection tints its banner with that colour; a many-
-			     coloured one (Elemental, Inclusive Pride) leans on the theme's accent
-			     for the chrome and wears its own stripes on the rule and the bar — so
-			     a flag's first stripe never becomes the page's colour. -->
+			<!-- A one-colour collection tints its banner with that colour; a many-coloured one leans on the theme's accent. -->
 			<section
 				class="coll-banner relative flex items-start gap-3 overflow-hidden rounded-xl border border-line/60 p-3 pl-4"
 				style={chosen.palette ? '' : `--a:${collectionHue(chosen)}`}
@@ -346,7 +302,7 @@
 								class="relative h-full transform-3d transition-transform duration-500 ease-out motion-reduce:transition-none group-hover:-translate-y-0.5"
 								class:rotate-y-180={turned[card.id]}
 							>
-								<!-- The face — words up, the pop's reward resting in the open. -->
+								<!-- The face -->
 								<div class="face face-on relative flex h-full flex-col items-center gap-1.5 overflow-hidden rounded-2xl border px-3 pt-6 pb-3 backface-hidden">
 									<i class="absolute inset-x-0 top-0 h-[3px]" style="background:var(--flag)" aria-hidden="true"></i>
 									{#if count > 1}
@@ -360,7 +316,7 @@
 									<p class="max-w-full truncate text-[0.68rem] text-ink-3">{collectionName.get(b.collection) ?? b.collection}</p>
 									<p class="mt-auto pt-1 text-[0.78rem] leading-snug text-ink-2">{card.preview}</p>
 								</div>
-								<!-- The back — the star itself, large, and where it belongs. -->
+								<!-- The back -->
 								<div class="face face-on absolute inset-0 flex rotate-y-180 flex-col items-center justify-center gap-2 overflow-hidden rounded-2xl border px-3 py-4 backface-hidden">
 									<i class="absolute inset-x-0 top-0 h-[3px]" style="background:var(--flag)" aria-hidden="true"></i>
 									<span class="orb block shrink-0" class:flag={isFlag} class:pride={isPride} style="width:calc(var(--s) * 1.4); height:calc(var(--s) * 1.4)" aria-hidden="true"></span>
@@ -393,14 +349,9 @@
 </div>
 
 <style>
-	/* The painterly few — every one mixes a per-card colour (`--t` the rarity's
-	   tint, `--c` the orb's own — both set by paint()) into the live theme
-	   tokens, which is why they are classes and not utilities: the same recipe,
-	   a different colour on every card, and it holds in light, dark and AMOLED
-	   because the tokens do. */
+	/* The painterly few — each mixes a per-card colour (`--t`, `--c`, set by paint()) into the live theme tokens. */
 
-	/* A card's surface — the star's colour bleeding into the theme's surface,
-	   the way the sky's pop card is tinted by the star it announces. */
+	/* A card's surface — the star's colour bleeding into the theme's surface. */
 	.face {
 		background: var(--bg-surface);
 		border-color: color-mix(in srgb, var(--t) 45%, var(--border-color));
@@ -433,8 +384,7 @@
 		border-color: color-mix(in srgb, var(--t) 28%, var(--border-color));
 	}
 
-	/* The name wears the star's colour, mixed toward the theme's ink so it
-	   reads on a light page as well as a dark one. */
+	/* The name wears the star's colour, mixed toward the theme's ink. */
 	.name {
 		color: color-mix(in srgb, var(--t) 58%, var(--text));
 	}
@@ -469,8 +419,7 @@
 		box-shadow: 0 0 12px color-mix(in srgb, var(--a, var(--accent)) 25%, transparent);
 	}
 
-	/* The chosen collection's banner — its colour fading in from the edge
-	   (`--a` is the collection's own, or the theme's accent when it has many). */
+	/* The chosen collection's banner — `--a` is the collection's own colour, or the theme's accent when it has many. */
 	.coll-banner {
 		--a: var(--accent);
 		background: linear-gradient(90deg, color-mix(in srgb, var(--a) 14%, transparent), transparent 70%);

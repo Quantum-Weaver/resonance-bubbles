@@ -35,7 +35,6 @@ kb = os.path.getsize(out) / 1024
 print(f"index.html sealed: {kb:.0f} KB · {len(bubbles['bubbles'])} bubbles · "
       f"{len(bubbles['collections'])} collections · {len(pops)} pops embedded")
 
-# the-logbook's encoding: one line at end of run, walk-up placement, silent on failure
 try:
     import datetime
     d = HERE

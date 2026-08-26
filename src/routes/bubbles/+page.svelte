@@ -1,15 +1,5 @@
 <script lang="ts">
-	// THE BUBBLES — the standalone playable, brought into the app.
-	//
-	// The laws are the game's IDENTITY, not its settings. They came whole
-	// from the origin (AudHDities athena BubblePopGame) and are not tunable
-	// by anyone building here. If a change would make this stickier, it is
-	// the wrong change.
-	//   · the limit slider is the point, not a feature — the boundary is theirs
-	//   · "take a breath" at 50 pops · cooldown after 15 minutes
-	//   · every rarity drifts for everyone — rare is rare, never locked
-	//   · the reward is the words — no streaks, no combos, no timers, no red
-	//   · local-first absolutely — collection and boundary in localStorage only
+	// The game's laws are its IDENTITY, not its settings — not tunable by anyone building here.
 	import { onDestroy, onMount } from 'svelte';
 	import { QUANTUM_COLORS } from '$lib/cosmic';
 	import {
@@ -19,8 +9,7 @@
 	import '$lib/bubbles/orb.css';
 	import set from '$lib/data/bubbles-set.json';
 
-	// The numbers are the game's law and live here. The colours are the dress
-	// and live once, at $lib/bubbles/dress — the gallery wears the same ones.
+	// The numbers are the game's law; the colours are the dress, at $lib/bubbles/dress.
 	const RARITY: Record<Rarity, { pts: number; w: number; size: number; speed: number; color: string; emoji: string }> = {
 		common:    { pts: 1,  w: 60, size: 40, speed: 0.6, ...RARITY_DRESS.common },
 		rare:      { pts: 3,  w: 25, size: 48, speed: 0.5, ...RARITY_DRESS.rare },
@@ -58,7 +47,7 @@
 	let saved = $state<Saved>({ daily: 0, max: DEFAULT_MAX, day: today(), collected: {}, sound: true });
 	function save() { try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch { /* nothing leaves the page either way */ } }
 
-	// ── the sky ──────────────────────────────────────────────────────────
+	// the sky
 	type Floater = { id: number; b: Bubble; x: number; y: number; speed: number; drift: number; popped: boolean };
 	let floaters = $state<Floater[]>([]);
 	let sky = $state<HTMLDivElement | null>(null);
@@ -68,8 +57,7 @@
 	let sessionPops = 0;
 	let sessionStart = Date.now();
 	let paused = $state(false);
-	// Kept apart from `paused` on purpose: leaving the breath door must never
-	// silently undo a pause the player asked for themselves.
+	// Kept apart from `paused`: leaving the breath door must never undo a pause the player asked for.
 	let manualPause = $state(false);
 	let lastSpawn = 0;
 	let raf = 0;
@@ -117,7 +105,7 @@
 	let lastPopSound = -1;
 	function playPop() {
 		if (!saved.sound) return;
-		// No two pops in a row are ever the same — KP's spec, carried.
+		// No two pops in a row are ever the same.
 		let i = Math.floor(Math.random() * 7);
 		if (i === lastPopSound) i = (i + 1) % 7;
 		lastPopSound = i;
@@ -163,7 +151,7 @@
 			}
 			const H = sky.clientHeight || 600;
 			for (const f of floaters) {
-				// `bottom` grows — they rise. Bubbles go up.
+				// `bottom` grows — they rise.
 				f.y += f.speed;
 				f.x += f.drift;
 			}
@@ -292,14 +280,9 @@
 	.chip + .chip { margin-left: 8px; }
 	.sky { position: relative; flex: 1; overflow: hidden; }
 
-	/* The paint — fill, rim, glow, the flag's stripes, the ring, the pride halo —
-	   lives in `$lib/bubbles/orb.css` now (moved verbatim 2026-08-23, so the
-	   gallery can draw the same star); this rule keeps only the sky's own
-	   business: where a bubble sits and that it can be pressed. */
+	/* The paint lives in `$lib/bubbles/orb.css`; this rule keeps only where a bubble sits and that it can be pressed. */
 	.bubble { position: absolute; cursor: pointer; padding: 0; }
 
-	/* The words sit at the top of the sky, where they are read before the eye
-	   goes back to the drifting. */
 	.card { position: absolute; left: 50%; top: 14px; transform: translateX(-50%); max-width: 420px;
 		background: linear-gradient(180deg, color-mix(in srgb, var(--ac) 16%, rgba(12,12,18,0.94)), rgba(12,12,18,0.95));
 		border: 1px solid color-mix(in srgb, var(--ac) 60%, transparent);

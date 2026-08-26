@@ -7,9 +7,8 @@ export interface ThemeConfig {
   presetName?: string;
   fontSize: 'small' | 'medium' | 'large';
   /** How far the accent bleeds into the background. The reader's choice, not
-   *  the app's - added 2026-08-21 at KP's word, "which i like, but others may
-   *  not." A config saved before this field existed is merged over the default
-   *  and reads as 'subtle', which is what its owner was already seeing. */
+   *  the app's. A config saved before this field existed is merged over the
+   *  default and reads as 'subtle'. */
   tint: TintLevel;
 }
 
