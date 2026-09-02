@@ -1,7 +1,7 @@
 {
   "name": "resonance-bubbles",
   "version": "0.1.1",
-  "description": "A sovereign journal for logging anything with feeling",
+  "description": "Pop the stars, collect their words.",
   "type": "module",
   "scripts": {
     "dev": "vite dev",

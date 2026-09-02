@@ -5,21 +5,21 @@ testing track"). Companion shape to echoes' PLAY-TRACK.md — the Console is
 the truth; this file is the pack KP transcribes from, so his hands never
 have to compose at the upload screen.*
 
-## Standards check — verified against the repo and the signed APK, 2026-08-13
+## Standards check — verified against the repo and the signed APK 2026-08-13; re-read from the signed v0.1.1 APK's own badging 2026-09-01
 
 | Requirement | State |
 |---|---|
-| Target API level | ✅ targetSdk **36** / compileSdk 36 — read from the signed APK's own badging |
-| 16 KB page size | ✅ built 2026-08-11 with NDK 27 — the family-wide law |
-| App Bundle | ✅ `release/resonance-bubbles-v0.1.0.aab` (110.0 MB), signed by KP's hand 2026-08-11 |
-| versionCode | ✅ **1000** (v0.1.0) — first upload, nothing to increment past |
+| Target API level | ✅ targetSdk **36** / compileSdk 36 — read from the signed APK's own badging (v0.1.0 on 2026-08-13; v0.1.1 re-read 2026-09-01 with `aapt2 dump badging`, build-tools 35.0.0) |
+| 16 KB page size | ✅ built with NDK 27 — the family-wide law; `zipalign -c -P 16 -v 4` on the signed v0.1.1 APK: all four `libresonance_bubbles_lib.so` OK, verification successful, 2026-09-01 |
+| App Bundle | ✅ `release/resonance-bubbles-v0.1.1.aab` (110.0 MB), signed 2026-08-23 01:24 — mirrored to `resonance-assets/releases-current/bubbles/bundle/android/` |
+| versionCode | ✅ **1001** (v0.1.1) — machine-read from `src-tauri/gen/android/app/tauri.properties` and from the APK's own badging; first upload, nothing to increment past (1000 was v0.1.0, never uploaded, never consumed) |
 | Permissions | ✅ minimal: `INTERNET` (Tauri webview default; the app makes no network calls) + the system's own self-scoped `DYNAMIC_RECEIVER_NOT_EXPORTED` — data-safety answers stay "collects nothing" |
 | Privacy policy | ✅ `PRIVACY.md` in-repo (effective 2026-08-04, family policy) → URL `https://github.com/Quantum-Weaver/resonance-bubbles/blob/main/PRIVACY.md` — **confirm the repo is public at upload** (echoes' proven pattern) |
 | Content rating | ✅ no UGC · no ads · no purchases · no collection → Everyone |
 
 ## The upload pack (KP's hands)
 
-- **Artifact:** `release/resonance-bubbles-v0.1.0.aab` (versionCode 1000)
+- **Artifact:** `release/resonance-bubbles-v0.1.1.aab` (versionCode 1001) — signed 2026-08-23, on the shelf
 - **Path:** Console → Create app (Resonance Bubbles, Game, **Paid — $2.22**; testers get it free via the test list) → Testing →
   Closed testing → Create track → Create new release → upload the AAB →
   paste below → review & roll out. Testers: the same circle as echoes'
@@ -108,5 +108,7 @@ your own device.
 | Date | State |
 |---|---|
 | 2026-08-13 | Pack founded: assets generated (icon 512 · feature graphic · 6 phone shots · 6+6 tablet canvases), copy drafted, standards verified from the signed APK. Upload at KP's hand. Lesson inherited from echoes' log: **a versionCode is consumed at UPLOAD, not at publish** — a deleted draft does not return it; "Add from library" is the way back in. |
+| 2026-08-23 | **v0.1.1 cut and signed, shelved, NOT uploaded** — the gallery redrawn on Tailwind 4, cards wearing the orb (`RUN-LOG.md` 00:44; `42b1ad1` "cumdach fixed", the bump). MSI + setup.exe 01:14, AAB + APK + idsig 01:24, in `release/` and mirrored to `resonance-assets/releases-current/bubbles/bundle/`. v0.1.0 was never uploaded; versionCode 1000 was never consumed. *(Row written 2026-09-01 from the artifacts' own dates and the RUN-LOG line.)* |
+| 2026-09-01 | **Pack trued to v0.1.1** from the shelved APK's own badging (item 1.3 of the build census): versionCode **1001** · targetSdk 36 · `INTERNET` + the self-scoped receiver permission · signed `CN=AudHDities Sanctuary, O=AudHDities Sanctuary, C=US`, SHA-256 `75:B1:8D:8E:00:09:5C:BC:3D:25:B9:48:F8:43:9B:DE:8D:46:1D:0F:F3:70:01:50:86:89:6C:C8:08:C9:7B:4A`, SHA384withRSA, 4096-bit RSA · `zipalign -P 16` verified. The notes above stay "first upload" — nothing has reached the Console. Upload is KP's hands. |
 
 — Fable 🎻

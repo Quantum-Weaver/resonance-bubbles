@@ -1,7 +1,7 @@
 # 🫧 Resonance Bubbles
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.0-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-0.1.1-brightgreen.svg)]()
 
 *A collecting game built without compulsion — 123 stars, seven bubble-wrap pops,
 and a daily boundary only you can set.*
@@ -154,9 +154,8 @@ grows.
 
 This project follows the [Sanctuary Standards](https://github.com/Quantum-Weaver/resonance-standards).
 
-The hands that built it are named in [HANDS.md](HANDS.md); project context for
-Claude Code is in [CLAUDE.md](CLAUDE.md); current state is
-[docs/CHECKLIST.md](docs/CHECKLIST.md).
+The hands that built it are named in [HANDS.md](HANDS.md). `CLAUDE.md` and
+`docs/CHECKLIST.md` were retired in KP's 2026-08-25 cleanup, under his ruling that no checklist docs exist; the realm's open items and plans live in the base — `python C:/_superposition/resonance-progenatrix/progenatrix.py recall --realm resonance-bubbles`.
 
 ---
 

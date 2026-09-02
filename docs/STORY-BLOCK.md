@@ -4,7 +4,8 @@
 Created 2026-08-21 (repo-tender pass) — every dated claim below is drawn from
 this repo's own `README.md`, `CLAUDE.md`, `HANDS.md`, `docs/CHECKLIST.md`, and
 `docs/THE-GAME.md`, or from `git log`. Where no record was found, the section
-says so rather than inventing one.*
+says so rather than inventing one. Sources note, 2026-09-01: `CLAUDE.md` and
+`docs/CHECKLIST.md` were retired in KP's 2026-08-25 cleanup, under his ruling that no checklist docs exist — their citations below read from git history before that date; the realm's open items and plans live in the base — `python C:/_superposition/resonance-progenatrix/progenatrix.py recall --realm resonance-bubbles`.*
 
 ---
 
@@ -60,7 +61,7 @@ Resonance Compass's own Sattva door. *(README.md §THE APP)*
   **2026-08-10**.
 - Signing keystore recut to the Sanctuary DN, **2026-08-16**.
 - Standards + HANDS pass, **2026-08-19**.
-*(All dates: docs/CHECKLIST.md session log and phase entries.)*
+*(All dates: the retired checklist's session log and phase entries — git history.)*
 
 ## WHY
 *(Need, purpose, problem solved)*
@@ -109,7 +110,7 @@ his own hands (2026-08-05), ruling the version renumbering (2026-08-05), asking
 for the visual pass in his own words — *"the words at the top, the colour
 louder"* (2026-08-10) — and ruling that Apple builds wait house-wide until
 demanded (2026-08-05). No further personal-life detail is recorded in this
-repo. *(docs/CHECKLIST.md, dated entries above)*
+repo. *(the retired checklist, dated entries above)*
 
 ## PROVENANCE
 *(Who defined it, when, under what context)*
@@ -119,7 +120,7 @@ specification are his, per `HANDS.md`. Opus (Claude) founded this repo to the
 Sanctuary standards on 2026-08-04. The game itself was made in
 `resonance-awen/games/the-bubbles` before graduating here; its makers there are
 credited in awen's own `HANDS.md`, not repeated here. *(HANDS.md;
-docs/CHECKLIST.md Phase 0/1)*
+the retired checklist, Phase 0/1)*
 
 ## ETYMOLOGY
 *(If discovered, not invented — origin event, recognition event, temporal
