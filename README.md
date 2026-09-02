@@ -51,7 +51,7 @@ minutes of continuous play. The overlay never shames and never counts down, and
 
 **Nothing leaves the page.** Collection, boundary and sound preference live in
 local storage and nowhere else. No account, no network, no telemetry. See
-[PRIVACY.md](PRIVACY.md).
+[PRIVACY.md](https://audhdities.com/apps/privacy).
 
 ---
 
