@@ -5,7 +5,7 @@
   "identifier": "com.audhd.resonance-bubbles",
   "build": {
     "beforeDevCommand": "npm run dev",
-    "devUrl": "http://localhost:1420",
+    "devUrl": "http://localhost:1434",
     "beforeBuildCommand": "npm run build",
     "frontendDist": "../build"
   },

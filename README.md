@@ -139,7 +139,7 @@ And for anyone who has ever wanted the pop without the hook.
 
 ```bash
 npm install
-npm run dev          # the app in a browser, http://localhost:1420
+npm run dev          # the app in a browser, http://localhost:1434
 npm run tauri dev    # the app in its own window
 npm run tauri build  # desktop binaries
 ```
