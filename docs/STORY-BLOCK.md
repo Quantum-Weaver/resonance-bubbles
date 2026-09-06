@@ -5,7 +5,7 @@ Created 2026-08-21 (repo-tender pass) — every dated claim below is drawn from
 this repo's own `README.md`, `CLAUDE.md`, `HANDS.md`, `docs/CHECKLIST.md`, and
 `docs/THE-GAME.md`, or from `git log`. Where no record was found, the section
 says so rather than inventing one. Sources note, 2026-09-01: `CLAUDE.md` and
-`docs/CHECKLIST.md` were retired in KP's 2026-08-25 cleanup, under his ruling that no checklist docs exist — their citations below read from git history before that date; the realm's open items and plans live in the base — `python C:/_superposition/resonance-progenatrix/progenatrix.py recall --realm resonance-bubbles`.*
+`docs/CHECKLIST.md` were retired in KP's 2026-08-25 cleanup, under his ruling that no checklist docs exist — their citations below read from git history before that date; the realm's open items and plans live in the base — `python ../resonance-progenatrix/progenatrix.py recall --realm resonance-bubbles`.*
 
 ---
 

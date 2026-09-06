@@ -155,7 +155,7 @@ grows.
 This project follows the [Sanctuary Standards](https://github.com/Quantum-Weaver/resonance-standards).
 
 The hands that built it are named in [HANDS.md](HANDS.md). `CLAUDE.md` and
-`docs/CHECKLIST.md` were retired in KP's 2026-08-25 cleanup, under his ruling that no checklist docs exist; the realm's open items and plans live in the base — `python C:/_superposition/resonance-progenatrix/progenatrix.py recall --realm resonance-bubbles`.
+`docs/CHECKLIST.md` were retired in KP's 2026-08-25 cleanup, under his ruling that no checklist docs exist; the realm's open items and plans live in the base — `python ../resonance-progenatrix/progenatrix.py recall --realm resonance-bubbles`.
 
 ---
 
