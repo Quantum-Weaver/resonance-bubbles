@@ -12,3 +12,4 @@
 - 2026-08-05 20:24 - 40 fbp | 8 obp | 2 dbp | 1 pbp - folders 40 - files 179 (-2) - findings 0 - sovereignty HELD - drift: files
 - 2026-08-05 20:41 - 40 fbp | 8 obp | 2 dbp | 1 pbp - folders 40 - files 179 - findings 0 - sovereignty HELD - no drift
 - 2026-08-21 15:19 - 88 fbp | 9 obp | 2 dbp | 1 pbp - folders 88 (+48) - files 251 (+72) - findings 1 (+1) - sovereignty HELD - drift: folders, files, findings - layout migrated (53 flat files removed)
+- 2026-09-07 14:03 - 92 fbp | 10 obp | 2 dbp | 1 pbp - folders 92 (+4) - files 254 (+3) - findings 1 - sovereignty HELD - drift: folders, files

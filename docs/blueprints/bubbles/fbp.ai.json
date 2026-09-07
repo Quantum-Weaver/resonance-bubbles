@@ -19,10 +19,6 @@
       "description": "!/usr/bin/env python3"
     },
     {
-      "path": "CLAUDE.md",
-      "description": "CLAUDE.md"
-    },
-    {
       "path": "game-template.html",
       "description": "markup, 22,571 bytes"
     },
@@ -44,7 +40,7 @@
     },
     {
       "path": "package.json",
-      "description": "data, 1,097 bytes"
+      "description": "data, 1,079 bytes"
     },
     {
       "path": "PHILOSOPHY.md",
@@ -64,7 +60,7 @@
     },
     {
       "path": "svelte.config.js",
-      "description": "Tauri doesn't have a Node.js server to do proper SSR"
+      "description": "See: https://svelte.dev/docs/kit/single-page-apps"
     },
     {
       "path": "tsconfig.json",
@@ -79,10 +75,11 @@
       "description": "script, 873 bytes"
     }
   ],
-  "file_count": 18,
+  "file_count": 17,
   "subdirectories": [
     ".cargo",
     ".claude",
+    ".journals",
     "docs",
     "reports",
     "screenshots",
@@ -108,7 +105,7 @@
     },
     "build.py": {
       "language": "python",
-      "lines": 62,
+      "lines": 61,
       "classes": [],
       "functions": [],
       "imports": [
@@ -121,41 +118,6 @@
       ],
       "env_names_read": [],
       "has_main_guard": false
-    },
-    "CLAUDE.md": {
-      "language": "markdown",
-      "lines": 111,
-      "words": 795,
-      "heading_count": 8,
-      "headings": [
-        "CLAUDE.md \u2014 resonance-bubbles",
-        "Essential rules \u2014 the anti-compulsion identity",
-        "The rooms",
-        "Tools",
-        "The gates that are KP's alone",
-        "People",
-        "Standards",
-        "The forge and the link tender"
-      ],
-      "links_external": 1,
-      "links_site_absolute": [],
-      "links_internal": [
-        {
-          "target": "HANDS.md",
-          "resolves": true,
-          "outside_checkout": false
-        }
-      ],
-      "links_internal_unresolved": [],
-      "links_internal_outside_checkout": [],
-      "code_fences": 0,
-      "table_rows": 0,
-      "checkboxes": {
-        "open": 0,
-        "done": 0
-      },
-      "has_story_block": false,
-      "declares_mirror_class": false
     },
     "HANDS.md": {
       "language": "markdown",
@@ -284,8 +246,8 @@
     },
     "README.md": {
       "language": "markdown",
-      "lines": 176,
-      "words": 956,
+      "lines": 175,
+      "words": 977,
       "heading_count": 10,
       "headings": [
         "\ud83e\udee7 Resonance Bubbles",
@@ -299,14 +261,9 @@
         "Development Standards",
         "LICENSE"
       ],
-      "links_external": 7,
+      "links_external": 8,
       "links_site_absolute": [],
       "links_internal": [
-        {
-          "target": "PRIVACY.md",
-          "resolves": true,
-          "outside_checkout": false
-        },
         {
           "target": "docs/STORY-BLOCK.md",
           "resolves": true,
@@ -314,16 +271,6 @@
         },
         {
           "target": "HANDS.md",
-          "resolves": true,
-          "outside_checkout": false
-        },
-        {
-          "target": "CLAUDE.md",
-          "resolves": true,
-          "outside_checkout": false
-        },
-        {
-          "target": "docs/CHECKLIST.md",
           "resolves": true,
           "outside_checkout": false
         },
@@ -351,8 +298,8 @@
     },
     "RUN-LOG.md": {
       "language": "markdown",
-      "lines": 6,
-      "words": 95,
+      "lines": 7,
+      "words": 133,
       "heading_count": 0,
       "headings": [],
       "links_external": 0,
@@ -371,7 +318,7 @@
     },
     "svelte.config.js": {
       "language": "node",
-      "lines": 19,
+      "lines": 17,
       "functions": [],
       "commands": []
     },
@@ -396,12 +343,6 @@
       "reason": "package-class tree (dependency or build output) \u2014 not counted, because counting it means walking it"
     },
     {
-      "name": ".svelte-kit",
-      "address": ".svelte-kit",
-      "walked": false,
-      "reason": "package-class tree (dependency or build output) \u2014 not counted, because counting it means walking it"
-    },
-    {
       "name": "build",
       "address": "build",
       "walked": false,
@@ -421,7 +362,7 @@
       "reason": "gitignored by this repo's own .gitignore \u2014 named and counted, never described, never opened"
     }
   ],
-  "scan_timestamp": "2026-08-21T15:19:21.601252 | in sovereign time",
+  "scan_timestamp": "2026-09-07T14:03:36.343539 | in sovereign time",
   "maintaining_agent": "FolderAgent",
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

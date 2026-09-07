@@ -4,22 +4,26 @@
   "folder_path": "reports",
   "self": "bubbles/reports/fbp.ai.json",
   "parent": "bubbles/pbp.ai.json",
-  "description": "3 files, 0 subfolders",
+  "description": "4 files, 0 subfolders",
   "files": [
     {
       "path": "reports/2026-08-17-assessment.md",
       "description": "Resonance Bubbles"
     },
     {
+      "path": "reports/2026-08-21-assessment.md",
+      "description": "Resonance Bubbles"
+    },
+    {
       "path": "reports/analysis.json",
-      "description": "data, 4,991 bytes"
+      "description": "data, 5,272 bytes"
     },
     {
       "path": "reports/inventory.json",
-      "description": "data, 105,643 bytes"
+      "description": "data, 116,482 bytes"
     }
   ],
-  "file_count": 3,
+  "file_count": 4,
   "subdirectories": [],
   "code_analysis": {
     "2026-08-17-assessment.md": {
@@ -50,9 +54,37 @@
       "has_story_block": false,
       "declares_mirror_class": false
     },
+    "2026-08-21-assessment.md": {
+      "language": "markdown",
+      "lines": 54,
+      "words": 582,
+      "heading_count": 7,
+      "headings": [
+        "Resonance Bubbles \u2014 Assessment Report",
+        "Summary",
+        "Standards Compliance",
+        "Vulnerabilities",
+        "Gaps",
+        "Test Readiness",
+        "Recommendations"
+      ],
+      "links_external": 0,
+      "links_site_absolute": [],
+      "links_internal": [],
+      "links_internal_unresolved": [],
+      "links_internal_outside_checkout": [],
+      "code_fences": 0,
+      "table_rows": 7,
+      "checkboxes": {
+        "open": 0,
+        "done": 0
+      },
+      "has_story_block": false,
+      "declares_mirror_class": false
+    },
     "analysis.json": {
       "language": "json",
-      "lines": 80,
+      "lines": 89,
       "valid": true,
       "root": "object",
       "top_level_keys": [
@@ -68,7 +100,7 @@
     },
     "inventory.json": {
       "language": "json",
-      "lines": 3700,
+      "lines": 4089,
       "valid": true,
       "root": "object",
       "top_level_keys": [
@@ -85,7 +117,7 @@
     }
   },
   "folders_not_walked": [],
-  "scan_timestamp": "2026-08-21T15:19:21.617925 | in sovereign time",
+  "scan_timestamp": "2026-09-07T14:03:36.359983 | in sovereign time",
   "maintaining_agent": "FolderAgent",
   "note": "The details live here. Upper tiers link to this address; they do not copy this body."
 }

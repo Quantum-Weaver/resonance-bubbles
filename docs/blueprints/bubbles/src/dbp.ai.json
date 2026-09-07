@@ -11,7 +11,7 @@
       "object_path": "src/lib",
       "description": "0 files, 11 subfolders",
       "folder_count": 14,
-      "total_files": 61
+      "total_files": 62
     },
     {
       "blueprint": "bubbles/src/routes/obp.ai.json",
@@ -32,8 +32,8 @@
     }
   ],
   "total_folders": 24,
-  "total_files": 74,
-  "integration_timestamp": "2026-08-21T15:19:21.859609 | in sovereign time",
+  "total_files": 75,
+  "integration_timestamp": "2026-09-07T14:03:36.530566 | in sovereign time",
   "maintaining_agent": "DomainAgent",
   "note": "Links only. Every object's details live at its own address."
 }
