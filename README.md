@@ -106,20 +106,14 @@ is deleted.
 
 *This section required by the [Story Block Standard](https://github.com/Quantum-Weaver/resonance-standards).*
 
-The game began inside the AudHDities platform as the athena BubblePopGame, and
-was detiered on 2026-07-31 — freed from the tier system so it could belong to
-everyone. It was named as a future on 2026-08-01: *"i kind of want a stand alone
-playable game version of the bubble game … not right now, but future"* — and
-opened the same night, becoming the first resident of resonance-awen's `games/`
-room, and the spring's first thing made purely to play.
-
-The seven pops are the chimes' bubble-wrap family, synthesized from pure math
-and tuned by ear to a single specification: *"like bubble wrap to a
-neurodivergent."* No two pops in a row are ever the same.
-
-This repo is that game's graduation — the point at which a thing that called
-itself *the standalone playable* got its own address, so it could be given away
-on its own terms.
+Resonance Bubbles is a collecting game built without compulsion — pop the
+stars, collect their words. It began inside the AudHDities platform as the
+athena BubblePopGame, detiered on 2026-07-31, then named a future want on
+2026-08-01 in KP's words: *"i kind of want a stand alone playable game
+version of the bubble game … not right now, but future"* — opened the same
+night as the first resident of `resonance-awen`'s `games/` room, and
+graduated into this standalone repo on 2026-08-04. The seven pops are tuned
+by ear to KP's own specification: *"like bubble wrap to a neurodivergent."*
 
 📖 [Full Story Block](docs/STORY-BLOCK.md)
 
